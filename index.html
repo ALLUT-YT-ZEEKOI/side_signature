@@ -1,1013 +1,3064 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>A-Side Signature &ndash; Professional Medical Apparel | Kuwait</title>
-<meta name="description" content="A-Side Signature provides professional, comfortable and functional medical uniforms for doctors, nurses and paramedics in Kuwait. Designed in line with Kuwait MOH colour codes."/>
-<link rel="preconnect" href="https://fonts.googleapis.com"/>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet"/>
-<style>
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-:root{
-  --gold:#d4af37;--gold-light:#e8c96a;--gold-dark:#b8942e;
-  --royal:#305CDE;--royal-dark:#2448b8;--royal-light:#4a74e8;
-  --navy:#0a1f5c;--navy-deep:#061438;--navy-mid:#122a6e;
-  --bg:#ffffff;--bg-2:#f6f8fc;--bg-3:#eef2f9;--bg-4:#e4eaf4;--bg-5:#d8e0ef;
-  --ink:#0a1f5c;--ink-soft:#243456;--text:#2a3348;--muted:#6b7385;
-  --white:#ffffff;
-  --ff-serif:'Playfair Display',Georgia,serif;--ff-sans:'DM Sans',system-ui,sans-serif;
-  --transition:0.3s cubic-bezier(0.4,0,0.2,1);
-  --shadow:0 8px 28px rgba(10,31,92,0.08);--shadow-royal:0 4px 24px rgba(48,92,222,0.2);
-  --radius:4px;--border:rgba(10,31,92,0.1);--border-gold:rgba(212,175,55,0.45);
-}
-html{scroll-behavior:smooth}
-body{font-family:var(--ff-sans);background:var(--bg);color:var(--text);overflow-x:hidden}
-a{text-decoration:none;color:inherit}
-img{display:block;max-width:100%}
-ul{list-style:none}
-button{cursor:pointer;border:none;background:none;font-family:inherit}
-.container{max-width:1280px;margin:0 auto;padding:0 24px}
-.section-title{display:flex;align-items:center;gap:16px;justify-content:center;margin-bottom:20px;font-family:var(--ff-serif);font-size:13px;letter-spacing:3px;text-transform:uppercase;color:var(--navy)}
-.section-title::before,.section-title::after{content:'';flex:1;max-width:80px;height:1px;background:linear-gradient(90deg,transparent,var(--gold),var(--royal),transparent)}
-.section-lead{text-align:center;max-width:640px;margin:0 auto 48px;font-size:15px;line-height:1.7;color:var(--muted)}
-.section-heading{font-family:var(--ff-serif);font-size:clamp(28px,3.2vw,40px);color:var(--navy);line-height:1.15;text-align:center;margin-bottom:12px}
-.btn-primary{display:inline-flex;align-items:center;gap:8px;background:var(--navy);color:#fff;padding:14px 26px;font-size:12px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;transition:var(--transition);border-radius:2px}
-.btn-primary:hover{background:var(--royal);transform:translateY(-1px);box-shadow:var(--shadow-royal)}
-.btn-outline{display:inline-flex;align-items:center;gap:8px;background:transparent;color:var(--navy);padding:13px 24px;font-size:12px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;border:1.5px solid rgba(10,31,92,0.35);transition:var(--transition);border-radius:2px}
-.btn-outline:hover{border-color:var(--royal);color:var(--royal);background:rgba(48,92,222,0.04)}
-.btn-wa{display:inline-flex;align-items:center;gap:8px;background:#25D366;color:#fff;padding:13px 22px;font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase;border-radius:2px;transition:var(--transition)}
-.btn-wa:hover{background:#1ebe57;transform:translateY(-1px)}
-.badge{font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;padding:4px 10px;border-radius:2px;display:inline-block}
-.badge-navy{background:var(--navy);color:var(--gold)}
-.badge-royal{background:var(--royal);color:#fff}
-.badge-gold{background:var(--gold);color:var(--navy)}
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A-Side Signature &ndash; Professional Medical Apparel | Kuwait</title>
+    <meta name="description"
+        content="A-Side Signature provides professional, comfortable and functional medical uniforms for doctors, nurses and paramedics in Kuwait. Designed in line with Kuwait MOH colour codes." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&display=swap"
+        rel="stylesheet" />
+    <style>
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0
+        }
 
-/* ANN */
-.announcement-bar{background:linear-gradient(90deg,var(--navy-deep),var(--navy) 45%,var(--royal-dark) 100%);border-bottom:1px solid rgba(212,175,55,0.35);padding:10px 0}
-.announcement-bar .container{display:flex;justify-content:space-between;align-items:center}
-.ann-items{display:flex;gap:36px;font-size:12px;letter-spacing:0.4px;color:rgba(255,255,255,0.9)}
-.ann-item{display:flex;align-items:center;gap:8px}
-.ann-item svg{color:var(--gold);flex-shrink:0}
-.ann-social{display:flex;gap:16px}
-.ann-social a{color:rgba(255,255,255,0.7);transition:var(--transition);display:flex}
-.ann-social a:hover{color:var(--gold)}
+        :root {
+            --gold: #d4af37;
+            --gold-light: #e8c96a;
+            --gold-dark: #b8942e;
+            --royal: #305CDE;
+            --royal-dark: #2448b8;
+            --royal-light: #4a74e8;
+            --navy: #0a1f5c;
+            --navy-deep: #061438;
+            --navy-mid: #122a6e;
+            --bg: #ffffff;
+            --bg-2: #f6f8fc;
+            --bg-3: #eef2f9;
+            --bg-4: #e4eaf4;
+            --bg-5: #d8e0ef;
+            --ink: #0a1f5c;
+            --ink-soft: #243456;
+            --text: #2a3348;
+            --muted: #6b7385;
+            --white: #ffffff;
+            --ff-serif: 'Playfair Display', Georgia, serif;
+            --ff-sans: 'DM Sans', system-ui, sans-serif;
+            --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            --shadow: 0 8px 28px rgba(10, 31, 92, 0.08);
+            --shadow-royal: 0 4px 24px rgba(48, 92, 222, 0.2);
+            --radius: 4px;
+            --border: rgba(10, 31, 92, 0.1);
+            --border-gold: rgba(212, 175, 55, 0.45);
+        }
 
-/* HEADER */
-.header{position:sticky;top:0;z-index:100;background:rgba(255,255,255,0.95);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
-.header-inner{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
-.logo img{height:52px;width:auto;display:block;border-radius:4px}
-.nav{display:flex;align-items:center;gap:28px}
-.nav a{font-size:13px;font-weight:500;letter-spacing:0.4px;color:var(--muted);transition:var(--transition);position:relative}
-.nav a::after{content:'';position:absolute;bottom:-4px;left:0;right:0;height:1px;background:linear-gradient(90deg,var(--gold),var(--royal));transform:scaleX(0);transition:var(--transition)}
-.nav a:hover,.nav a.active{color:var(--navy)}
-.nav a:hover::after,.nav a.active::after{transform:scaleX(1)}
-.header-actions{display:flex;align-items:center;gap:12px}
+        html {
+            scroll-behavior: smooth
+        }
 
-/* HERO */
-.hero{position:relative;min-height:calc(100vh - 110px);display:flex;flex-direction:column;justify-content:center;overflow:hidden;background:#fff}
-.hero-media{position:absolute;top:0;right:0;bottom:0;width:52%;z-index:0}
-.hero-media img{width:100%;height:100%;object-fit:cover;object-position:center top}
-.hero-media::before{content:'';position:absolute;inset:0;background:linear-gradient(90deg,#fff 0%,rgba(255,255,255,0.92) 8%,rgba(255,255,255,0.35) 42%,transparent 68%);z-index:1;pointer-events:none}
-.hero-inner{position:relative;z-index:2;width:100%;padding:72px 0 28px}
-.hero-content{max-width:560px;animation:fadeInUp 0.8s ease both}
-.hero-eyebrow{font-size:12px;letter-spacing:3.5px;text-transform:uppercase;color:var(--royal);margin-bottom:18px;font-weight:600}
-.hero-title{font-family:var(--ff-serif);font-size:clamp(38px,5vw,62px);line-height:1.08;font-weight:600;color:var(--navy);margin-bottom:22px}
-.hero-title em{font-style:italic;color:var(--royal)}
-.hero-sub{font-size:16px;line-height:1.7;color:var(--muted);max-width:460px;margin-bottom:34px}
-.hero-ctas{display:flex;gap:14px;flex-wrap:wrap}
-.hero-badge{position:absolute;right:8%;bottom:14%;z-index:3;width:118px;height:118px;border-radius:50%;border:1.5px solid var(--gold);background:rgba(255,255,255,0.96);display:flex;align-items:center;justify-content:center;text-align:center;box-shadow:0 10px 30px rgba(10,31,92,0.12);animation:spin-slow 28s linear infinite}
-.hero-badge::before{content:'';position:absolute;inset:5px;border-radius:50%;border:1px dashed rgba(212,175,55,0.7)}
-.hero-badge-text{position:relative;z-index:1;font-size:9px;letter-spacing:1.4px;text-transform:uppercase;color:var(--navy);line-height:1.35;font-weight:700;max-width:78px}
+        body {
+            font-family: var(--ff-sans);
+            background: var(--bg);
+            color: var(--text);
+            overflow-x: hidden
+        }
 
-/* BENEFITS */
-.benefits{padding:72px 0;background:linear-gradient(180deg,#fff 0%,var(--bg-2) 100%)}
-.benefits-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
-.benefit-card{background:#fff;border:1px solid var(--border);border-radius:12px;padding:28px 20px;text-align:center;transition:var(--transition)}
-.benefit-card:hover{transform:translateY(-4px);box-shadow:var(--shadow);border-color:rgba(212,175,55,0.4)}
-.benefit-icon{width:48px;height:48px;margin:0 auto 16px;border-radius:12px;background:linear-gradient(145deg,var(--navy-deep),var(--navy));display:flex;align-items:center;justify-content:center;color:var(--gold)}
-.benefit-card:nth-child(even) .benefit-icon{background:linear-gradient(145deg,var(--royal-dark),var(--royal));color:#fff}
-.benefit-icon svg{width:22px;height:22px}
-.benefit-card h3{font-size:14px;font-weight:600;color:var(--navy);margin-bottom:8px;line-height:1.35}
-.benefit-card p{font-size:13px;line-height:1.55;color:var(--muted)}
+        a {
+            text-decoration: none;
+            color: inherit
+        }
 
-/* ABOUT */
-.about{padding:96px 0;background:var(--bg)}
-.about-inner{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center}
-.about-img-wrap{position:relative}
-.about-img-wrap::before{content:'';position:absolute;top:-16px;left:-16px;right:16px;bottom:16px;border:1px solid rgba(48,92,222,0.35);border-radius:4px;z-index:0}
-.about-img-wrap img{width:100%;height:480px;object-fit:cover;border-radius:4px;position:relative;z-index:1}
-.about-eyebrow{font-size:11px;letter-spacing:4px;text-transform:uppercase;color:var(--royal);margin-bottom:20px}
-.about-title{font-family:var(--ff-serif);font-size:clamp(30px,3vw,42px);color:var(--navy);line-height:1.15;margin-bottom:24px}
-.about-body{font-size:15px;line-height:1.8;color:var(--muted);margin-bottom:16px}
-.about-tagline{font-family:var(--ff-serif);font-size:18px;color:var(--navy);margin:28px 0 32px;font-style:italic}
+        img {
+            display: block;
+            max-width: 100%
+        }
 
-/* COLLECTION INTRO */
-.collection-intro{padding:72px 0 24px;background:var(--bg-2)}
-.split-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:40px}
-.split-card{position:relative;padding:48px 40px;min-height:280px;overflow:hidden;border:1px solid var(--border);transition:var(--transition);box-shadow:var(--shadow);display:flex;flex-direction:column;justify-content:flex-end;isolation:isolate}
-.split-card:hover{transform:translateY(-3px);box-shadow:0 12px 32px rgba(10,31,92,0.12)}
-.split-card-bg{position:absolute;inset:0;z-index:0}
-.split-card-bg img{width:100%;height:100%;object-fit:cover;object-position:center 20%;transition:transform 0.6s ease}
-.split-card:hover .split-card-bg img{transform:scale(1.05)}
-.split-card::before{content:'';position:absolute;inset:0;z-index:1;pointer-events:none}
-.split-card--women::before{background:linear-gradient(115deg,rgba(36,72,184,0.88) 0%,rgba(48,92,222,0.78) 48%,rgba(74,116,232,0.55) 100%)}
-.split-card--men::before{background:linear-gradient(115deg,rgba(6,20,56,0.9) 0%,rgba(10,31,92,0.82) 50%,rgba(18,42,110,0.6) 100%)}
-.split-card--women{background:var(--royal)}
-.split-card--men{background:var(--navy)}
-.split-card .split-eyebrow,.split-card .split-title,.split-card .split-sub,.split-card .split-cta{position:relative;z-index:2}
-.split-card .split-eyebrow{font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:14px}
-.split-card .split-title{font-family:var(--ff-serif);font-size:32px;color:#fff;margin-bottom:12px;line-height:1.15}
-.split-card .split-sub{font-size:14px;color:rgba(255,255,255,0.9);line-height:1.6;max-width:340px;margin-bottom:28px}
-.split-card .split-cta{display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--navy);background:var(--gold);padding:12px 22px;border-radius:var(--radius);transition:var(--transition);align-self:flex-start}
-.split-card .split-cta:hover{background:var(--gold-light)}
+        ul {
+            list-style: none
+        }
 
-/* PRODUCT SECTIONS */
-.product-section{padding:64px 0;background:var(--bg-2)}
-.product-section--alt{background:#fff}
-.product-section-head{margin-bottom:40px;max-width:640px}
-.product-section-head .section-title{justify-content:flex-start;margin-bottom:16px}
-.product-section-head .section-title::before{display:none}
-.product-section-head h2{font-family:var(--ff-serif);font-size:clamp(26px,3vw,36px);color:var(--navy);margin-bottom:12px;line-height:1.2}
-.product-section-head p{font-size:15px;line-height:1.7;color:var(--muted)}
-.products-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
-.product-card{background:#fff;border:1px solid rgba(10,31,92,0.08);border-radius:16px;overflow:hidden;transition:transform 0.3s ease,box-shadow 0.3s ease;box-shadow:0 4px 16px rgba(10,31,92,0.04);display:flex;flex-direction:column;position:relative}
-.product-card:hover{transform:translateY(-6px);box-shadow:0 16px 36px rgba(10,31,92,0.12)}
-.product-media{position:relative;flex:1;display:flex;flex-direction:column;min-height:0}
-.product-img-wrap{position:relative;height:220px;background:linear-gradient(160deg,#eef2f9 0%,#fff 55%,#f6f8fc 100%);display:flex;align-items:center;justify-content:center}
-.product-img-wrap img{width:100%;height:100%;object-fit:contain;object-position:center;padding:16px 14px 48px;transition:transform 0.45s ease}
-.product-card:hover .product-img-wrap img{transform:scale(1.05) translateY(-4px)}
-.product-badge{position:absolute;top:12px;left:12px;z-index:2;right:auto;display:block;padding:0;justify-content:flex-start}
-.product-badge .badge{font-size:9px;padding:5px 10px;letter-spacing:1.2px;border-radius:999px}
-.product-swatch-float{display:none}
-.product-info{position:relative;z-index:2;margin-top:-36px;margin-left:12px;margin-right:12px;margin-bottom:12px;padding:14px 14px 12px;background:rgba(255,255,255,0.96);backdrop-filter:blur(8px);border:1px solid rgba(10,31,92,0.08);border-radius:12px;display:flex;flex-direction:column;gap:4px;box-shadow:0 8px 20px rgba(10,31,92,0.06)}
-.product-tagline{font-size:10px;letter-spacing:0.4px;color:var(--royal);font-weight:600;margin:0;text-transform:uppercase}
-.product-name{font-family:var(--ff-serif);font-size:16px;color:var(--navy);margin:0;line-height:1.25}
-.product-basics{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:6px}
-.product-sizes{font-size:11px;color:var(--muted)}
-.product-sizes strong{color:var(--navy);font-weight:600;margin-right:3px}
-.product-colours{display:flex;align-items:center;gap:6px;margin:0}
-.swatches{display:flex;gap:4px}
-.swatch{width:11px;height:11px;border-radius:50%;border:2px solid rgba(10,31,92,0.12);display:inline-block}
-.swatch--navy{background:var(--navy)}
-.swatch--royal{background:var(--royal)}
-.product-actions{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px;padding-top:0;border-top:none}
-.btn-details{display:inline-flex;align-items:center;justify-content:center;gap:4px;background:var(--bg-2);color:var(--navy);padding:10px 8px;font-size:10px;font-weight:700;letter-spacing:0.8px;text-transform:uppercase;border:1px solid rgba(10,31,92,0.1);border-radius:8px;cursor:pointer;font-family:inherit;transition:var(--transition)}
-.btn-details::after{content:none}
-.btn-details:hover{background:var(--navy);color:#fff;border-color:var(--navy)}
-.product-enquire{display:inline-flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;letter-spacing:0.8px;text-transform:uppercase;color:#fff;background:var(--royal);padding:10px 8px;border-radius:8px;transition:var(--transition);margin-left:0}
-.product-enquire:hover{background:var(--royal-dark)}
-.product-card--men .product-enquire{background:var(--navy)}
-.product-card--men .product-enquire:hover{background:var(--navy-mid)}
+        button {
+            cursor: pointer;
+            border: none;
+            background: none;
+            font-family: inherit
+        }
 
-/* PRODUCT MODAL */
-.product-modal{position:fixed;inset:0;z-index:300;display:flex;align-items:center;justify-content:center;padding:20px;opacity:0;visibility:hidden;pointer-events:none;transition:opacity 0.28s ease,visibility 0.28s ease}
-.product-modal.open{opacity:1;visibility:visible;pointer-events:all}
-.product-modal-backdrop{position:absolute;inset:0;background:rgba(6,20,56,0.55);backdrop-filter:blur(6px)}
-.product-modal-dialog{position:relative;z-index:1;width:min(860px,100%);max-height:min(90vh,720px);background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 24px 60px rgba(10,31,92,0.25);display:grid;grid-template-columns:1fr 1.1fr;transform:translateY(16px) scale(0.98);transition:transform 0.3s ease}
-.product-modal.open .product-modal-dialog{transform:translateY(0) scale(1)}
-.product-modal-close{position:absolute;top:12px;right:12px;z-index:2;width:36px;height:36px;border-radius:50%;background:rgba(10,31,92,0.08);color:var(--navy);display:inline-flex;align-items:center;justify-content:center;cursor:pointer;border:none;transition:var(--transition)}
-.product-modal-close:hover{background:var(--navy);color:#fff}
-.product-modal-media{background:var(--bg-2);display:flex;align-items:center;justify-content:center;padding:28px;min-height:280px;position:relative}
-.product-modal-media img{width:100%;height:100%;max-height:420px;object-fit:contain}
-.product-modal-badge{position:absolute;top:16px;left:16px}
-.product-modal-body{padding:28px 28px 24px;overflow-y:auto;display:flex;flex-direction:column;gap:12px}
-.product-modal-tagline{font-size:12px;color:var(--royal);font-weight:600;letter-spacing:0.3px}
-.product-modal-title{font-family:var(--ff-serif);font-size:26px;color:var(--navy);line-height:1.2;margin:0}
-.product-modal-desc{font-size:14px;line-height:1.65;color:var(--muted);margin:0}
-.product-modal-meta{display:flex;flex-wrap:wrap;gap:8px}
-.product-modal-meta span{font-size:12px;color:var(--ink-soft);background:var(--bg-2);border:1px solid rgba(10,31,92,0.08);padding:6px 10px;border-radius:999px}
-.product-modal-meta span strong{color:var(--navy);margin-right:4px}
-.product-modal-features{list-style:none;display:flex;flex-direction:column;gap:8px;margin:4px 0 0;padding:0}
-.product-modal-features li{font-size:13px;color:var(--ink-soft);padding-left:16px;position:relative;line-height:1.4}
-.product-modal-features li::before{content:'';position:absolute;left:0;top:7px;width:7px;height:7px;border-radius:50%;background:var(--gold)}
-.product-modal-colours{display:flex;align-items:center;gap:10px;font-size:13px;color:var(--muted);padding-top:4px}
-.product-modal-note{font-size:13px;font-weight:600;color:var(--navy);margin:0}
-.product-modal-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:8px}
-.product-modal-actions .btn-primary,.product-modal-actions .btn-wa{padding:12px 18px;font-size:11px}
-body.modal-open{overflow:hidden}
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 24px
+        }
 
-/* FEATURES */
-.features{padding:80px 0;background:#fff}
-.features-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-.feature-card{padding:28px 24px;border:1px solid var(--border);border-radius:10px;background:var(--bg-2);transition:var(--transition)}
-.feature-card:hover{border-color:rgba(48,92,222,0.35);background:#fff;box-shadow:var(--shadow)}
-.feature-num{font-family:var(--ff-serif);font-size:28px;color:var(--gold);margin-bottom:12px}
-.feature-card h3{font-size:16px;color:var(--navy);margin-bottom:8px;font-weight:600}
-.feature-card p{font-size:13px;line-height:1.6;color:var(--muted)}
+        .section-title {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            justify-content: center;
+            margin-bottom: 20px;
+            font-family: var(--ff-serif);
+            font-size: 13px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--navy)
+        }
 
-/* WHY */
-.why{padding:80px 0;background:linear-gradient(135deg,var(--navy-deep),var(--navy) 50%,var(--royal-dark));color:#fff}
-.why .section-title{color:#fff}
-.why .section-title::before,.why .section-title::after{background:linear-gradient(90deg,transparent,var(--gold),transparent)}
-.why .section-heading{color:#fff}
-.why .section-lead{color:rgba(255,255,255,0.8)}
-.why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
-.why-card{background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.12);border-radius:12px;padding:28px 22px;transition:var(--transition)}
-.why-card:hover{background:rgba(255,255,255,0.1);border-color:rgba(212,175,55,0.45)}
-.why-card h3{font-size:15px;color:var(--gold);margin-bottom:10px;line-height:1.35}
-.why-card p{font-size:13px;line-height:1.6;color:rgba(255,255,255,0.8)}
+        .section-title::before,
+        .section-title::after {
+            content: '';
+            flex: 1;
+            max-width: 80px;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--gold), var(--royal), transparent)
+        }
 
-/* BULK */
-.bulk{padding:80px 0;background:var(--bg-2)}
-.bulk-inner{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:stretch}
-.bulk-copy{display:flex;flex-direction:column;justify-content:center;padding:8px 8px 8px 0}
-.bulk-eyebrow{font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--royal);margin-bottom:14px}
-.bulk-title{font-family:var(--ff-serif);font-size:clamp(28px,3vw,40px);color:var(--navy);line-height:1.15;margin-bottom:14px}
-.bulk-lead{font-size:18px;font-weight:700;color:var(--navy);margin-bottom:12px}
-.bulk-body{font-size:15px;line-height:1.75;color:var(--muted);margin-bottom:16px}
-.bulk-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:8px}
-.bulk-panel{background:linear-gradient(145deg,var(--navy-deep),var(--navy));color:#fff;padding:36px 32px;border-radius:12px;border:1px solid rgba(212,175,55,0.3);display:flex;flex-direction:column;height:100%}
-.bulk-panel h3{font-family:var(--ff-serif);font-size:24px;margin-bottom:10px;color:#fff}
-.bulk-panel > p{font-size:14px;line-height:1.65;color:rgba(255,255,255,0.85);margin-bottom:20px}
-.bulk-panel-label{font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold);margin-bottom:14px;font-weight:600}
-.bulk-list{display:grid;grid-template-columns:1fr 1fr;gap:10px 14px;margin:0 0 24px;list-style:none;padding:0}
-.bulk-list li{font-size:13px;color:rgba(255,255,255,0.92);padding-left:18px;position:relative;line-height:1.35}
-.bulk-list li::before{content:'✓';position:absolute;left:0;color:var(--gold);font-weight:700;font-size:12px}
-.bulk-panel .btn-primary{margin-top:auto;align-self:flex-start;background:var(--gold);color:var(--navy)}
-.bulk-panel .btn-primary:hover{background:var(--gold-light)}
+        .section-lead {
+            text-align: center;
+            max-width: 640px;
+            margin: 0 auto 48px;
+            font-size: 15px;
+            line-height: 1.7;
+            color: var(--muted)
+        }
 
-/* CATALOGUE */
-.catalogue{padding:64px 0;background:#fff}
-.catalogue-box{display:flex;align-items:center;justify-content:space-between;gap:32px;flex-wrap:wrap;padding:40px 44px;border:1px solid var(--border);border-radius:12px;background:linear-gradient(135deg,#fff,var(--bg-2));box-shadow:var(--shadow)}
-.catalogue-box h2{font-family:var(--ff-serif);font-size:28px;color:var(--navy);margin-bottom:8px}
-.catalogue-box p{font-size:14px;color:var(--muted);line-height:1.6;max-width:480px}
-.catalogue-actions{display:flex;flex-direction:column;align-items:flex-end;gap:12px}
-.catalogue-secondary{font-size:13px;color:var(--royal);font-weight:500}
-.catalogue-secondary:hover{text-decoration:underline}
+        .section-heading {
+            font-family: var(--ff-serif);
+            font-size: clamp(28px, 3.2vw, 40px);
+            color: var(--navy);
+            line-height: 1.15;
+            text-align: center;
+            margin-bottom: 12px
+        }
 
-/* CONTACT */
-.contact{padding:80px 0;background:var(--bg-2)}
-.contact-grid{display:grid;grid-template-columns:1fr 1.15fr;gap:40px;align-items:start}
-.contact-card{background:#fff;border:1px solid var(--border);border-radius:12px;padding:36px 32px;box-shadow:var(--shadow)}
-.contact-card h2{font-family:var(--ff-serif);font-size:32px;color:var(--navy);margin-bottom:12px}
-.contact-card > p{font-size:14px;line-height:1.7;color:var(--muted);margin-bottom:28px}
-.company-name{font-size:13px;font-weight:700;letter-spacing:0.5px;color:var(--navy);margin-bottom:4px}
-.company-sub{font-size:13px;color:var(--royal);margin-bottom:24px}
-.contact-rows{display:flex;flex-direction:column;gap:18px;margin-bottom:28px}
-.contact-row strong{display:block;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold-dark);margin-bottom:4px}
-.contact-row span,.contact-row a{font-size:14px;color:var(--ink-soft);line-height:1.5}
-.contact-row a:hover{color:var(--royal)}
-.contact-actions{display:flex;flex-wrap:wrap;gap:10px}
-/* FORM */
-.enquiry-form{background:#fff;border:1px solid var(--border);border-radius:12px;padding:36px 32px;box-shadow:var(--shadow)}
-.enquiry-form h3{font-family:var(--ff-serif);font-size:26px;color:var(--navy);margin-bottom:8px}
-.enquiry-form .form-lead{font-size:14px;color:var(--muted);margin-bottom:28px;line-height:1.6}
-.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-.form-group{display:flex;flex-direction:column;gap:6px}
-.form-group--full{grid-column:1/-1}
-.form-group label{font-size:12px;font-weight:600;color:var(--navy);letter-spacing:0.3px}
-.form-group label .req{color:var(--royal)}
-.form-group input,.form-group select,.form-group textarea{padding:12px 14px;border:1px solid rgba(10,31,92,0.15);border-radius:6px;font-family:inherit;font-size:14px;color:var(--ink);background:var(--bg-2);outline:none;transition:var(--transition)}
-.form-group input:focus,.form-group select:focus,.form-group textarea:focus{border-color:var(--royal);background:#fff;box-shadow:0 0 0 3px rgba(48,92,222,0.12)}
-.form-group textarea{min-height:110px;resize:vertical}
-.form-note{font-size:12px;color:var(--muted);margin-top:14px;line-height:1.5}
-.form-submit{margin-top:20px}
+        .btn-primary {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--navy);
+            color: #fff;
+            padding: 14px 26px;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 1.2px;
+            text-transform: uppercase;
+            transition: var(--transition);
+            border-radius: 2px
+        }
 
-/* FOOTER */
-.footer{background:#fff;border-top:1px solid var(--border);padding:56px 0 0}
-.footer-grid{display:grid;grid-template-columns:1.35fr 1fr 1fr 1.15fr;column-gap:32px;row-gap:36px;align-items:start;margin-bottom:36px}
-.footer-col{display:flex;flex-direction:column;min-width:0}
-.footer-brand .logo{display:flex;align-items:center;min-height:40px;margin:0 0 18px}
-.footer-brand .logo img{height:40px;width:auto}
-.footer-heading{font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--navy);font-weight:600;min-height:40px;display:flex;align-items:center;margin:0 0 18px;line-height:1.2}
-.footer-brand > p{font-size:13px;line-height:1.65;color:var(--muted);margin:0 0 12px}
-.footer-company{font-size:12px;color:var(--ink-soft);margin:0 0 12px !important;line-height:1.5}
-.footer-pillars{font-size:10px;letter-spacing:1px;text-transform:uppercase;color:var(--royal);margin:0 0 16px !important}
-.footer-social{display:flex;gap:10px;margin-top:auto}
-.footer-social a{width:34px;height:34px;border:1px solid var(--border);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--muted);transition:var(--transition)}
-.footer-social a:hover{border-color:var(--royal);color:var(--royal)}
-.footer-social svg{width:14px;height:14px}
-.footer-links{display:flex;flex-direction:column;gap:10px;padding:0;margin:0;list-style:none}
-.footer-links a{font-size:13px;color:var(--muted);transition:var(--transition)}
-.footer-links a:hover{color:var(--royal)}
-.footer-cta-text{font-size:13px;color:var(--muted);line-height:1.6;margin:0 0 16px}
-.footer-cta .btn-primary{padding:12px 20px;font-size:11px;align-self:flex-start}
-.footer-bottom{border-top:1px solid var(--border);padding:18px 0;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
-.footer-bottom p{font-size:12px;color:var(--muted);margin:0}
-.footer-bottom-links{display:flex;gap:24px;align-items:center;flex-wrap:wrap}
-.footer-bottom-links a{font-size:12px;color:var(--muted)}
-.footer-bottom-links a:hover{color:var(--royal)}
-.footer-bottom-left{display:flex;flex-direction:column;gap:4px}
-.footer-made{font-size:12px;color:var(--muted)}
+        .btn-primary:hover {
+            background: var(--royal);
+            transform: translateY(-1px);
+            box-shadow: var(--shadow-royal)
+        }
 
-/* MOBILE NAV */
-.nav-toggle{display:none;flex-direction:column;justify-content:center;gap:5px;width:40px;height:40px;padding:8px;cursor:pointer;border-radius:8px;z-index:210;position:relative}
-.nav-toggle span{width:22px;height:2px;background:var(--navy);transition:0.3s;display:block;margin:0 auto;transform-origin:center}
-.nav-toggle.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
-.nav-toggle.open span:nth-child(2){opacity:0}
-.nav-toggle.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
-.mobile-overlay{position:fixed;inset:0;background:rgba(6,20,56,0.5);backdrop-filter:blur(5px);z-index:180;opacity:0;visibility:hidden;pointer-events:none;transition:0.3s}
-.mobile-overlay.open{opacity:1;visibility:visible;pointer-events:all}
-.mobile-nav{position:fixed;top:0;right:0;bottom:0;width:min(300px,88vw);background:#fff;z-index:200;display:flex;flex-direction:column;box-shadow:-12px 0 40px rgba(10,31,92,0.2);transform:translate3d(100%,0,0);transition:transform 0.38s cubic-bezier(0.22,1,0.36,1)}
-.mobile-nav.open{transform:translate3d(0,0,0)}
-.mobile-nav-top{display:flex;align-items:center;justify-content:space-between;padding:16px;border-bottom:1px solid rgba(10,31,92,0.1)}
-.mobile-nav-brand img{height:48px;width:auto;border-radius:4px}
-.mobile-nav-close{width:36px;height:36px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;color:var(--navy);background:rgba(10,31,92,0.06)}
-.mobile-nav-links{display:flex;flex-direction:column;padding:8px 0;flex:1;overflow-y:auto}
-.mobile-nav-links a{font-size:17px;font-family:var(--ff-serif);color:var(--navy);padding:13px 22px;border-left:3px solid transparent}
-.mobile-nav-links a:hover,.mobile-nav-links a.active{color:var(--royal);background:rgba(48,92,222,0.08);border-left-color:var(--royal)}
-.mobile-nav-footer{padding:16px 18px 22px;border-top:1px solid rgba(10,31,92,0.1)}
-.mobile-nav-cta{display:flex;align-items:center;justify-content:center;background:var(--navy);color:#fff;padding:13px 18px;border-radius:6px;font-size:12px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase}
-body.nav-open{overflow:hidden}
+        .btn-outline {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: transparent;
+            color: var(--navy);
+            padding: 13px 24px;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 1.2px;
+            text-transform: uppercase;
+            border: 1.5px solid rgba(10, 31, 92, 0.35);
+            transition: var(--transition);
+            border-radius: 2px
+        }
 
-@keyframes fadeInUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
-@keyframes spin-slow{from{transform:rotate(0)}to{transform:rotate(360deg)}}
-.fade-in{opacity:0;transform:translateY(20px);transition:opacity 0.6s ease,transform 0.6s ease}
-.fade-in.visible{opacity:1;transform:translateY(0)}
+        .btn-outline:hover {
+            border-color: var(--royal);
+            color: var(--royal);
+            background: rgba(48, 92, 222, 0.04)
+        }
 
-@media(max-width:1100px){
-  .benefits-grid{grid-template-columns:repeat(3,1fr)}
-  .products-grid{grid-template-columns:repeat(4,1fr);gap:12px}
-  .product-img-wrap{height:190px}
-  .product-name{font-size:15px}
-  .features-grid{grid-template-columns:repeat(2,1fr)}
-  .why-grid{grid-template-columns:repeat(2,1fr)}
-  .footer-grid{grid-template-columns:1fr 1fr}
-  .nav{gap:18px}
-  .hero-media{width:48%}
-}
-@media(max-width:900px){
-  .products-grid{grid-template-columns:repeat(2,1fr);gap:16px}
-  .product-img-wrap{height:200px}
-  .product-modal-dialog{grid-template-columns:1fr;max-height:92vh}
-  .product-modal-media{min-height:200px;padding:20px;max-height:240px}
-  .product-modal-media img{max-height:200px}
-  .product-modal-body{padding:20px}
-  .product-modal-title{font-size:22px}
-  .container{padding:0 18px}
-  .nav{display:none}
-  .nav-toggle{display:flex}
-  .about-inner,.split-grid,.bulk-inner,.contact-grid{grid-template-columns:1fr}
-  .ann-social{display:none}
-  .ann-item:nth-child(n+3){display:none}
-  .hero{min-height:auto;display:block}
-  .hero-media{position:relative;width:100%;height:380px}
-  .hero-media::before{background:linear-gradient(180deg,transparent 45%,rgba(255,255,255,0.55) 75%,#fff 100%)}
-  .hero-inner{padding:8px 0 20px}
-  .hero-content{max-width:100%}
-  .hero-badge{right:16px;bottom:24px;top:auto;width:96px;height:96px}
-  .catalogue-box{flex-direction:column;align-items:flex-start;padding:28px}
-  .catalogue-actions{align-items:flex-start}
-  .split-card{padding:36px 28px}
-}
-@media(max-width:640px){
-  .container{padding:0 16px}
-  .ann-item:nth-child(n+2){display:none}
-  .logo img{height:38px}
-  .hero-media{height:300px}
-  .hero-title{font-size:34px}
-  .hero-ctas{flex-direction:column}
-  .hero-ctas .btn-primary,.hero-ctas .btn-outline{width:100%;justify-content:center}
-  .benefits-grid,.products-grid,.features-grid,.why-grid,.bulk-list,.form-grid{grid-template-columns:1fr}
-  .footer-grid{grid-template-columns:1fr}
-  .footer-bottom{flex-direction:column;text-align:center}
-  .about-img-wrap img{height:280px}
-  .contact-card,.enquiry-form{padding:24px 20px}
-}
-</style>
+        .btn-wa {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: #25D366;
+            color: #fff;
+            padding: 13px 22px;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            border-radius: 2px;
+            transition: var(--transition)
+        }
+
+        .btn-wa:hover {
+            background: #1ebe57;
+            transform: translateY(-1px)
+        }
+
+        .badge {
+            font-size: 10px;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            padding: 4px 10px;
+            border-radius: 2px;
+            display: inline-block
+        }
+
+        .badge-navy {
+            background: var(--navy);
+            color: var(--gold)
+        }
+
+        .badge-royal {
+            background: var(--royal);
+            color: #fff
+        }
+
+        .badge-gold {
+            background: var(--gold);
+            color: var(--navy)
+        }
+
+        /* ANN */
+        .announcement-bar {
+            background: linear-gradient(90deg, var(--navy-deep), var(--navy) 45%, var(--royal-dark) 100%);
+            border-bottom: 1px solid rgba(212, 175, 55, 0.35);
+            padding: 10px 0
+        }
+
+        .announcement-bar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center
+        }
+
+        .ann-items {
+            display: flex;
+            gap: 36px;
+            font-size: 12px;
+            letter-spacing: 0.4px;
+            color: rgba(255, 255, 255, 0.9)
+        }
+
+        .ann-item {
+            display: flex;
+            align-items: center;
+            gap: 8px
+        }
+
+        .ann-item svg {
+            color: var(--gold);
+            flex-shrink: 0
+        }
+
+        .ann-social {
+            display: flex;
+            gap: 16px
+        }
+
+        .ann-social a {
+            color: rgba(255, 255, 255, 0.7);
+            transition: var(--transition);
+            display: flex
+        }
+
+        .ann-social a:hover {
+            color: var(--gold)
+        }
+
+        /* HEADER */
+        .header {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--border)
+        }
+
+        .header-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 12px 0
+        }
+
+        .logo img {
+            height: 52px;
+            width: auto;
+            display: block;
+            border-radius: 4px
+        }
+
+        .nav {
+            display: flex;
+            align-items: center;
+            gap: 28px
+        }
+
+        .nav a {
+            font-size: 13px;
+            font-weight: 500;
+            letter-spacing: 0.4px;
+            color: var(--muted);
+            transition: var(--transition);
+            position: relative
+        }
+
+        .nav a::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, var(--gold), var(--royal));
+            transform: scaleX(0);
+            transition: var(--transition)
+        }
+
+        .nav a:hover,
+        .nav a.active {
+            color: var(--navy)
+        }
+
+        .nav a:hover::after,
+        .nav a.active::after {
+            transform: scaleX(1)
+        }
+
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 12px
+        }
+
+        /* HERO */
+        .hero {
+            position: relative;
+            min-height: calc(100vh - 110px);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            overflow: hidden;
+            background: #fff
+        }
+
+        .hero-media {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            width: 52%;
+            z-index: 0
+        }
+
+        .hero-media img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center top
+        }
+
+        .hero-media::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(90deg, #fff 0%, rgba(255, 255, 255, 0.92) 8%, rgba(255, 255, 255, 0.35) 42%, transparent 68%);
+            z-index: 1;
+            pointer-events: none
+        }
+
+        .hero-inner {
+            position: relative;
+            z-index: 2;
+            width: 100%;
+            padding: 72px 0 28px
+        }
+
+        .hero-content {
+            max-width: 560px;
+            animation: fadeInUp 0.8s ease both
+        }
+
+        .hero-eyebrow {
+            font-size: 12px;
+            letter-spacing: 3.5px;
+            text-transform: uppercase;
+            color: var(--royal);
+            margin-bottom: 18px;
+            font-weight: 600
+        }
+
+        .hero-title {
+            font-family: var(--ff-serif);
+            font-size: clamp(38px, 5vw, 62px);
+            line-height: 1.08;
+            font-weight: 600;
+            color: var(--navy);
+            margin-bottom: 22px
+        }
+
+        .hero-title em {
+            font-style: italic;
+            color: var(--royal)
+        }
+
+        .hero-sub {
+            font-size: 16px;
+            line-height: 1.7;
+            color: var(--muted);
+            max-width: 460px;
+            margin-bottom: 34px
+        }
+
+        .hero-ctas {
+            display: flex;
+            gap: 14px;
+            flex-wrap: wrap
+        }
+
+        .hero-badge {
+            position: absolute;
+            right: 8%;
+            bottom: 14%;
+            z-index: 3;
+            width: 118px;
+            height: 118px;
+            border-radius: 50%;
+            border: 1.5px solid var(--gold);
+            background: rgba(255, 255, 255, 0.96);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(10, 31, 92, 0.12);
+            animation: spin-slow 28s linear infinite
+        }
+
+        .hero-badge::before {
+            content: '';
+            position: absolute;
+            inset: 5px;
+            border-radius: 50%;
+            border: 1px dashed rgba(212, 175, 55, 0.7)
+        }
+
+        .hero-badge-text {
+            position: relative;
+            z-index: 1;
+            font-size: 9px;
+            letter-spacing: 1.4px;
+            text-transform: uppercase;
+            color: var(--navy);
+            line-height: 1.35;
+            font-weight: 700;
+            max-width: 78px
+        }
+
+        /* BENEFITS */
+        .benefits {
+            padding: 72px 0;
+            background: linear-gradient(180deg, #fff 0%, var(--bg-2) 100%)
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 16px
+        }
+
+        .benefit-card {
+            background: #fff;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 28px 20px;
+            text-align: center;
+            transition: var(--transition)
+        }
+
+        .benefit-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow);
+            border-color: rgba(212, 175, 55, 0.4)
+        }
+
+        .benefit-icon {
+            width: 48px;
+            height: 48px;
+            margin: 0 auto 16px;
+            border-radius: 12px;
+            background: linear-gradient(145deg, var(--navy-deep), var(--navy));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--gold)
+        }
+
+        .benefit-card:nth-child(even) .benefit-icon {
+            background: linear-gradient(145deg, var(--royal-dark), var(--royal));
+            color: #fff
+        }
+
+        .benefit-icon svg {
+            width: 22px;
+            height: 22px
+        }
+
+        .benefit-card h3 {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--navy);
+            margin-bottom: 8px;
+            line-height: 1.35
+        }
+
+        .benefit-card p {
+            font-size: 13px;
+            line-height: 1.55;
+            color: var(--muted)
+        }
+
+        /* ABOUT */
+        .about {
+            padding: 96px 0;
+            background: var(--bg)
+        }
+
+        .about-inner {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 72px;
+            align-items: center
+        }
+
+        .about-img-wrap {
+            position: relative
+        }
+
+        .about-img-wrap::before {
+            content: '';
+            position: absolute;
+            top: -16px;
+            left: -16px;
+            right: 16px;
+            bottom: 16px;
+            border: 1px solid rgba(48, 92, 222, 0.35);
+            border-radius: 4px;
+            z-index: 0
+        }
+
+        .about-img-wrap img {
+            width: 100%;
+            height: 480px;
+            object-fit: cover;
+            border-radius: 4px;
+            position: relative;
+            z-index: 1
+        }
+
+        .about-eyebrow {
+            font-size: 11px;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            color: var(--royal);
+            margin-bottom: 20px
+        }
+
+        .about-title {
+            font-family: var(--ff-serif);
+            font-size: clamp(30px, 3vw, 42px);
+            color: var(--navy);
+            line-height: 1.15;
+            margin-bottom: 24px
+        }
+
+        .about-body {
+            font-size: 15px;
+            line-height: 1.8;
+            color: var(--muted);
+            margin-bottom: 16px
+        }
+
+        .about-tagline {
+            font-family: var(--ff-serif);
+            font-size: 18px;
+            color: var(--navy);
+            margin: 28px 0 32px;
+            font-style: italic
+        }
+
+        /* COLLECTION INTRO */
+        .collection-intro {
+            padding: 72px 0 24px;
+            background: var(--bg-2)
+        }
+
+        .split-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-top: 40px
+        }
+
+        .split-card {
+            position: relative;
+            padding: 48px 40px;
+            min-height: 280px;
+            overflow: hidden;
+            border: 1px solid var(--border);
+            transition: var(--transition);
+            box-shadow: var(--shadow);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            isolation: isolate
+        }
+
+        .split-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 32px rgba(10, 31, 92, 0.12)
+        }
+
+        .split-card-bg {
+            position: absolute;
+            inset: 0;
+            z-index: 0
+        }
+
+        .split-card-bg img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center 20%;
+            transition: transform 0.6s ease
+        }
+
+        .split-card:hover .split-card-bg img {
+            transform: scale(1.05)
+        }
+
+        .split-card::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            z-index: 1;
+            pointer-events: none
+        }
+
+        .split-card--women::before {
+            background: linear-gradient(115deg, rgba(36, 72, 184, 0.88) 0%, rgba(48, 92, 222, 0.78) 48%, rgba(74, 116, 232, 0.55) 100%)
+        }
+
+        .split-card--men::before {
+            background: linear-gradient(115deg, rgba(6, 20, 56, 0.9) 0%, rgba(10, 31, 92, 0.82) 50%, rgba(18, 42, 110, 0.6) 100%)
+        }
+
+        .split-card--women {
+            background: var(--royal)
+        }
+
+        .split-card--men {
+            background: var(--navy)
+        }
+
+        .split-card .split-eyebrow,
+        .split-card .split-title,
+        .split-card .split-sub,
+        .split-card .split-cta {
+            position: relative;
+            z-index: 2
+        }
+
+        .split-card .split-eyebrow {
+            font-size: 11px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--gold);
+            margin-bottom: 14px
+        }
+
+        .split-card .split-title {
+            font-family: var(--ff-serif);
+            font-size: 32px;
+            color: #fff;
+            margin-bottom: 12px;
+            line-height: 1.15
+        }
+
+        .split-card .split-sub {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.9);
+            line-height: 1.6;
+            max-width: 340px;
+            margin-bottom: 28px
+        }
+
+        .split-card .split-cta {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            color: var(--navy);
+            background: var(--gold);
+            padding: 12px 22px;
+            border-radius: var(--radius);
+            transition: var(--transition);
+            align-self: flex-start
+        }
+
+        .split-card .split-cta:hover {
+            background: var(--gold-light)
+        }
+
+        /* PRODUCT SECTIONS */
+        .product-section {
+            padding: 64px 0;
+            background: var(--bg-2)
+        }
+
+        .product-section--alt {
+            background: #fff
+        }
+
+        .product-section-head {
+            margin-bottom: 40px;
+            max-width: 640px
+        }
+
+        .product-section-head .section-title {
+            justify-content: flex-start;
+            margin-bottom: 16px
+        }
+
+        .product-section-head .section-title::before {
+            display: none
+        }
+
+        .product-section-head h2 {
+            font-family: var(--ff-serif);
+            font-size: clamp(26px, 3vw, 36px);
+            color: var(--navy);
+            margin-bottom: 12px;
+            line-height: 1.2
+        }
+
+        .product-section-head p {
+            font-size: 15px;
+            line-height: 1.7;
+            color: var(--muted)
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 18px
+        }
+
+        .product-card {
+            background: #fff;
+            border: 1px solid rgba(10, 31, 92, 0.08);
+            border-radius: 16px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 16px rgba(10, 31, 92, 0.04);
+            display: flex;
+            flex-direction: column;
+            position: relative
+        }
+
+        .product-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 16px 36px rgba(10, 31, 92, 0.12)
+        }
+
+        .product-media {
+            position: relative;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            min-height: 0
+        }
+
+        .product-img-wrap {
+            position: relative;
+            height: 220px;
+            background: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center
+        }
+
+        .product-img-wrap img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            object-position: center;
+            padding: 14px 12px 44px;
+            transition: transform 0.45s ease
+        }
+
+        .product-card:hover .product-img-wrap img {
+            transform: scale(1.05) translateY(-4px)
+        }
+
+        .product-badge {
+            position: absolute;
+            top: 12px;
+            left: 12px;
+            z-index: 2;
+            right: auto;
+            display: block;
+            padding: 0;
+            justify-content: flex-start
+        }
+
+        .product-badge .badge {
+            font-size: 9px;
+            padding: 5px 10px;
+            letter-spacing: 1.2px;
+            border-radius: 999px
+        }
+
+        .product-swatch-float {
+            display: none
+        }
+
+        .product-info {
+            position: relative;
+            z-index: 2;
+            margin-top: -36px;
+            margin-left: 12px;
+            margin-right: 12px;
+            margin-bottom: 12px;
+            padding: 14px 14px 12px;
+            background: rgba(255, 255, 255, 0.96);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(10, 31, 92, 0.08);
+            border-radius: 12px;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            box-shadow: 0 8px 20px rgba(10, 31, 92, 0.06)
+        }
+
+        .product-tagline {
+            font-size: 10px;
+            letter-spacing: 0.4px;
+            color: var(--royal);
+            font-weight: 600;
+            margin: 0;
+            text-transform: uppercase
+        }
+
+        .product-name {
+            font-family: var(--ff-serif);
+            font-size: 16px;
+            color: var(--navy);
+            margin: 0;
+            line-height: 1.25
+        }
+
+        .product-basics {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 8px;
+            margin-top: 6px
+        }
+
+        .product-sizes {
+            font-size: 11px;
+            color: var(--muted)
+        }
+
+        .product-sizes strong {
+            color: var(--navy);
+            font-weight: 600;
+            margin-right: 3px
+        }
+
+        .product-colours {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            margin: 0
+        }
+
+        .swatches {
+            display: flex;
+            gap: 4px
+        }
+
+        .swatch {
+            width: 11px;
+            height: 11px;
+            border-radius: 50%;
+            border: 2px solid rgba(10, 31, 92, 0.12);
+            display: inline-block
+        }
+
+        .swatch--navy {
+            background: var(--navy)
+        }
+
+        .swatch--royal {
+            background: var(--royal)
+        }
+
+        .product-actions {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+            margin-top: 10px;
+            padding-top: 0;
+            border-top: none
+        }
+
+        .btn-details {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 4px;
+            background: var(--bg-2);
+            color: var(--navy);
+            padding: 10px 8px;
+            font-size: 10px;
+            font-weight: 700;
+            letter-spacing: 0.8px;
+            text-transform: uppercase;
+            border: 1px solid rgba(10, 31, 92, 0.1);
+            border-radius: 8px;
+            cursor: pointer;
+            font-family: inherit;
+            transition: var(--transition)
+        }
+
+        .btn-details::after {
+            content: none
+        }
+
+        .btn-details:hover {
+            background: var(--navy);
+            color: #fff;
+            border-color: var(--navy)
+        }
+
+        .product-enquire {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 10px;
+            font-weight: 700;
+            letter-spacing: 0.8px;
+            text-transform: uppercase;
+            color: #fff;
+            background: var(--royal);
+            padding: 10px 8px;
+            border-radius: 8px;
+            transition: var(--transition);
+            margin-left: 0
+        }
+
+        .product-enquire:hover {
+            background: var(--royal-dark)
+        }
+
+        .product-card--men .product-enquire {
+            background: var(--navy)
+        }
+
+        .product-card--men .product-enquire:hover {
+            background: var(--navy-mid)
+        }
+
+        /* PRODUCT MODAL */
+        .product-modal {
+            position: fixed;
+            inset: 0;
+            z-index: 300;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+            transition: opacity 0.28s ease, visibility 0.28s ease
+        }
+
+        .product-modal.open {
+            opacity: 1;
+            visibility: visible;
+            pointer-events: all
+        }
+
+        .product-modal-backdrop {
+            position: absolute;
+            inset: 0;
+            background: rgba(6, 20, 56, 0.55);
+            backdrop-filter: blur(6px)
+        }
+
+        .product-modal-dialog {
+            position: relative;
+            z-index: 1;
+            width: min(860px, 100%);
+            max-height: min(90vh, 720px);
+            background: #fff;
+            border-radius: 14px;
+            overflow: hidden;
+            box-shadow: 0 24px 60px rgba(10, 31, 92, 0.25);
+            display: grid;
+            grid-template-columns: 1fr 1.1fr;
+            transform: translateY(16px) scale(0.98);
+            transition: transform 0.3s ease
+        }
+
+        .product-modal.open .product-modal-dialog {
+            transform: translateY(0) scale(1)
+        }
+
+        .product-modal-close {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            z-index: 2;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: rgba(10, 31, 92, 0.08);
+            color: var(--navy);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            border: none;
+            transition: var(--transition)
+        }
+
+        .product-modal-close:hover {
+            background: var(--navy);
+            color: #fff
+        }
+
+        .product-modal-media {
+            background: var(--bg-2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 28px;
+            min-height: 280px;
+            position: relative
+        }
+
+        .product-modal-media img {
+            width: 100%;
+            height: 100%;
+            max-height: 420px;
+            object-fit: contain
+        }
+
+        .product-modal-badge {
+            position: absolute;
+            top: 16px;
+            left: 16px
+        }
+
+        .product-modal-body {
+            padding: 28px 28px 24px;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 12px
+        }
+
+        .product-modal-tagline {
+            font-size: 12px;
+            color: var(--royal);
+            font-weight: 600;
+            letter-spacing: 0.3px
+        }
+
+        .product-modal-title {
+            font-family: var(--ff-serif);
+            font-size: 26px;
+            color: var(--navy);
+            line-height: 1.2;
+            margin: 0
+        }
+
+        .product-modal-desc {
+            font-size: 14px;
+            line-height: 1.65;
+            color: var(--muted);
+            margin: 0
+        }
+
+        .product-modal-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px
+        }
+
+        .product-modal-meta span {
+            font-size: 12px;
+            color: var(--ink-soft);
+            background: var(--bg-2);
+            border: 1px solid rgba(10, 31, 92, 0.08);
+            padding: 6px 10px;
+            border-radius: 999px
+        }
+
+        .product-modal-meta span strong {
+            color: var(--navy);
+            margin-right: 4px
+        }
+
+        .product-modal-features {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin: 4px 0 0;
+            padding: 0
+        }
+
+        .product-modal-features li {
+            font-size: 13px;
+            color: var(--ink-soft);
+            padding-left: 16px;
+            position: relative;
+            line-height: 1.4
+        }
+
+        .product-modal-features li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 7px;
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: var(--gold)
+        }
+
+        .product-modal-colours {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 13px;
+            color: var(--muted);
+            padding-top: 4px
+        }
+
+        .product-modal-note {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--navy);
+            margin: 0
+        }
+
+        .product-modal-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 8px
+        }
+
+        .product-modal-actions .btn-primary,
+        .product-modal-actions .btn-wa {
+            padding: 12px 18px;
+            font-size: 11px
+        }
+
+        body.modal-open {
+            overflow: hidden
+        }
+
+        /* FEATURES */
+        .features {
+            padding: 80px 0;
+            background: #fff
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px
+        }
+
+        .feature-card {
+            padding: 28px 24px;
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            background: var(--bg-2);
+            transition: var(--transition)
+        }
+
+        .feature-card:hover {
+            border-color: rgba(48, 92, 222, 0.35);
+            background: #fff;
+            box-shadow: var(--shadow)
+        }
+
+        .feature-num {
+            font-family: var(--ff-serif);
+            font-size: 28px;
+            color: var(--gold);
+            margin-bottom: 12px
+        }
+
+        .feature-card h3 {
+            font-size: 16px;
+            color: var(--navy);
+            margin-bottom: 8px;
+            font-weight: 600
+        }
+
+        .feature-card p {
+            font-size: 13px;
+            line-height: 1.6;
+            color: var(--muted)
+        }
+
+        /* WHY */
+        .why {
+            padding: 80px 0;
+            background: linear-gradient(135deg, var(--navy-deep), var(--navy) 50%, var(--royal-dark));
+            color: #fff
+        }
+
+        .why .section-title {
+            color: #fff
+        }
+
+        .why .section-title::before,
+        .why .section-title::after {
+            background: linear-gradient(90deg, transparent, var(--gold), transparent)
+        }
+
+        .why .section-heading {
+            color: #fff
+        }
+
+        .why .section-lead {
+            color: rgba(255, 255, 255, 0.8)
+        }
+
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 18px
+        }
+
+        .why-card {
+            background: rgba(255, 255, 255, 0.06);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 12px;
+            padding: 28px 22px;
+            transition: var(--transition)
+        }
+
+        .why-card:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: rgba(212, 175, 55, 0.45)
+        }
+
+        .why-card h3 {
+            font-size: 15px;
+            color: var(--gold);
+            margin-bottom: 10px;
+            line-height: 1.35
+        }
+
+        .why-card p {
+            font-size: 13px;
+            line-height: 1.6;
+            color: rgba(255, 255, 255, 0.8)
+        }
+
+        /* BULK */
+        .bulk {
+            padding: 80px 0;
+            background: var(--bg-2)
+        }
+
+        .bulk-inner {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 28px;
+            align-items: stretch
+        }
+
+        .bulk-copy {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 8px 8px 8px 0
+        }
+
+        .bulk-eyebrow {
+            font-size: 11px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--royal);
+            margin-bottom: 14px
+        }
+
+        .bulk-title {
+            font-family: var(--ff-serif);
+            font-size: clamp(28px, 3vw, 40px);
+            color: var(--navy);
+            line-height: 1.15;
+            margin-bottom: 14px
+        }
+
+        .bulk-lead {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--navy);
+            margin-bottom: 12px
+        }
+
+        .bulk-body {
+            font-size: 15px;
+            line-height: 1.75;
+            color: var(--muted);
+            margin-bottom: 16px
+        }
+
+        .bulk-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 8px
+        }
+
+        .bulk-panel {
+            background: linear-gradient(145deg, var(--navy-deep), var(--navy));
+            color: #fff;
+            padding: 36px 32px;
+            border-radius: 12px;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            display: flex;
+            flex-direction: column;
+            height: 100%
+        }
+
+        .bulk-panel h3 {
+            font-family: var(--ff-serif);
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #fff
+        }
+
+        .bulk-panel>p {
+            font-size: 14px;
+            line-height: 1.65;
+            color: rgba(255, 255, 255, 0.85);
+            margin-bottom: 20px
+        }
+
+        .bulk-panel-label {
+            font-size: 12px;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            color: var(--gold);
+            margin-bottom: 14px;
+            font-weight: 600
+        }
+
+        .bulk-list {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px 14px;
+            margin: 0 0 24px;
+            list-style: none;
+            padding: 0
+        }
+
+        .bulk-list li {
+            font-size: 13px;
+            color: rgba(255, 255, 255, 0.92);
+            padding-left: 18px;
+            position: relative;
+            line-height: 1.35
+        }
+
+        .bulk-list li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--gold);
+            font-weight: 700;
+            font-size: 12px
+        }
+
+        .bulk-panel .btn-primary {
+            margin-top: auto;
+            align-self: flex-start;
+            background: var(--gold);
+            color: var(--navy)
+        }
+
+        .bulk-panel .btn-primary:hover {
+            background: var(--gold-light)
+        }
+
+        /* CATALOGUE */
+        .catalogue {
+            padding: 64px 0;
+            background: #fff
+        }
+
+        .catalogue-box {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 32px;
+            flex-wrap: wrap;
+            padding: 40px 44px;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            background: linear-gradient(135deg, #fff, var(--bg-2));
+            box-shadow: var(--shadow)
+        }
+
+        .catalogue-box h2 {
+            font-family: var(--ff-serif);
+            font-size: 28px;
+            color: var(--navy);
+            margin-bottom: 8px
+        }
+
+        .catalogue-box p {
+            font-size: 14px;
+            color: var(--muted);
+            line-height: 1.6;
+            max-width: 480px
+        }
+
+        .catalogue-actions {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 12px
+        }
+
+        .catalogue-secondary {
+            font-size: 13px;
+            color: var(--royal);
+            font-weight: 500
+        }
+
+        .catalogue-secondary:hover {
+            text-decoration: underline
+        }
+
+        /* CONTACT */
+        .contact {
+            padding: 80px 0;
+            background: var(--bg-2)
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.15fr;
+            gap: 40px;
+            align-items: start
+        }
+
+        .contact-card {
+            background: #fff;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 36px 32px;
+            box-shadow: var(--shadow)
+        }
+
+        .contact-card h2 {
+            font-family: var(--ff-serif);
+            font-size: 32px;
+            color: var(--navy);
+            margin-bottom: 12px
+        }
+
+        .contact-card>p {
+            font-size: 14px;
+            line-height: 1.7;
+            color: var(--muted);
+            margin-bottom: 28px
+        }
+
+        .company-name {
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            color: var(--navy);
+            margin-bottom: 4px
+        }
+
+        .company-sub {
+            font-size: 13px;
+            color: var(--royal);
+            margin-bottom: 24px
+        }
+
+        .contact-rows {
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+            margin-bottom: 28px
+        }
+
+        .contact-row strong {
+            display: block;
+            font-size: 11px;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            color: var(--gold-dark);
+            margin-bottom: 4px
+        }
+
+        .contact-row span,
+        .contact-row a {
+            font-size: 14px;
+            color: var(--ink-soft);
+            line-height: 1.5
+        }
+
+        .contact-row a:hover {
+            color: var(--royal)
+        }
+
+        .contact-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px
+        }
+
+        /* FORM */
+        .enquiry-form {
+            background: #fff;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 36px 32px;
+            box-shadow: var(--shadow)
+        }
+
+        .enquiry-form h3 {
+            font-family: var(--ff-serif);
+            font-size: 26px;
+            color: var(--navy);
+            margin-bottom: 8px
+        }
+
+        .enquiry-form .form-lead {
+            font-size: 14px;
+            color: var(--muted);
+            margin-bottom: 28px;
+            line-height: 1.6
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 6px
+        }
+
+        .form-group--full {
+            grid-column: 1/-1
+        }
+
+        .form-group label {
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--navy);
+            letter-spacing: 0.3px
+        }
+
+        .form-group label .req {
+            color: var(--royal)
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            padding: 12px 14px;
+            border: 1px solid rgba(10, 31, 92, 0.15);
+            border-radius: 6px;
+            font-family: inherit;
+            font-size: 14px;
+            color: var(--ink);
+            background: var(--bg-2);
+            outline: none;
+            transition: var(--transition)
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            border-color: var(--royal);
+            background: #fff;
+            box-shadow: 0 0 0 3px rgba(48, 92, 222, 0.12)
+        }
+
+        .form-group textarea {
+            min-height: 110px;
+            resize: vertical
+        }
+
+        .form-note {
+            font-size: 12px;
+            color: var(--muted);
+            margin-top: 14px;
+            line-height: 1.5
+        }
+
+        .form-submit {
+            margin-top: 20px
+        }
+
+        /* FOOTER */
+        .footer {
+            background: #fff;
+            border-top: 1px solid var(--border);
+            padding: 56px 0 0
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.35fr 1fr 1fr 1.15fr;
+            column-gap: 32px;
+            row-gap: 36px;
+            align-items: start;
+            margin-bottom: 36px
+        }
+
+        .footer-col {
+            display: flex;
+            flex-direction: column;
+            min-width: 0
+        }
+
+        .footer-brand .logo {
+            display: flex;
+            align-items: center;
+            min-height: 40px;
+            margin: 0 0 18px
+        }
+
+        .footer-brand .logo img {
+            height: 40px;
+            width: auto
+        }
+
+        .footer-heading {
+            font-size: 12px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--navy);
+            font-weight: 600;
+            min-height: 40px;
+            display: flex;
+            align-items: center;
+            margin: 0 0 18px;
+            line-height: 1.2
+        }
+
+        .footer-brand>p {
+            font-size: 13px;
+            line-height: 1.65;
+            color: var(--muted);
+            margin: 0 0 12px
+        }
+
+        .footer-company {
+            font-size: 12px;
+            color: var(--ink-soft);
+            margin: 0 0 12px !important;
+            line-height: 1.5
+        }
+
+        .footer-pillars {
+            font-size: 10px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: var(--royal);
+            margin: 0 0 16px !important
+        }
+
+        .footer-social {
+            display: flex;
+            gap: 10px;
+            margin-top: auto
+        }
+
+        .footer-social a {
+            width: 34px;
+            height: 34px;
+            border: 1px solid var(--border);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--muted);
+            transition: var(--transition)
+        }
+
+        .footer-social a:hover {
+            border-color: var(--royal);
+            color: var(--royal)
+        }
+
+        .footer-social svg {
+            width: 14px;
+            height: 14px
+        }
+
+        .footer-links {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 0;
+            margin: 0;
+            list-style: none
+        }
+
+        .footer-links a {
+            font-size: 13px;
+            color: var(--muted);
+            transition: var(--transition)
+        }
+
+        .footer-links a:hover {
+            color: var(--royal)
+        }
+
+        .footer-cta-text {
+            font-size: 13px;
+            color: var(--muted);
+            line-height: 1.6;
+            margin: 0 0 16px
+        }
+
+        .footer-cta .btn-primary {
+            padding: 12px 20px;
+            font-size: 11px;
+            align-self: flex-start
+        }
+
+        .footer-bottom {
+            border-top: 1px solid var(--border);
+            padding: 18px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 16px;
+            flex-wrap: wrap
+        }
+
+        .footer-bottom p {
+            font-size: 12px;
+            color: var(--muted);
+            margin: 0
+        }
+
+        .footer-bottom-links {
+            display: flex;
+            gap: 24px;
+            align-items: center;
+            flex-wrap: wrap
+        }
+
+        .footer-bottom-links a {
+            font-size: 12px;
+            color: var(--muted)
+        }
+
+        .footer-bottom-links a:hover {
+            color: var(--royal)
+        }
+
+        .footer-bottom-left {
+            display: flex;
+            flex-direction: column;
+            gap: 4px
+        }
+
+        .footer-made {
+            font-size: 12px;
+            color: var(--muted)
+        }
+
+        /* MOBILE NAV */
+        .nav-toggle {
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            gap: 5px;
+            width: 40px;
+            height: 40px;
+            padding: 8px;
+            cursor: pointer;
+            border-radius: 8px;
+            z-index: 210;
+            position: relative
+        }
+
+        .nav-toggle span {
+            width: 22px;
+            height: 2px;
+            background: var(--navy);
+            transition: 0.3s;
+            display: block;
+            margin: 0 auto;
+            transform-origin: center
+        }
+
+        .nav-toggle.open span:nth-child(1) {
+            transform: translateY(7px) rotate(45deg)
+        }
+
+        .nav-toggle.open span:nth-child(2) {
+            opacity: 0
+        }
+
+        .nav-toggle.open span:nth-child(3) {
+            transform: translateY(-7px) rotate(-45deg)
+        }
+
+        .mobile-overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(6, 20, 56, 0.5);
+            backdrop-filter: blur(5px);
+            z-index: 180;
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+            transition: 0.3s
+        }
+
+        .mobile-overlay.open {
+            opacity: 1;
+            visibility: visible;
+            pointer-events: all
+        }
+
+        .mobile-nav {
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            width: min(300px, 88vw);
+            background: #fff;
+            z-index: 200;
+            display: flex;
+            flex-direction: column;
+            box-shadow: -12px 0 40px rgba(10, 31, 92, 0.2);
+            transform: translate3d(100%, 0, 0);
+            transition: transform 0.38s cubic-bezier(0.22, 1, 0.36, 1)
+        }
+
+        .mobile-nav.open {
+            transform: translate3d(0, 0, 0)
+        }
+
+        .mobile-nav-top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 16px;
+            border-bottom: 1px solid rgba(10, 31, 92, 0.1)
+        }
+
+        .mobile-nav-brand img {
+            height: 48px;
+            width: auto;
+            border-radius: 4px
+        }
+
+        .mobile-nav-close {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--navy);
+            background: rgba(10, 31, 92, 0.06)
+        }
+
+        .mobile-nav-links {
+            display: flex;
+            flex-direction: column;
+            padding: 8px 0;
+            flex: 1;
+            overflow-y: auto
+        }
+
+        .mobile-nav-links a {
+            font-size: 17px;
+            font-family: var(--ff-serif);
+            color: var(--navy);
+            padding: 13px 22px;
+            border-left: 3px solid transparent
+        }
+
+        .mobile-nav-links a:hover,
+        .mobile-nav-links a.active {
+            color: var(--royal);
+            background: rgba(48, 92, 222, 0.08);
+            border-left-color: var(--royal)
+        }
+
+        .mobile-nav-footer {
+            padding: 16px 18px 22px;
+            border-top: 1px solid rgba(10, 31, 92, 0.1)
+        }
+
+        .mobile-nav-cta {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--navy);
+            color: #fff;
+            padding: 13px 18px;
+            border-radius: 6px;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 1.2px;
+            text-transform: uppercase
+        }
+
+        body.nav-open {
+            overflow: hidden
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px)
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0)
+            }
+        }
+
+        @keyframes spin-slow {
+            from {
+                transform: rotate(0)
+            }
+
+            to {
+                transform: rotate(360deg)
+            }
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease, transform 0.6s ease
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0)
+        }
+
+        @media(max-width:1100px) {
+            .benefits-grid {
+                grid-template-columns: repeat(3, 1fr)
+            }
+
+            .products-grid {
+                grid-template-columns: repeat(4, 1fr);
+                gap: 12px
+            }
+
+            .product-img-wrap {
+                height: 190px
+            }
+
+            .product-name {
+                font-size: 15px
+            }
+
+            .features-grid {
+                grid-template-columns: repeat(2, 1fr)
+            }
+
+            .why-grid {
+                grid-template-columns: repeat(2, 1fr)
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr 1fr
+            }
+
+            .nav {
+                gap: 18px
+            }
+
+            .hero-media {
+                width: 48%
+            }
+        }
+
+        @media(max-width:900px) {
+            .products-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 16px
+            }
+
+            .product-img-wrap {
+                height: 200px
+            }
+
+            .product-modal-dialog {
+                grid-template-columns: 1fr;
+                max-height: 92vh
+            }
+
+            .product-modal-media {
+                min-height: 200px;
+                padding: 20px;
+                max-height: 240px
+            }
+
+            .product-modal-media img {
+                max-height: 200px
+            }
+
+            .product-modal-body {
+                padding: 20px
+            }
+
+            .product-modal-title {
+                font-size: 22px
+            }
+
+            .container {
+                padding: 0 18px
+            }
+
+            .nav {
+                display: none
+            }
+
+            .nav-toggle {
+                display: flex
+            }
+
+            .about-inner,
+            .split-grid,
+            .bulk-inner,
+            .contact-grid {
+                grid-template-columns: 1fr
+            }
+
+            .bulk-copy {
+                text-align: center;
+                padding: 0;
+                align-items: center
+            }
+
+            .bulk-actions {
+                justify-content: center
+            }
+
+            .bulk-panel {
+                text-align: center;
+                align-items: center
+            }
+
+            .bulk-list {
+                width: 100%;
+                max-width: 360px;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: left
+            }
+
+            .bulk-panel .btn-primary {
+                align-self: center
+            }
+
+            .ann-social {
+                display: none
+            }
+
+            .ann-item:nth-child(n+3) {
+                display: none
+            }
+
+            .hero {
+                min-height: auto;
+                display: block
+            }
+
+            .hero-media {
+                position: relative;
+                width: 100%;
+                height: 380px
+            }
+
+            .hero-media::before {
+                background: linear-gradient(180deg, transparent 45%, rgba(255, 255, 255, 0.55) 75%, #fff 100%)
+            }
+
+            .hero-inner {
+                padding: 8px 0 20px
+            }
+
+            .hero-content {
+                max-width: 100%
+            }
+
+            .hero-badge {
+                right: 16px;
+                bottom: 24px;
+                top: auto;
+                width: 96px;
+                height: 96px
+            }
+
+            .catalogue-box {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 28px
+            }
+
+            .catalogue-actions {
+                align-items: flex-start
+            }
+
+            .split-card {
+                padding: 36px 28px
+            }
+        }
+
+        @media(max-width:640px) {
+            .container {
+                padding: 0 16px
+            }
+
+            .ann-item:nth-child(n+2) {
+                display: none
+            }
+
+            .logo img {
+                height: 38px
+            }
+
+            .hero-media {
+                height: 300px
+            }
+
+            .hero-title {
+                font-size: 34px
+            }
+
+            .hero-ctas {
+                flex-direction: column
+            }
+
+            .hero-ctas .btn-primary,
+            .hero-ctas .btn-outline {
+                width: 100%;
+                justify-content: center
+            }
+
+            .benefits-grid,
+            .products-grid,
+            .features-grid,
+            .why-grid,
+            .bulk-list,
+            .form-grid {
+                grid-template-columns: 1fr
+            }
+
+            .bulk-copy {
+                text-align: center;
+                padding: 0;
+                align-items: center
+            }
+
+            .bulk-actions {
+                justify-content: center
+            }
+
+            .bulk-panel {
+                text-align: center;
+                align-items: center
+            }
+
+            .bulk-list {
+                width: 100%;
+                max-width: 320px;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: left
+            }
+
+            .bulk-list li {
+                text-align: left
+            }
+
+            .bulk-panel .btn-primary {
+                align-self: center
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+                text-align: center;
+                justify-items: center
+            }
+
+            .footer-col {
+                align-items: center;
+                width: 100%
+            }
+
+            .footer-brand .logo {
+                justify-content: center
+            }
+
+            .footer-heading {
+                justify-content: center;
+                width: 100%
+            }
+
+            .footer-links {
+                align-items: center
+            }
+
+            .footer-social {
+                justify-content: center
+            }
+
+            .footer-cta .btn-primary {
+                align-self: center
+            }
+
+            .footer-bottom {
+                flex-direction: column;
+                text-align: center;
+                align-items: center
+            }
+
+            .footer-bottom-left,
+            .footer-bottom-links {
+                align-items: center;
+                justify-content: center
+            }
+
+            .about-img-wrap img {
+                height: 280px
+            }
+
+            .contact-card,
+            .enquiry-form {
+                padding: 24px 20px
+            }
+        }
+    </style>
 </head>
+
 <body>
-<div class="announcement-bar">
-<div class="container">
-  <div class="ann-items">
-    <div class="ann-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Follows Kuwait MOH Colour Codes</div>
-    <div class="ann-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>Professional · Comfortable · Functional</div>
-    <div class="ann-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/></svg>Made in India · Marketed in Kuwait</div>
-  </div>
-  <div class="ann-social">
-    <a href="#" aria-label="Instagram"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
-    <a href="#contact" aria-label="WhatsApp"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.6-.8-1.8-.9-.2-.1-.4-.1-.6.1-.2.2-.7.9-.8 1-.2.1-.3.2-.6.1-.3-.1-1.2-.4-2.3-1.5-1-.9-1.6-1.9-1.8-2.2-.2-.3 0-.4.1-.5.1-.1.3-.3.4-.5.1-.1.2-.3.3-.5.1-.2 0-.4 0-.5 0-.1-.6-1.5-.8-2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.1s.9 2.4 1 2.6c.1.2 1.8 2.8 4.4 3.9 1.6.7 2.2.7 3 .6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2-.1-.1-.3-.2-.6-.3z"/><path d="M12 2a10 10 0 00-8.7 14.9L2 22l5.2-1.4A10 10 0 1012 2zm0 18.2a8.2 8.2 0 01-4.2-1.1l-.3-.2-3.1.8.8-3-.2-.3A8.2 8.2 0 1112 20.2z"/></svg></a>
-  </div>
-</div>
-</div>
+    <div class="announcement-bar">
+        <div class="container">
+            <div class="ann-items">
+                <div class="ann-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                    </svg>Follows Kuwait MOH Colour Codes</div>
+                <div class="ann-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <path
+                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                    </svg>Professional · Comfortable · Functional</div>
+                <div class="ann-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <circle cx="12" cy="12" r="10" />
+                        <path d="M2 12h20" />
+                    </svg>Made in India · Marketed in Kuwait</div>
+            </div>
+            <div class="ann-social">
+                <a href="#" aria-label="Instagram"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2">
+                        <rect x="2" y="2" width="20" height="20" rx="5" />
+                        <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" />
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                    </svg></a>
+                <a href="#contact" aria-label="WhatsApp"><svg width="14" height="14" viewBox="0 0 24 24"
+                        fill="currentColor">
+                        <path
+                            d="M17.5 14.4c-.3-.1-1.6-.8-1.8-.9-.2-.1-.4-.1-.6.1-.2.2-.7.9-.8 1-.2.1-.3.2-.6.1-.3-.1-1.2-.4-2.3-1.5-1-.9-1.6-1.9-1.8-2.2-.2-.3 0-.4.1-.5.1-.1.3-.3.4-.5.1-.1.2-.3.3-.5.1-.2 0-.4 0-.5 0-.1-.6-1.5-.8-2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.1s.9 2.4 1 2.6c.1.2 1.8 2.8 4.4 3.9 1.6.7 2.2.7 3 .6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2-.1-.1-.3-.2-.6-.3z" />
+                        <path
+                            d="M12 2a10 10 0 00-8.7 14.9L2 22l5.2-1.4A10 10 0 1012 2zm0 18.2a8.2 8.2 0 01-4.2-1.1l-.3-.2-3.1.8.8-3-.2-.3A8.2 8.2 0 1112 20.2z" />
+                    </svg></a>
+            </div>
+        </div>
+    </div>
 
-<header class="header" id="main-header">
-<div class="container">
-  <div class="header-inner">
-    <a href="#" class="logo"><img src="assets/logo.png" alt="A-Side Signature — Professional Medical Apparel"/></a>
-    <nav class="nav">
-      <a href="#" class="active">Home</a>
-      <a href="#about">About Us</a>
-      <a href="#womens">Women's</a>
-      <a href="#mens">Men's</a>
-      <a href="#bulk">Bulk Enquiries</a>
-      <a href="#catalogue">Catalogue</a>
-      <a href="#contact">Contact Us</a>
+    <header class="header" id="main-header">
+        <div class="container">
+            <div class="header-inner">
+                <a href="#" class="logo"><img src="assets/logo.png"
+                        alt="A-Side Signature — Professional Medical Apparel" /></a>
+                <nav class="nav">
+                    <a href="#" class="active">Home</a>
+                    <a href="#about">About Us</a>
+                    <a href="#womens">Women's</a>
+                    <a href="#mens">Men's</a>
+                    <a href="#bulk">Bulk Enquiries</a>
+                    <a href="#catalogue">Catalogue</a>
+                    <a href="#contact">Contact Us</a>
+                </nav>
+                <div class="header-actions">
+                    <div class="nav-toggle" id="nav-toggle" role="button" aria-label="Toggle menu">
+                        <span></span><span></span><span></span></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="mobile-overlay" id="mobile-overlay"></div>
+    <nav class="mobile-nav" id="mobile-nav" aria-hidden="true">
+        <div class="mobile-nav-top">
+            <a href="#" class="mobile-nav-brand" id="mobile-logo"><img src="assets/logo.png"
+                    alt="A-Side Signature" /></a>
+            <button class="mobile-nav-close" id="mobile-nav-close" aria-label="Close menu">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18" />
+                    <line x1="6" y1="6" x2="18" y2="18" />
+                </svg>
+            </button>
+        </div>
+        <div class="mobile-nav-links">
+            <a href="#" class="active">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#womens">Women's Collection</a>
+            <a href="#mens">Men's Collection</a>
+            <a href="#bulk">Bulk Enquiries</a>
+            <a href="#catalogue">Catalogue</a>
+            <a href="#contact">Contact Us</a>
+        </div>
+        <div class="mobile-nav-footer">
+            <a href="#contact" class="mobile-nav-cta">Enquire Now</a>
+        </div>
     </nav>
-    <div class="header-actions">
-      <div class="nav-toggle" id="nav-toggle" role="button" aria-label="Toggle menu"><span></span><span></span><span></span></div>
-    </div>
-  </div>
-</div>
-</header>
 
-<div class="mobile-overlay" id="mobile-overlay"></div>
-<nav class="mobile-nav" id="mobile-nav" aria-hidden="true">
-  <div class="mobile-nav-top">
-    <a href="#" class="mobile-nav-brand" id="mobile-logo"><img src="assets/logo.png" alt="A-Side Signature"/></a>
-    <button class="mobile-nav-close" id="mobile-nav-close" aria-label="Close menu">
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
-    </button>
-  </div>
-  <div class="mobile-nav-links">
-    <a href="#" class="active">Home</a>
-    <a href="#about">About Us</a>
-    <a href="#womens">Women's Collection</a>
-    <a href="#mens">Men's Collection</a>
-    <a href="#bulk">Bulk Enquiries</a>
-    <a href="#catalogue">Catalogue</a>
-    <a href="#contact">Contact Us</a>
-  </div>
-  <div class="mobile-nav-footer">
-    <a href="#contact" class="mobile-nav-cta">Enquire Now</a>
-  </div>
-</nav>
-
-<!-- 01 HERO -->
-<section class="hero" id="hero">
-  <div class="hero-media">
-    <img src="assets/hero-banner.jpg" alt="Healthcare professional in A-Side Signature medical apparel"/>
-    <div class="hero-badge"><span class="hero-badge-text">Made for Every Shift</span></div>
-  </div>
-  <div class="hero-inner">
-    <div class="container">
-      <div class="hero-content">
-        <p class="hero-eyebrow">Professional Medical Apparel</p>
-        <h1 class="hero-title">Made for the professionals who keep <em>healthcare moving.</em></h1>
-        <p class="hero-sub">Professional medical uniforms designed for doctors, nurses and paramedics in Kuwait — bringing together comfort, functionality and a smart professional appearance for every working day.</p>
-        <div class="hero-ctas">
-          <a href="#collection" class="btn-primary">Explore Our Collection <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-          <a href="#contact" class="btn-outline">Enquire Now</a>
+    <!-- 01 HERO -->
+    <section class="hero" id="hero">
+        <div class="hero-media">
+            <img src="assets/hero-banner.png" alt="Healthcare professional in A-Side Signature medical apparel" />
+            <div class="hero-badge"><span class="hero-badge-text">Made for Every Shift</span></div>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- 02 KEY BENEFITS -->
-<section class="benefits" id="benefits">
-<div class="container">
-  <div class="section-title">Key Benefits</div>
-  <h2 class="section-heading">Built for healthcare professionals</h2>
-  <p class="section-lead">Uniforms that look the part and work through every shift.</p>
-  <div class="benefits-grid">
-    <div class="benefit-card fade-in">
-      <div class="benefit-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
-      <h3>Follows Kuwait MOH Required Colour Codes</h3>
-      <p>Follows the Kuwait MOH-required colour code for healthcare uniforms.</p>
-    </div>
-    <div class="benefit-card fade-in">
-      <div class="benefit-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
-      <h3>Professional</h3>
-      <p>A clean, smart appearance suited to modern healthcare environments.</p>
-    </div>
-    <div class="benefit-card fade-in">
-      <div class="benefit-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 22c4-4 8-7.5 8-12a8 8 0 10-16 0c0 4.5 4 8 8 12z"/><circle cx="12" cy="10" r="2.5"/></svg></div>
-      <h3>Comfortable</h3>
-      <p>Designed with long working hours and everyday movement in mind.</p>
-    </div>
-    <div class="benefit-card fade-in">
-      <div class="benefit-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></div>
-      <h3>Functional</h3>
-      <p>Practical details that support the demands of healthcare professionals.</p>
-    </div>
-    <div class="benefit-card fade-in">
-      <div class="benefit-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
-      <h3>Reliable</h3>
-      <p>Medical apparel made for consistent, everyday professional use.</p>
-    </div>
-  </div>
-</div>
-</section>
-
-<!-- 03 ABOUT -->
-<section class="about" id="about">
-<div class="container">
-<div class="about-inner">
-<div class="about-img-wrap fade-in"><img src="assets/about-store.jpg" alt="A-Side Signature medical apparel" loading="lazy"/></div>
-<div class="fade-in">
-  <div class="about-eyebrow">About A-Side Signature</div>
-  <h2 class="about-title">What you wear to care should work as hard as you do.</h2>
-  <p class="about-body">Healthcare professionals spend their days moving between patients, procedures and responsibilities. Their uniforms need to keep up.</p>
-  <p class="about-body">A-Side Signature, Kuwait is the medical apparel brand focused on providing professional, comfortable and functional medical uniforms for healthcare professionals across Kuwait.</p>
-  <p class="about-body">Our medical apparel is developed around the everyday requirements of doctors, nurses and paramedics, with an emphasis on professional appearance, comfort, practicality and durability.</p>
-  <p class="about-body">Designed in line with Kuwait Ministry of Health uniform requirements, A-Side Signature uniforms support an appropriate and compliant appearance across healthcare environments.</p>
-  <p class="about-tagline">Professional medical apparel for healthcare professionals.</p>
-  <a href="#contact" class="btn-primary">Get in Touch</a>
-</div>
-</div>
-</div>
-</section>
-
-<!-- 04 OUR COLLECTION -->
-<section class="collection-intro" id="collection">
-<div class="container">
-  <div class="section-title">Our Collection</div>
-  <h2 class="section-heading">Medical Apparel for Healthcare Professionals</h2>
-  <p class="section-lead">Find the fit that works for you. Different roles. Different preferences. The same need for a uniform that feels comfortable, looks professional and works throughout the day. Explore men's and women's medical scrub sets in a selection of professional neckline styles.</p>
-  <div class="split-grid">
-    <a href="#womens" class="split-card split-card--women">
-      <div class="split-card-bg"><img src="assets/hero-banner.jpg" alt="" loading="lazy"/></div>
-      <div class="split-eyebrow">Women's Collection</div>
-      <div class="split-title">Designed for<br/>her work shift.</div>
-      <div class="split-sub">Professional medical scrub sets with a choice of neckline styles for women across today's healthcare environments.</div>
-      <span class="split-cta">View Women's</span>
-    </a>
-    <a href="#mens" class="split-card split-card--men">
-      <div class="split-card-bg"><img src="assets/product-flat-navy.jpg" alt="" loading="lazy"/></div>
-      <div class="split-eyebrow">Men's Collection</div>
-      <div class="split-title">Designed for<br/>his work shift.</div>
-      <div class="split-sub">Clean, practical medical apparel designed around the everyday requirements of men working across healthcare.</div>
-      <span class="split-cta">View Men's</span>
-    </a>
-  </div>
-</div>
-</section>
-
-<!-- 05 WOMEN'S -->
-<section class="product-section" id="womens">
-<div class="container">
-  <div class="product-section-head">
-    <div class="section-title">Our Scrub Sets</div>
-    <h2>Women's &amp; Men's Collection</h2>
-    <p>Professional medical scrub sets with a choice of neckline styles — created for healthcare professionals across today's environments.</p>
-  </div>
-  <div class="products-grid">
-    <article class="product-card fade-in"
-      data-badge="Women's" data-badge-class="badge-royal"
-      data-tagline="Clean. Classic. Professional."
-      data-name="Women's V-Neck Scrub Set"
-      data-desc="A versatile V-neck medical scrub set designed for a smart professional appearance and practical everyday use."
-      data-style="V-Neck Scrub Set" data-sizes="M / L / XL" data-origin="India"
-      data-features="Professional V-neck design|Practical pocket detailing|Comfortable everyday fit|Clean professional appearance|Designed for healthcare professionals"
-      data-colours="Navy Blue & Royal Blue"
-      data-img="assets/product-vneck-flatlay.jpg">
-      <div class="product-media">
-        <div class="product-img-wrap">
-          <img src="assets/product-vneck-flatlay.jpg" alt="Women's V-Neck Scrub Set" loading="lazy"/>
+        <div class="hero-inner">
+            <div class="container">
+                <div class="hero-content">
+                    <p class="hero-eyebrow">Professional Medical Apparel</p>
+                    <h1 class="hero-title">Made for the professionals who keep <em>healthcare moving.</em></h1>
+                    <p class="hero-sub">Professional medical uniforms designed for doctors, nurses and paramedics in
+                        Kuwait — bringing together comfort, functionality and a smart professional appearance for every
+                        working day.</p>
+                    <div class="hero-ctas">
+                        <a href="#collection" class="btn-primary">Explore Our Collection <svg width="16" height="16"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7" />
+                            </svg></a>
+                        <a href="#contact" class="btn-outline">Enquire Now</a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="product-badge"><span class="badge badge-royal">Women's</span></div>
-      </div>
-      <div class="product-info">
-        <p class="product-tagline">Clean. Classic. Professional.</p>
-        <h3 class="product-name">Women's V-Neck Scrub Set</h3>
-        <div class="product-basics">
-          <span class="product-sizes"><strong>Sizes</strong> M / L / XL</span>
-          <div class="product-colours"><div class="swatches"><i class="swatch swatch--navy"></i><i class="swatch swatch--royal"></i></div></div>
+    </section>
+
+    <!-- 02 KEY BENEFITS -->
+    <section class="benefits" id="benefits">
+        <div class="container">
+            <div class="section-title">Key Benefits</div>
+            <h2 class="section-heading">Built for healthcare professionals</h2>
+            <p class="section-lead">Uniforms that look the part and work through every shift.</p>
+            <div class="benefits-grid">
+                <div class="benefit-card fade-in">
+                    <div class="benefit-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.6">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                        </svg></div>
+                    <h3>Follows Kuwait MOH Required Colour Codes</h3>
+                    <p>Follows the Kuwait MOH-required colour code for healthcare uniforms.</p>
+                </div>
+                <div class="benefit-card fade-in">
+                    <div class="benefit-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.6">
+                            <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2" />
+                            <circle cx="12" cy="7" r="4" />
+                        </svg></div>
+                    <h3>Professional</h3>
+                    <p>A clean, smart appearance suited to modern healthcare environments.</p>
+                </div>
+                <div class="benefit-card fade-in">
+                    <div class="benefit-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.6">
+                            <path d="M12 22c4-4 8-7.5 8-12a8 8 0 10-16 0c0 4.5 4 8 8 12z" />
+                            <circle cx="12" cy="10" r="2.5" />
+                        </svg></div>
+                    <h3>Comfortable</h3>
+                    <p>Designed with long working hours and everyday movement in mind.</p>
+                </div>
+                <div class="benefit-card fade-in">
+                    <div class="benefit-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.6">
+                            <rect x="3" y="3" width="18" height="18" rx="2" />
+                            <path d="M3 9h18M9 21V9" />
+                        </svg></div>
+                    <h3>Functional</h3>
+                    <p>Practical details that support the demands of healthcare professionals.</p>
+                </div>
+                <div class="benefit-card fade-in">
+                    <div class="benefit-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.6">
+                            <path
+                                d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                        </svg></div>
+                    <h3>Reliable</h3>
+                    <p>Medical apparel made for consistent, everyday professional use.</p>
+                </div>
+            </div>
         </div>
-        <div class="product-actions">
-          <button type="button" class="btn-details js-product-details">Details</button>
-          <a href="#contact" class="product-enquire">Enquire</a>
+    </section>
+
+    <!-- 03 ABOUT -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-inner">
+                <div class="about-img-wrap fade-in"><img src="assets/about-store.png"
+                        alt="A-Side Signature medical apparel" loading="lazy" /></div>
+                <div class="fade-in">
+                    <div class="about-eyebrow">About A-Side Signature</div>
+                    <h2 class="about-title">What you wear to care should work as hard as you do.</h2>
+                    <p class="about-body">Healthcare professionals spend their days moving between patients, procedures
+                        and responsibilities. Their uniforms need to keep up.</p>
+                    <p class="about-body">A-Side Signature, Kuwait is the medical apparel brand focused on providing
+                        professional, comfortable and functional medical uniforms for healthcare professionals across
+                        Kuwait.</p>
+                    <p class="about-body">Our medical apparel is developed around the everyday requirements of doctors,
+                        nurses and paramedics, with an emphasis on professional appearance, comfort, practicality and
+                        durability.</p>
+                    <p class="about-body">Designed in line with Kuwait Ministry of Health uniform requirements, A-Side
+                        Signature uniforms support an appropriate and compliant appearance across healthcare
+                        environments.</p>
+                    <p class="about-tagline">Professional medical apparel for healthcare professionals.</p>
+                    <a href="#contact" class="btn-primary">Get in Touch</a>
+                </div>
+            </div>
         </div>
-      </div>
-    </article>
-    <article class="product-card fade-in"
-      data-badge="Women's" data-badge-class="badge-royal"
-      data-tagline="Modern comfort. Professional presence."
-      data-name="Women's Round-Neck Scrub Set"
-      data-desc="A contemporary round-neck medical scrub set for healthcare professionals who prefer a distinctive alternative to the traditional V-neck."
-      data-style="Round-Neck Scrub Set" data-sizes="M / L / XL" data-origin="India"
-      data-features="Modern round-neck design|Practical pocket detailing|Comfortable everyday fit|Smart professional silhouette|Designed for healthcare environments"
-      data-colours="Navy Blue & Royal Blue"
-      data-img="assets/ref-scrubs-2.png">
-      <div class="product-media">
-        <div class="product-img-wrap">
-          <img src="assets/ref-scrubs-2.png" alt="Women's Round-Neck Scrub Set" loading="lazy"/>
+    </section>
+
+    <!-- 04 OUR COLLECTION -->
+    <section class="collection-intro" id="collection">
+        <div class="container">
+            <div class="section-title">Our Collection</div>
+            <h2 class="section-heading">Medical Apparel for Healthcare Professionals</h2>
+            <p class="section-lead">Find the fit that works for you. Different roles. Different preferences. The same
+                need for a uniform that feels comfortable, looks professional and works throughout the day. Explore
+                men's and women's medical scrub sets in a selection of professional neckline styles.</p>
+            <div class="split-grid">
+                <a href="#womens" class="split-card split-card--women">
+                    <div class="split-card-bg"><img src="assets/hero-banner.png" alt="" loading="lazy" /></div>
+                    <div class="split-eyebrow">Women's Collection</div>
+                    <div class="split-title">Designed for<br />her work shift.</div>
+                    <div class="split-sub">Professional medical scrub sets with a choice of neckline styles for women
+                        across today's healthcare environments.</div>
+                    <span class="split-cta">View Women's</span>
+                </a>
+                <a href="#mens" class="split-card split-card--men">
+                    <div class="split-card-bg"><img src="assets/product-flat-navy.png" alt="" loading="lazy" /></div>
+                    <div class="split-eyebrow">Men's Collection</div>
+                    <div class="split-title">Designed for<br />his work shift.</div>
+                    <div class="split-sub">Clean, practical medical apparel designed around the everyday requirements of
+                        men working across healthcare.</div>
+                    <span class="split-cta">View Men's</span>
+                </a>
+            </div>
         </div>
-        <div class="product-badge"><span class="badge badge-royal">Women's</span></div>
-      </div>
-      <div class="product-info">
-        <p class="product-tagline">Modern comfort. Professional presence.</p>
-        <h3 class="product-name">Women's Round-Neck Scrub Set</h3>
-        <div class="product-basics">
-          <span class="product-sizes"><strong>Sizes</strong> M / L / XL</span>
-          <div class="product-colours"><div class="swatches"><i class="swatch swatch--navy"></i><i class="swatch swatch--royal"></i></div></div>
+    </section>
+
+    <!-- 05 WOMEN'S -->
+    <section class="product-section" id="womens">
+        <div class="container">
+            <div class="product-section-head">
+                <div class="section-title">Our Scrub Sets</div>
+                <h2>Women's &amp; Men's Collection</h2>
+                <p>Professional medical scrub sets with a choice of neckline styles — created for healthcare
+                    professionals across today's environments.</p>
+            </div>
+            <div class="products-grid">
+                <article class="product-card fade-in" data-badge="Women's" data-badge-class="badge-royal"
+                    data-tagline="Clean. Classic. Professional." data-name="Women's V-Neck Scrub Set"
+                    data-desc="A versatile V-neck medical scrub set designed for a smart professional appearance and practical everyday use."
+                    data-style="V-Neck Scrub Set" data-sizes="M / L / XL" data-origin="India"
+                    data-features="Professional V-neck design|Practical pocket detailing|Comfortable everyday fit|Clean professional appearance|Designed for healthcare professionals"
+                    data-colours="Navy Blue & Royal Blue" data-img="assets/product-women-vneck.png">
+                    <div class="product-media">
+                        <div class="product-img-wrap">
+                            <img src="assets/product-women-vneck.png" alt="Women's V-Neck Scrub Set" loading="lazy" />
+                        </div>
+                        <div class="product-badge"><span class="badge badge-royal">Women's</span></div>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-tagline">Clean. Classic. Professional.</p>
+                        <h3 class="product-name">Women's V-Neck Scrub Set</h3>
+                        <div class="product-basics">
+                            <span class="product-sizes"><strong>Sizes</strong> M / L / XL</span>
+                            <div class="product-colours">
+                                <div class="swatches"><i class="swatch swatch--navy"></i><i
+                                        class="swatch swatch--royal"></i></div>
+                            </div>
+                        </div>
+                        <div class="product-actions">
+                            <button type="button" class="btn-details js-product-details">Details</button>
+                            <a href="#contact" class="product-enquire">Enquire</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="product-card fade-in" data-badge="Women's" data-badge-class="badge-royal"
+                    data-tagline="Modern comfort. Professional presence." data-name="Women's Round-Neck Scrub Set"
+                    data-desc="A contemporary round-neck medical scrub set for healthcare professionals who prefer a distinctive alternative to the traditional V-neck."
+                    data-style="Round-Neck Scrub Set" data-sizes="M / L / XL" data-origin="India"
+                    data-features="Modern round-neck design|Practical pocket detailing|Comfortable everyday fit|Smart professional silhouette|Designed for healthcare environments"
+                    data-colours="Navy Blue & Royal Blue" data-img="assets/product-women-roundneck.png">
+                    <div class="product-media">
+                        <div class="product-img-wrap">
+                            <img src="assets/product-women-roundneck.png" alt="Women's Round-Neck Scrub Set" loading="lazy" />
+                        </div>
+                        <div class="product-badge"><span class="badge badge-royal">Women's</span></div>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-tagline">Modern comfort. Professional presence.</p>
+                        <h3 class="product-name">Women's Round-Neck Scrub Set</h3>
+                        <div class="product-basics">
+                            <span class="product-sizes"><strong>Sizes</strong> M / L / XL</span>
+                            <div class="product-colours">
+                                <div class="swatches"><i class="swatch swatch--navy"></i><i
+                                        class="swatch swatch--royal"></i></div>
+                            </div>
+                        </div>
+                        <div class="product-actions">
+                            <button type="button" class="btn-details js-product-details">Details</button>
+                            <a href="#contact" class="product-enquire">Enquire</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="product-card fade-in" data-badge="Women's" data-badge-class="badge-royal"
+                    data-tagline="Distinctive by design. Professional by nature."
+                    data-name="Women's High-Neck Scrub Set"
+                    data-desc="A modern high-neck medical scrub set created for professionals who prefer a more structured neckline while maintaining everyday comfort and functionality."
+                    data-style="High-Neck Scrub Set" data-sizes="M / L / XL" data-origin="India"
+                    data-features="Distinctive high-neck design|Practical pocket detailing|Comfortable everyday fit|Structured professional appearance|Designed for everyday healthcare use"
+                    data-colours="Navy Blue & Royal Blue" data-img="assets/product-women-highneck.png">
+                    <div class="product-media">
+                        <div class="product-img-wrap">
+                            <img src="assets/product-women-highneck.png" alt="Women's High-Neck Scrub Set"
+                                loading="lazy" />
+                        </div>
+                        <div class="product-badge"><span class="badge badge-royal">Women's</span></div>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-tagline">Distinctive by design. Professional by nature.</p>
+                        <h3 class="product-name">Women's High-Neck Scrub Set</h3>
+                        <div class="product-basics">
+                            <span class="product-sizes"><strong>Sizes</strong> M / L / XL</span>
+                            <div class="product-colours">
+                                <div class="swatches"><i class="swatch swatch--navy"></i><i
+                                        class="swatch swatch--royal"></i></div>
+                            </div>
+                        </div>
+                        <div class="product-actions">
+                            <button type="button" class="btn-details js-product-details">Details</button>
+                            <a href="#contact" class="product-enquire">Enquire</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="product-card product-card--men fade-in" id="mens" data-badge="Men's"
+                    data-badge-class="badge-navy" data-tagline="Functional and Professional."
+                    data-name="Men's V-Neck Scrub Set"
+                    data-desc="A classic men's V-neck scrub set created to provide a clean professional appearance with the practicality required for everyday healthcare work."
+                    data-style="V-Neck Scrub Set" data-sizes="M / L / XL" data-origin="India"
+                    data-features="Classic V-neck design|Practical pocket detailing|Comfortable everyday fit|Clean professional appearance|Designed for healthcare professionals"
+                    data-colours="Navy Blue & Royal Blue" data-img="assets/product-men-vneck.png">
+                    <div class="product-media">
+                        <div class="product-img-wrap">
+                            <img src="assets/product-men-vneck.png" alt="Men's V-Neck Scrub Set" loading="lazy" />
+                        </div>
+                        <div class="product-badge"><span class="badge badge-navy">Men's</span></div>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-tagline">Functional and Professional.</p>
+                        <h3 class="product-name">Men's V-Neck Scrub Set</h3>
+                        <div class="product-basics">
+                            <span class="product-sizes"><strong>Sizes</strong> M / L / XL</span>
+                            <div class="product-colours">
+                                <div class="swatches"><i class="swatch swatch--navy"></i><i
+                                        class="swatch swatch--royal"></i></div>
+                            </div>
+                        </div>
+                        <div class="product-actions">
+                            <button type="button" class="btn-details js-product-details">Details</button>
+                            <a href="#contact" class="product-enquire">Enquire</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
         </div>
-        <div class="product-actions">
-          <button type="button" class="btn-details js-product-details">Details</button>
-          <a href="#contact" class="product-enquire">Enquire</a>
+    </section>
+
+    <!-- 07 PRODUCT FEATURES -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-title">Product Features</div>
+            <h2 class="section-heading">Designed Around the Working Day</h2>
+            <p class="section-lead">Because the details matter when you're wearing it all day. From the first round to
+                the last, a medical uniform needs to support the professional wearing it.</p>
+            <div class="features-grid">
+                <div class="feature-card fade-in">
+                    <div class="feature-num">01</div>
+                    <h3>Professional Necklines</h3>
+                    <p>Clean, contemporary neckline options designed for a smart healthcare appearance.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-num">02</div>
+                    <h3>Practical Pocketing</h3>
+                    <p>Functional pocket details for keeping everyday essentials within reach.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-num">03</div>
+                    <h3>Comfortable Fit</h3>
+                    <p>Designed with everyday movement and extended working hours in mind.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-num">04</div>
+                    <h3>Functional Bottoms</h3>
+                    <p>Practical scrub pants designed to complement the demands of the working day.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-num">05</div>
+                    <h3>Seamless Finish</h3>
+                    <p>Clean construction and detailing for a polished, professional appearance.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-num">06</div>
+                    <h3>Sizes M–XL</h3>
+                    <p>Core sizing available across the current A-Side Signature medical scrub collection.</p>
+                </div>
+            </div>
         </div>
-      </div>
-    </article>
-    <article class="product-card fade-in"
-      data-badge="Women's" data-badge-class="badge-royal"
-      data-tagline="Distinctive by design. Professional by nature."
-      data-name="Women's High-Neck Scrub Set"
-      data-desc="A modern high-neck medical scrub set created for professionals who prefer a more structured neckline while maintaining everyday comfort and functionality."
-      data-style="High-Neck Scrub Set" data-sizes="M / L / XL" data-origin="India"
-      data-features="Distinctive high-neck design|Practical pocket detailing|Comfortable everyday fit|Structured professional appearance|Designed for everyday healthcare use"
-      data-colours="Navy Blue & Royal Blue"
-      data-img="assets/product-mandarin-flatlay.jpg">
-      <div class="product-media">
-        <div class="product-img-wrap">
-          <img src="assets/product-mandarin-flatlay.jpg" alt="Women's High-Neck Scrub Set" loading="lazy"/>
+    </section>
+
+    <!-- 08 WHY -->
+    <section class="why" id="why">
+        <div class="container">
+            <div class="section-title">Why A-Side Signature</div>
+            <h2 class="section-heading">Medical apparel should do more than look the part.</h2>
+            <p class="section-lead">It should feel right through long working hours, support everyday movement and
+                maintain the professional appearance that healthcare demands. That's what A-Side Signature is built
+                around.</p>
+            <div class="why-grid">
+                <div class="why-card fade-in">
+                    <h3>Follows Kuwait MOH Required Colour Codes</h3>
+                    <p>Follows the Kuwait MOH-required colour code for healthcare uniforms.</p>
+                </div>
+                <div class="why-card fade-in">
+                    <h3>Smart &amp; Professional Design</h3>
+                    <p>Clean silhouettes and considered neckline options for a smart, professional appearance.</p>
+                </div>
+                <div class="why-card fade-in">
+                    <h3>Comfort for the Working Day</h3>
+                    <p>Designed with the movement and long hours of healthcare professionals in mind.</p>
+                </div>
+                <div class="why-card fade-in">
+                    <h3>Function Where It Matters</h3>
+                    <p>Practical garment details created around everyday healthcare requirements.</p>
+                </div>
+            </div>
         </div>
-        <div class="product-badge"><span class="badge badge-royal">Women's</span></div>
-      </div>
-      <div class="product-info">
-        <p class="product-tagline">Distinctive by design. Professional by nature.</p>
-        <h3 class="product-name">Women's High-Neck Scrub Set</h3>
-        <div class="product-basics">
-          <span class="product-sizes"><strong>Sizes</strong> M / L / XL</span>
-          <div class="product-colours"><div class="swatches"><i class="swatch swatch--navy"></i><i class="swatch swatch--royal"></i></div></div>
+    </section>
+
+    <!-- 09 BULK -->
+    <section class="bulk" id="bulk">
+        <div class="container">
+            <div class="bulk-inner">
+                <div class="bulk-copy fade-in">
+                    <div class="bulk-eyebrow">Bulk &amp; Corporate Enquiries</div>
+                    <h2 class="bulk-title">For Healthcare Organisations</h2>
+                    <p class="bulk-lead">Uniforming your team?</p>
+                    <p class="bulk-body">A-Side Signature welcomes bulk and institutional enquiries from healthcare
+                        organisations across Kuwait. Speak to us about styles, sizes, quantities and available options.
+                    </p>
+                    <p class="bulk-body">From small teams to larger workforces, we help you find the right medical
+                        apparel.</p>
+                    <div class="bulk-actions">
+                        <a href="#contact" class="btn-primary">Bulk / Corporate Enquiry</a>
+                        <a href="#contact" class="btn-wa">WhatsApp Us</a>
+                    </div>
+                </div>
+                <div class="bulk-panel fade-in">
+                    <div class="bulk-panel-label">We provide uniforms to</div>
+                    <ul class="bulk-list">
+                        <li>Hospitals</li>
+                        <li>Clinics</li>
+                        <li>Medical Centres</li>
+                        <li>Laboratories</li>
+                        <li>Pharmacies</li>
+                        <li>Healthcare Groups</li>
+                        <li>Other Corporate &amp; Institutional Customers</li>
+                    </ul>
+                    <h3>Looking for bulk quantities?</h3>
+                    <p>Contact us for product information, availability and bulk pricing.</p>
+                    <a href="#contact" class="btn-primary">Talk to Our Team</a>
+                </div>
+            </div>
         </div>
-        <div class="product-actions">
-          <button type="button" class="btn-details js-product-details">Details</button>
-          <a href="#contact" class="product-enquire">Enquire</a>
+    </section>
+
+    <!-- 10 CATALOGUE -->
+    <section class="catalogue" id="catalogue">
+        <div class="container">
+            <div class="catalogue-box fade-in">
+                <div>
+                    <div class="section-title" style="justify-content:flex-start;margin-bottom:12px">Catalogue</div>
+                    <h2>A-Side Signature Catalogue</h2>
+                    <p>Explore our collection. Discover the current A-Side Signature medical apparel range, including
+                        available models, neckline styles, colours, sizes and product specifications.</p>
+                </div>
+                <div class="catalogue-actions">
+                    <a href="#womens" class="btn-primary">View Digital Catalogue</a>
+                    <a href="#contact" class="catalogue-secondary">Need help finding the right product? Talk to Us</a>
+                </div>
+            </div>
         </div>
-      </div>
-    </article>
-    <article class="product-card product-card--men fade-in" id="mens"
-      data-badge="Men's" data-badge-class="badge-navy"
-      data-tagline="Functional and Professional."
-      data-name="Men's V-Neck Scrub Set"
-      data-desc="A classic men's V-neck scrub set created to provide a clean professional appearance with the practicality required for everyday healthcare work."
-      data-style="V-Neck Scrub Set" data-sizes="M / L / XL" data-origin="India"
-      data-features="Classic V-neck design|Practical pocket detailing|Comfortable everyday fit|Clean professional appearance|Designed for healthcare professionals"
-      data-colours="Navy Blue & Royal Blue"
-      data-img="assets/product-navy-scrubs.jpg">
-      <div class="product-media">
-        <div class="product-img-wrap">
-          <img src="assets/product-navy-scrubs.jpg" alt="Men's V-Neck Scrub Set" loading="lazy"/>
+    </section>
+
+    <!-- 11 + 12 CONTACT & ENQUIRY -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-title">Contact Us</div>
+            <div class="contact-grid">
+                <div class="contact-card fade-in">
+                    <h2>Get in Touch</h2>
+                    <p>Looking for a particular scrub style, size or colour? Sourcing medical uniforms for your
+                        healthcare organisation? Our Kuwait team is here to assist with product enquiries, price,
+                        availability and institutional requirements.</p>
+                    <div class="company-name">A SIDE GENERAL TRADING COMPANY W.L.L.</div>
+                    <div class="company-sub">A-Side Signature – Professional Medical Apparel</div>
+                    <div class="contact-rows">
+                        <div class="contact-row"><strong>Address</strong><span>Kuwait Office / Showroom — details on
+                                request</span></div>
+                        <div class="contact-row"><strong>Call Us</strong><a href="tel:+965">+965 [Contact Number]</a>
+                        </div>
+                        <div class="contact-row"><strong>WhatsApp</strong><a href="#contact">+965 [WhatsApp Number]</a>
+                        </div>
+                        <div class="contact-row"><strong>Email</strong><a href="mailto:info@asidesignature.com">[Email
+                                Address]</a></div>
+                        <div class="contact-row"><strong>Business Hours</strong><span>[Business Days]<br />[Opening
+                                Time] – [Closing Time]</span></div>
+                    </div>
+                    <div class="contact-actions">
+                        <a href="#contact" class="btn-wa">WhatsApp Us</a>
+                        <a href="tel:+965" class="btn-primary">Call Us</a>
+                        <a href="#contact" class="btn-outline">Get Directions</a>
+                    </div>
+                </div>
+
+                <div class="enquiry-form fade-in">
+                    <h3>How can we help?</h3>
+                    <p class="form-lead">Tell us what you're looking for and our team will get in touch with you.</p>
+                    <form id="enquiry-form" onsubmit="handleEnquiry(event)">
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="eq-name">Full Name <span class="req">*</span></label>
+                                <input id="eq-name" name="name" type="text" placeholder="Enter your name" required />
+                            </div>
+                            <div class="form-group">
+                                <label for="eq-mobile">Mobile Number <span class="req">*</span></label>
+                                <input id="eq-mobile" name="mobile" type="tel" placeholder="Enter your contact number"
+                                    required />
+                            </div>
+                            <div class="form-group form-group--full">
+                                <label for="eq-email">Email Address</label>
+                                <input id="eq-email" name="email" type="email" placeholder="Enter your email" />
+                            </div>
+                            <div class="form-group">
+                                <label for="eq-type">Enquiry Type <span class="req">*</span></label>
+                                <select id="eq-type" name="type" required>
+                                    <option value="">Select type</option>
+                                    <option>Individual</option>
+                                    <option>Hospital</option>
+                                    <option>Clinic</option>
+                                    <option>Medical Centre</option>
+                                    <option>Laboratory</option>
+                                    <option>Pharmacy</option>
+                                    <option>Healthcare Group</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="eq-product">Product Interested In</label>
+                                <select id="eq-product" name="product">
+                                    <option value="">Select product</option>
+                                    <option>Men's V-Neck Scrub Set</option>
+                                    <option>Women's V-Neck Scrub Set</option>
+                                    <option>Women's Round-Neck Scrub Set</option>
+                                    <option>Women's High-Neck Scrub Set</option>
+                                    <option>Bulk Requirement</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="eq-size">Size</label>
+                                <select id="eq-size" name="size">
+                                    <option value="">Select size</option>
+                                    <option>M</option>
+                                    <option>L</option>
+                                    <option>XL</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="eq-qty">Quantity Required</label>
+                                <input id="eq-qty" name="quantity" type="text" placeholder="Enter quantity" />
+                            </div>
+                            <div class="form-group form-group--full">
+                                <label for="eq-message">Message</label>
+                                <textarea id="eq-message" name="message"
+                                    placeholder="Tell us about your requirement"></textarea>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn-primary form-submit" id="eq-submit">Send Enquiry</button>
+                        <p class="form-note">Our team will contact you regarding product details, price and
+                            availability.</p>
+                    </form>
+                </div>
+            </div>
         </div>
-        <div class="product-badge"><span class="badge badge-navy">Men's</span></div>
-      </div>
-      <div class="product-info">
-        <p class="product-tagline">Functional and Professional.</p>
-        <h3 class="product-name">Men's V-Neck Scrub Set</h3>
-        <div class="product-basics">
-          <span class="product-sizes"><strong>Sizes</strong> M / L / XL</span>
-          <div class="product-colours"><div class="swatches"><i class="swatch swatch--navy"></i><i class="swatch swatch--royal"></i></div></div>
+    </section>
+
+    <!-- 13 FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col footer-brand">
+                    <div class="logo"><img src="assets/logo.png" alt="A-Side Signature" /></div>
+                    <p>Professional Medical Apparel for Healthcare Professionals.</p>
+                    <p class="footer-company">A medical apparel brand of<br />A SIDE GENERAL TRADING COMPANY W.L.L. –
+                        Kuwait</p>
+                    <p class="footer-pillars">Professional · Comfortable · Functional · Reliable</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" />
+                                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" />
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                            </svg></a>
+                        <a href="#contact" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M17.5 14.4c-.3-.1-1.6-.8-1.8-.9-.2-.1-.4-.1-.6.1-.2.2-.7.9-.8 1-.2.1-.3.2-.6.1-.3-.1-1.2-.4-2.3-1.5-1-.9-1.6-1.9-1.8-2.2-.2-.3 0-.4.1-.5.1-.1.3-.3.4-.5.1-.1.2-.3.3-.5.1-.2 0-.4 0-.5 0-.1-.6-1.5-.8-2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.1s.9 2.4 1 2.6c.1.2 1.8 2.8 4.4 3.9 1.6.7 2.2.7 3 .6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2-.1-.1-.3-.2-.6-.3z" />
+                                <path
+                                    d="M12 2a10 10 0 00-8.7 14.9L2 22l5.2-1.4A10 10 0 1012 2zm0 18.2a8.2 8.2 0 01-4.2-1.1l-.3-.2-3.1.8.8-3-.2-.3A8.2 8.2 0 1112 20.2z" />
+                            </svg></a>
+                        <a href="mailto:info@asidesignature.com" aria-label="Email"><svg viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                <polyline points="22,6 12,13 2,6" />
+                            </svg></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <div class="footer-heading">Quick Links</div>
+                    <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#womens">Women's Collection</a></li>
+                        <li><a href="#mens">Men's Collection</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <div class="footer-heading">Business</div>
+                    <ul class="footer-links">
+                        <li><a href="#bulk">Bulk Enquiries</a></li>
+                        <li><a href="#catalogue">Catalogue</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                        <li><a href="#features">Product Features</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col footer-cta">
+                    <div class="footer-heading">Get Started</div>
+                    <p class="footer-cta-text">Tell us your style, size and quantity — we'll help with price and
+                        availability.</p>
+                    <a href="#contact" class="btn-primary">Send Enquiry</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-left">
+                    <p>&copy; 2026 A SIDE GENERAL TRADING COMPANY W.L.L. All Rights Reserved. Powered by Zeekoi
+                        Enterprise Solutions</p>
+                    <p class="footer-made">Made in India. Marketed in Kuwait.</p>
+                </div>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms &amp; Conditions</a>
+                </div>
+            </div>
         </div>
-        <div class="product-actions">
-          <button type="button" class="btn-details js-product-details">Details</button>
-          <a href="#contact" class="product-enquire">Enquire</a>
+    </footer>
+
+    <!-- PRODUCT DETAILS MODAL -->
+    <div class="product-modal" id="product-modal" aria-hidden="true" role="dialog" aria-modal="true"
+        aria-labelledby="pm-title">
+        <div class="product-modal-backdrop" id="product-modal-backdrop"></div>
+        <div class="product-modal-dialog">
+            <button type="button" class="product-modal-close" id="product-modal-close" aria-label="Close details">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18" />
+                    <line x1="6" y1="6" x2="18" y2="18" />
+                </svg>
+            </button>
+            <div class="product-modal-media">
+                <div class="product-modal-badge"><span class="badge" id="pm-badge">Women's</span></div>
+                <img id="pm-img" src="" alt="" />
+            </div>
+            <div class="product-modal-body">
+                <p class="product-modal-tagline" id="pm-tagline"></p>
+                <h3 class="product-modal-title" id="pm-title"></h3>
+                <p class="product-modal-desc" id="pm-desc"></p>
+                <div class="product-modal-meta" id="pm-meta"></div>
+                <ul class="product-modal-features" id="pm-features"></ul>
+                <div class="product-modal-colours">
+                    <div class="swatches"><i class="swatch swatch--navy"></i><i class="swatch swatch--royal"></i></div>
+                    <span id="pm-colours">Navy Blue &amp; Royal Blue</span>
+                </div>
+                <p class="product-modal-note">For Price &amp; Availability, Please Contact Us.</p>
+                <div class="product-modal-actions">
+                    <a href="#contact" class="btn-primary" id="pm-enquire">Enquire Now</a>
+                    <a href="#contact" class="btn-wa" id="pm-whatsapp">WhatsApp</a>
+                </div>
+            </div>
         </div>
-      </div>
-    </article>
-  </div>
-</div>
-</section>
-
-<!-- 07 PRODUCT FEATURES -->
-<section class="features" id="features">
-<div class="container">
-  <div class="section-title">Product Features</div>
-  <h2 class="section-heading">Designed Around the Working Day</h2>
-  <p class="section-lead">Because the details matter when you're wearing it all day. From the first round to the last, a medical uniform needs to support the professional wearing it.</p>
-  <div class="features-grid">
-    <div class="feature-card fade-in"><div class="feature-num">01</div><h3>Professional Necklines</h3><p>Clean, contemporary neckline options designed for a smart healthcare appearance.</p></div>
-    <div class="feature-card fade-in"><div class="feature-num">02</div><h3>Practical Pocketing</h3><p>Functional pocket details for keeping everyday essentials within reach.</p></div>
-    <div class="feature-card fade-in"><div class="feature-num">03</div><h3>Comfortable Fit</h3><p>Designed with everyday movement and extended working hours in mind.</p></div>
-    <div class="feature-card fade-in"><div class="feature-num">04</div><h3>Functional Bottoms</h3><p>Practical scrub pants designed to complement the demands of the working day.</p></div>
-    <div class="feature-card fade-in"><div class="feature-num">05</div><h3>Seamless Finish</h3><p>Clean construction and detailing for a polished, professional appearance.</p></div>
-    <div class="feature-card fade-in"><div class="feature-num">06</div><h3>Sizes M–XL</h3><p>Core sizing available across the current A-Side Signature medical scrub collection.</p></div>
-  </div>
-</div>
-</section>
-
-<!-- 08 WHY -->
-<section class="why" id="why">
-<div class="container">
-  <div class="section-title">Why A-Side Signature</div>
-  <h2 class="section-heading">Medical apparel should do more than look the part.</h2>
-  <p class="section-lead">It should feel right through long working hours, support everyday movement and maintain the professional appearance that healthcare demands. That's what A-Side Signature is built around.</p>
-  <div class="why-grid">
-    <div class="why-card fade-in"><h3>Follows Kuwait MOH Required Colour Codes</h3><p>Follows the Kuwait MOH-required colour code for healthcare uniforms.</p></div>
-    <div class="why-card fade-in"><h3>Smart &amp; Professional Design</h3><p>Clean silhouettes and considered neckline options for a smart, professional appearance.</p></div>
-    <div class="why-card fade-in"><h3>Comfort for the Working Day</h3><p>Designed with the movement and long hours of healthcare professionals in mind.</p></div>
-    <div class="why-card fade-in"><h3>Function Where It Matters</h3><p>Practical garment details created around everyday healthcare requirements.</p></div>
-  </div>
-</div>
-</section>
-
-<!-- 09 BULK -->
-<section class="bulk" id="bulk">
-<div class="container">
-  <div class="bulk-inner">
-    <div class="bulk-copy fade-in">
-      <div class="bulk-eyebrow">Bulk &amp; Corporate Enquiries</div>
-      <h2 class="bulk-title">For Healthcare Organisations</h2>
-      <p class="bulk-lead">Uniforming your team?</p>
-      <p class="bulk-body">A-Side Signature welcomes bulk and institutional enquiries from healthcare organisations across Kuwait. Speak to us about styles, sizes, quantities and available options.</p>
-      <p class="bulk-body">From small teams to larger workforces, we help you find the right medical apparel.</p>
-      <div class="bulk-actions">
-        <a href="#contact" class="btn-primary">Bulk / Corporate Enquiry</a>
-        <a href="#contact" class="btn-wa">WhatsApp Us</a>
-      </div>
-    </div>
-    <div class="bulk-panel fade-in">
-      <div class="bulk-panel-label">We provide uniforms to</div>
-      <ul class="bulk-list">
-        <li>Hospitals</li>
-        <li>Clinics</li>
-        <li>Medical Centres</li>
-        <li>Laboratories</li>
-        <li>Pharmacies</li>
-        <li>Healthcare Groups</li>
-        <li>Other Corporate &amp; Institutional Customers</li>
-      </ul>
-      <h3>Looking for bulk quantities?</h3>
-      <p>Contact us for product information, availability and bulk pricing.</p>
-      <a href="#contact" class="btn-primary">Talk to Our Team</a>
-    </div>
-  </div>
-</div>
-</section>
-
-<!-- 10 CATALOGUE -->
-<section class="catalogue" id="catalogue">
-<div class="container">
-  <div class="catalogue-box fade-in">
-    <div>
-      <div class="section-title" style="justify-content:flex-start;margin-bottom:12px">Catalogue</div>
-      <h2>A-Side Signature Catalogue</h2>
-      <p>Explore our collection. Discover the current A-Side Signature medical apparel range, including available models, neckline styles, colours, sizes and product specifications.</p>
-    </div>
-    <div class="catalogue-actions">
-      <a href="#womens" class="btn-primary">View Digital Catalogue</a>
-      <a href="#contact" class="catalogue-secondary">Need help finding the right product? Talk to Us</a>
-    </div>
-  </div>
-</div>
-</section>
-
-<!-- 11 + 12 CONTACT & ENQUIRY -->
-<section class="contact" id="contact">
-<div class="container">
-  <div class="section-title">Contact Us</div>
-  <div class="contact-grid">
-    <div class="contact-card fade-in">
-      <h2>Get in Touch</h2>
-      <p>Looking for a particular scrub style, size or colour? Sourcing medical uniforms for your healthcare organisation? Our Kuwait team is here to assist with product enquiries, price, availability and institutional requirements.</p>
-      <div class="company-name">A SIDE GENERAL TRADING COMPANY W.L.L.</div>
-      <div class="company-sub">A-Side Signature – Professional Medical Apparel</div>
-      <div class="contact-rows">
-        <div class="contact-row"><strong>Address</strong><span>Kuwait Office / Showroom — details on request</span></div>
-        <div class="contact-row"><strong>Call Us</strong><a href="tel:+965">+965 [Contact Number]</a></div>
-        <div class="contact-row"><strong>WhatsApp</strong><a href="#contact">+965 [WhatsApp Number]</a></div>
-        <div class="contact-row"><strong>Email</strong><a href="mailto:info@asidesignature.com">[Email Address]</a></div>
-        <div class="contact-row"><strong>Business Hours</strong><span>[Business Days]<br/>[Opening Time] – [Closing Time]</span></div>
-      </div>
-      <div class="contact-actions">
-        <a href="#contact" class="btn-wa">WhatsApp Us</a>
-        <a href="tel:+965" class="btn-primary">Call Us</a>
-        <a href="#contact" class="btn-outline">Get Directions</a>
-      </div>
     </div>
 
-    <div class="enquiry-form fade-in">
-      <h3>How can we help?</h3>
-      <p class="form-lead">Tell us what you're looking for and our team will get in touch with you.</p>
-      <form id="enquiry-form" onsubmit="handleEnquiry(event)">
-        <div class="form-grid">
-          <div class="form-group">
-            <label for="eq-name">Full Name <span class="req">*</span></label>
-            <input id="eq-name" name="name" type="text" placeholder="Enter your name" required/>
-          </div>
-          <div class="form-group">
-            <label for="eq-mobile">Mobile Number <span class="req">*</span></label>
-            <input id="eq-mobile" name="mobile" type="tel" placeholder="Enter your contact number" required/>
-          </div>
-          <div class="form-group form-group--full">
-            <label for="eq-email">Email Address</label>
-            <input id="eq-email" name="email" type="email" placeholder="Enter your email"/>
-          </div>
-          <div class="form-group">
-            <label for="eq-type">Enquiry Type <span class="req">*</span></label>
-            <select id="eq-type" name="type" required>
-              <option value="">Select type</option>
-              <option>Individual</option>
-              <option>Hospital</option>
-              <option>Clinic</option>
-              <option>Medical Centre</option>
-              <option>Laboratory</option>
-              <option>Pharmacy</option>
-              <option>Healthcare Group</option>
-              <option>Other</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="eq-product">Product Interested In</label>
-            <select id="eq-product" name="product">
-              <option value="">Select product</option>
-              <option>Men's V-Neck Scrub Set</option>
-              <option>Women's V-Neck Scrub Set</option>
-              <option>Women's Round-Neck Scrub Set</option>
-              <option>Women's High-Neck Scrub Set</option>
-              <option>Bulk Requirement</option>
-              <option>Other</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="eq-size">Size</label>
-            <select id="eq-size" name="size">
-              <option value="">Select size</option>
-              <option>M</option>
-              <option>L</option>
-              <option>XL</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="eq-qty">Quantity Required</label>
-            <input id="eq-qty" name="quantity" type="text" placeholder="Enter quantity"/>
-          </div>
-          <div class="form-group form-group--full">
-            <label for="eq-message">Message</label>
-            <textarea id="eq-message" name="message" placeholder="Tell us about your requirement"></textarea>
-          </div>
-        </div>
-        <button type="submit" class="btn-primary form-submit" id="eq-submit">Send Enquiry</button>
-        <p class="form-note">Our team will contact you regarding product details, price and availability.</p>
-      </form>
-    </div>
-  </div>
-</div>
-</section>
+    <script>
+        const navToggle = document.getElementById('nav-toggle');
+        const mobileNav = document.getElementById('mobile-nav');
+        const mobileOverlay = document.getElementById('mobile-overlay');
+        const mobileClose = document.getElementById('mobile-nav-close');
+        function openNav() {
+            mobileNav.classList.add('open');
+            mobileOverlay.classList.add('open');
+            navToggle.classList.add('open');
+            document.body.classList.add('nav-open');
+            mobileNav.setAttribute('aria-hidden', 'false');
+        }
+        function closeNav() {
+            mobileNav.classList.remove('open');
+            mobileOverlay.classList.remove('open');
+            navToggle.classList.remove('open');
+            document.body.classList.remove('nav-open');
+            mobileNav.setAttribute('aria-hidden', 'true');
+        }
+        navToggle.addEventListener('click', () => { mobileNav.classList.contains('open') ? closeNav() : openNav() });
+        mobileClose.addEventListener('click', closeNav);
+        mobileOverlay.addEventListener('click', closeNav);
+        document.querySelectorAll('.mobile-nav-links a, .mobile-nav-cta, #mobile-logo').forEach(a => a.addEventListener('click', closeNav));
+        document.addEventListener('keydown', e => {
+            if (e.key === 'Escape' && mobileNav.classList.contains('open')) closeNav();
+            if (e.key === 'Escape' && productModal.classList.contains('open')) closeProductModal();
+        });
 
-<!-- 13 FOOTER -->
-<footer class="footer">
-<div class="container">
-  <div class="footer-grid">
-    <div class="footer-col footer-brand">
-      <div class="logo"><img src="assets/logo.png" alt="A-Side Signature"/></div>
-      <p>Professional Medical Apparel for Healthcare Professionals.</p>
-      <p class="footer-company">A medical apparel brand of<br/>A SIDE GENERAL TRADING COMPANY W.L.L. – Kuwait</p>
-      <p class="footer-pillars">Professional · Comfortable · Functional · Reliable</p>
-      <div class="footer-social">
-        <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
-        <a href="#contact" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.6-.8-1.8-.9-.2-.1-.4-.1-.6.1-.2.2-.7.9-.8 1-.2.1-.3.2-.6.1-.3-.1-1.2-.4-2.3-1.5-1-.9-1.6-1.9-1.8-2.2-.2-.3 0-.4.1-.5.1-.1.3-.3.4-.5.1-.1.2-.3.3-.5.1-.2 0-.4 0-.5 0-.1-.6-1.5-.8-2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.1s.9 2.4 1 2.6c.1.2 1.8 2.8 4.4 3.9 1.6.7 2.2.7 3 .6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2-.1-.1-.3-.2-.6-.3z"/><path d="M12 2a10 10 0 00-8.7 14.9L2 22l5.2-1.4A10 10 0 1012 2zm0 18.2a8.2 8.2 0 01-4.2-1.1l-.3-.2-3.1.8.8-3-.2-.3A8.2 8.2 0 1112 20.2z"/></svg></a>
-        <a href="mailto:info@asidesignature.com" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></a>
-      </div>
-    </div>
-    <div class="footer-col">
-      <div class="footer-heading">Quick Links</div>
-      <ul class="footer-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#about">About Us</a></li>
-        <li><a href="#womens">Women's Collection</a></li>
-        <li><a href="#mens">Men's Collection</a></li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <div class="footer-heading">Business</div>
-      <ul class="footer-links">
-        <li><a href="#bulk">Bulk Enquiries</a></li>
-        <li><a href="#catalogue">Catalogue</a></li>
-        <li><a href="#contact">Contact Us</a></li>
-        <li><a href="#features">Product Features</a></li>
-      </ul>
-    </div>
-    <div class="footer-col footer-cta">
-      <div class="footer-heading">Get Started</div>
-      <p class="footer-cta-text">Tell us your style, size and quantity — we'll help with price and availability.</p>
-      <a href="#contact" class="btn-primary">Send Enquiry</a>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <div class="footer-bottom-left">
-      <p>&copy; 2026 A SIDE GENERAL TRADING COMPANY W.L.L. All Rights Reserved. Powered by Zeekoi Enterprise Solutions</p>
-      <p class="footer-made">Made in India. Marketed in Kuwait.</p>
-    </div>
-    <div class="footer-bottom-links">
-      <a href="#">Privacy Policy</a>
-      <a href="#">Terms &amp; Conditions</a>
-    </div>
-  </div>
-</div>
-</footer>
+        const header = document.getElementById('main-header');
+        window.addEventListener('scroll', () => { header.style.boxShadow = window.scrollY > 60 ? '0 4px 24px rgba(10,31,92,0.08)' : 'none' });
 
-<!-- PRODUCT DETAILS MODAL -->
-<div class="product-modal" id="product-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="pm-title">
-  <div class="product-modal-backdrop" id="product-modal-backdrop"></div>
-  <div class="product-modal-dialog">
-    <button type="button" class="product-modal-close" id="product-modal-close" aria-label="Close details">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
-    </button>
-    <div class="product-modal-media">
-      <div class="product-modal-badge"><span class="badge" id="pm-badge">Women's</span></div>
-      <img id="pm-img" src="" alt=""/>
-    </div>
-    <div class="product-modal-body">
-      <p class="product-modal-tagline" id="pm-tagline"></p>
-      <h3 class="product-modal-title" id="pm-title"></h3>
-      <p class="product-modal-desc" id="pm-desc"></p>
-      <div class="product-modal-meta" id="pm-meta"></div>
-      <ul class="product-modal-features" id="pm-features"></ul>
-      <div class="product-modal-colours">
-        <div class="swatches"><i class="swatch swatch--navy"></i><i class="swatch swatch--royal"></i></div>
-        <span id="pm-colours">Navy Blue &amp; Royal Blue</span>
-      </div>
-      <p class="product-modal-note">For Price &amp; Availability, Please Contact Us.</p>
-      <div class="product-modal-actions">
-        <a href="#contact" class="btn-primary" id="pm-enquire">Enquire Now</a>
-        <a href="#contact" class="btn-wa" id="pm-whatsapp">WhatsApp</a>
-      </div>
-    </div>
-  </div>
-</div>
+        const fadeEls = document.querySelectorAll('.fade-in');
+        const obs = new IntersectionObserver((entries) => { entries.forEach((e, i) => { if (e.isIntersecting) { setTimeout(() => e.target.classList.add('visible'), i * 60); obs.unobserve(e.target) } }) }, { threshold: 0.1 });
+        fadeEls.forEach(el => obs.observe(el));
 
-<script>
-  const navToggle = document.getElementById('nav-toggle');
-  const mobileNav = document.getElementById('mobile-nav');
-  const mobileOverlay = document.getElementById('mobile-overlay');
-  const mobileClose = document.getElementById('mobile-nav-close');
-  function openNav(){
-    mobileNav.classList.add('open');
-    mobileOverlay.classList.add('open');
-    navToggle.classList.add('open');
-    document.body.classList.add('nav-open');
-    mobileNav.setAttribute('aria-hidden','false');
-  }
-  function closeNav(){
-    mobileNav.classList.remove('open');
-    mobileOverlay.classList.remove('open');
-    navToggle.classList.remove('open');
-    document.body.classList.remove('nav-open');
-    mobileNav.setAttribute('aria-hidden','true');
-  }
-  navToggle.addEventListener('click',()=>{mobileNav.classList.contains('open')?closeNav():openNav()});
-  mobileClose.addEventListener('click',closeNav);
-  mobileOverlay.addEventListener('click',closeNav);
-  document.querySelectorAll('.mobile-nav-links a, .mobile-nav-cta, #mobile-logo').forEach(a=>a.addEventListener('click',closeNav));
-  document.addEventListener('keydown',e=>{
-    if(e.key==='Escape'&&mobileNav.classList.contains('open'))closeNav();
-    if(e.key==='Escape'&&productModal.classList.contains('open'))closeProductModal();
-  });
+        // Product details modal
+        const productModal = document.getElementById('product-modal');
+        const pmImg = document.getElementById('pm-img');
+        const pmBadge = document.getElementById('pm-badge');
+        const pmTagline = document.getElementById('pm-tagline');
+        const pmTitle = document.getElementById('pm-title');
+        const pmDesc = document.getElementById('pm-desc');
+        const pmMeta = document.getElementById('pm-meta');
+        const pmFeatures = document.getElementById('pm-features');
+        const pmColours = document.getElementById('pm-colours');
 
-  const header=document.getElementById('main-header');
-  window.addEventListener('scroll',()=>{header.style.boxShadow=window.scrollY>60?'0 4px 24px rgba(10,31,92,0.08)':'none'});
+        function openProductModal(card) {
+            const d = card.dataset;
+            pmImg.src = d.img || '';
+            pmImg.alt = d.name || '';
+            pmBadge.textContent = d.badge || '';
+            pmBadge.className = 'badge ' + (d.badgeClass || 'badge-royal');
+            pmTagline.textContent = d.tagline || '';
+            pmTitle.textContent = d.name || '';
+            pmDesc.textContent = d.desc || '';
+            pmMeta.innerHTML =
+                '<span><strong>Style</strong> ' + (d.style || '') + '</span>' +
+                '<span><strong>Sizes</strong> ' + (d.sizes || '') + '</span>' +
+                '<span><strong>Origin</strong> ' + (d.origin || '') + '</span>';
+            pmFeatures.innerHTML = (d.features || '').split('|').filter(Boolean).map(f => '<li>' + f + '</li>').join('');
+            pmColours.textContent = d.colours || 'Navy Blue & Royal Blue';
+            productModal.classList.add('open');
+            productModal.setAttribute('aria-hidden', 'false');
+            document.body.classList.add('modal-open');
+        }
+        function closeProductModal() {
+            productModal.classList.remove('open');
+            productModal.setAttribute('aria-hidden', 'true');
+            document.body.classList.remove('modal-open');
+        }
+        document.querySelectorAll('.js-product-details').forEach(btn => {
+            btn.addEventListener('click', () => openProductModal(btn.closest('.product-card')));
+        });
+        document.getElementById('product-modal-close').addEventListener('click', closeProductModal);
+        document.getElementById('product-modal-backdrop').addEventListener('click', closeProductModal);
+        document.getElementById('pm-enquire').addEventListener('click', closeProductModal);
+        document.getElementById('pm-whatsapp').addEventListener('click', closeProductModal);
 
-  const fadeEls=document.querySelectorAll('.fade-in');
-  const obs=new IntersectionObserver((entries)=>{entries.forEach((e,i)=>{if(e.isIntersecting){setTimeout(()=>e.target.classList.add('visible'),i*60);obs.unobserve(e.target)}})},{threshold:0.1});
-  fadeEls.forEach(el=>obs.observe(el));
+        function handleEnquiry(e) {
+            e.preventDefault();
+            const btn = document.getElementById('eq-submit');
+            const orig = btn.textContent;
+            btn.textContent = 'Enquiry Sent';
+            btn.style.background = '#25D366';
+            e.target.reset();
+            setTimeout(() => { btn.textContent = orig; btn.style.background = '' }, 3200);
+        }
 
-  // Product details modal
-  const productModal=document.getElementById('product-modal');
-  const pmImg=document.getElementById('pm-img');
-  const pmBadge=document.getElementById('pm-badge');
-  const pmTagline=document.getElementById('pm-tagline');
-  const pmTitle=document.getElementById('pm-title');
-  const pmDesc=document.getElementById('pm-desc');
-  const pmMeta=document.getElementById('pm-meta');
-  const pmFeatures=document.getElementById('pm-features');
-  const pmColours=document.getElementById('pm-colours');
-
-  function openProductModal(card){
-    const d=card.dataset;
-    pmImg.src=d.img||'';
-    pmImg.alt=d.name||'';
-    pmBadge.textContent=d.badge||'';
-    pmBadge.className='badge '+(d.badgeClass||'badge-royal');
-    pmTagline.textContent=d.tagline||'';
-    pmTitle.textContent=d.name||'';
-    pmDesc.textContent=d.desc||'';
-    pmMeta.innerHTML=
-      '<span><strong>Style</strong> '+(d.style||'')+'</span>'+
-      '<span><strong>Sizes</strong> '+(d.sizes||'')+'</span>'+
-      '<span><strong>Origin</strong> '+(d.origin||'')+'</span>';
-    pmFeatures.innerHTML=(d.features||'').split('|').filter(Boolean).map(f=>'<li>'+f+'</li>').join('');
-    pmColours.textContent=d.colours||'Navy Blue & Royal Blue';
-    productModal.classList.add('open');
-    productModal.setAttribute('aria-hidden','false');
-    document.body.classList.add('modal-open');
-  }
-  function closeProductModal(){
-    productModal.classList.remove('open');
-    productModal.setAttribute('aria-hidden','true');
-    document.body.classList.remove('modal-open');
-  }
-  document.querySelectorAll('.js-product-details').forEach(btn=>{
-    btn.addEventListener('click',()=>openProductModal(btn.closest('.product-card')));
-  });
-  document.getElementById('product-modal-close').addEventListener('click',closeProductModal);
-  document.getElementById('product-modal-backdrop').addEventListener('click',closeProductModal);
-  document.getElementById('pm-enquire').addEventListener('click',closeProductModal);
-  document.getElementById('pm-whatsapp').addEventListener('click',closeProductModal);
-
-  function handleEnquiry(e){
-    e.preventDefault();
-    const btn=document.getElementById('eq-submit');
-    const orig=btn.textContent;
-    btn.textContent='Enquiry Sent';
-    btn.style.background='#25D366';
-    e.target.reset();
-    setTimeout(()=>{btn.textContent=orig;btn.style.background=''},3200);
-  }
-
-  const sects=['hero','about','womens','mens','bulk','catalogue','contact'];
-  const navLinks=document.querySelectorAll('.nav a');
-  window.addEventListener('scroll',()=>{
-    let current='';
-    sects.forEach(id=>{const el=document.getElementById(id);if(el&&window.scrollY>=el.offsetTop-130)current=id});
-    navLinks.forEach(link=>{
-      link.classList.remove('active');
-      const href=link.getAttribute('href');
-      if(href==='#'+current||(current==='hero'&&href==='#'))link.classList.add('active');
-    });
-  });
-</script>
+        const sects = ['hero', 'about', 'womens', 'mens', 'bulk', 'catalogue', 'contact'];
+        const navLinks = document.querySelectorAll('.nav a');
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sects.forEach(id => { const el = document.getElementById(id); if (el && window.scrollY >= el.offsetTop - 130) current = id });
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                const href = link.getAttribute('href');
+                if (href === '#' + current || (current === 'hero' && href === '#')) link.classList.add('active');
+            });
+        });
+    </script>
 </body>
+
 </html>

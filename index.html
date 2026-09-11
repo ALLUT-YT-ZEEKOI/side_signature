@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Side Signature &ndash; Professional Medical Apparel | Kuwait</title>
+<meta name="description" content="Side Signature offers premium professional medical uniforms designed for doctors, nurses and paramedics in Kuwait. Comfort, functionality and smart professional appearance."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<style>
+
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --gold:#c8a96e;--gold-light:#e2c78a;--gold-dark:#a8894e;
+  --dark:#0a0a0a;--dark-2:#111111;--dark-3:#1a1a1a;--dark-4:#222222;--dark-5:#2a2a2a;
+  --light:#f5f0e8;--white:#ffffff;--grey:#888888;--grey-light:#aaaaaa;
+  --ff-serif:'Playfair Display',Georgia,serif;--ff-sans:'Inter',system-ui,sans-serif;
+  --transition:0.3s cubic-bezier(0.4,0,0.2,1);
+  --shadow:0 4px 24px rgba(0,0,0,0.4);--shadow-gold:0 4px 24px rgba(200,169,110,0.15);
+  --radius:4px;
+}
+html{scroll-behavior:smooth}
+body{font-family:var(--ff-sans);background:var(--dark);color:var(--light);overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+img{display:block;max-width:100%}
+ul{list-style:none}
+button{cursor:pointer;border:none;background:none;font-family:inherit}
+.container{max-width:1280px;margin:0 auto;padding:0 24px}
+.section-title{display:flex;align-items:center;gap:16px;justify-content:center;margin-bottom:48px;font-family:var(--ff-serif);font-size:13px;letter-spacing:3px;text-transform:uppercase;color:var(--gold)}
+.section-title::before,.section-title::after{content:'';flex:1;max-width:80px;height:1px;background:var(--gold)}
+.btn-primary{display:inline-flex;align-items:center;gap:8px;background:var(--gold);color:var(--dark);padding:13px 28px;font-family:var(--ff-sans);font-size:13px;font-weight:600;letter-spacing:1px;text-transform:uppercase;transition:var(--transition);border-radius:var(--radius)}
+.btn-primary:hover{background:var(--gold-light);transform:translateY(-1px);box-shadow:var(--shadow-gold)}
+.btn-outline{display:inline-flex;align-items:center;gap:8px;background:transparent;color:var(--light);padding:12px 28px;font-family:var(--ff-sans);font-size:13px;font-weight:600;letter-spacing:1px;text-transform:uppercase;border:1px solid rgba(255,255,255,0.4);transition:var(--transition);border-radius:var(--radius)}
+.btn-outline:hover{border-color:var(--gold);color:var(--gold)}
+.badge{font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;padding:4px 10px;border-radius:2px;display:inline-block}
+.badge-gold{background:var(--gold);color:var(--dark)}
+.badge-dark{background:var(--dark-3);color:var(--gold);border:1px solid var(--gold)}
+
+/* ANN BAR */
+.announcement-bar{background:var(--dark-3);border-bottom:1px solid rgba(200,169,110,0.2);padding:10px 0}
+.announcement-bar .container{display:flex;justify-content:space-between;align-items:center}
+.ann-items{display:flex;gap:40px;font-size:12px;letter-spacing:0.5px;color:var(--grey-light)}
+.ann-item{display:flex;align-items:center;gap:8px}
+.ann-item svg{color:var(--gold);flex-shrink:0}
+.ann-social{display:flex;gap:16px}
+.ann-social a{color:var(--grey);transition:var(--transition);display:flex;align-items:center}
+.ann-social a:hover{color:var(--gold)}
+
+/* HEADER */
+.header{position:sticky;top:0;z-index:100;background:rgba(10,10,10,0.95);backdrop-filter:blur(12px);border-bottom:1px solid rgba(200,169,110,0.15);transition:var(--transition)}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+.logo{display:flex;align-items:center;gap:12px}
+.logo-icon{width:44px;height:44px;border:1.5px solid var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--ff-serif);font-size:16px;color:var(--gold);font-weight:700}
+.logo-text{line-height:1.2}
+.logo-text strong{display:block;font-family:var(--ff-serif);font-size:18px;font-weight:700;color:var(--white);letter-spacing:1px}
+.logo-text span{font-size:9px;letter-spacing:3px;text-transform:uppercase;color:var(--gold)}
+.nav{display:flex;align-items:center;gap:36px}
+.nav a{font-size:13px;font-weight:500;letter-spacing:0.5px;color:var(--grey-light);transition:var(--transition);position:relative}
+.nav a::after{content:'';position:absolute;bottom:-4px;left:0;right:0;height:1px;background:var(--gold);transform:scaleX(0);transition:var(--transition)}
+.nav a:hover,.nav a.active{color:var(--white)}
+.nav a:hover::after,.nav a.active::after{transform:scaleX(1)}
+.header-actions{display:flex;align-items:center;gap:20px}
+.header-actions button{color:var(--grey-light);transition:var(--transition)}
+.header-actions button:hover{color:var(--gold)}
+.nav-toggle{display:none;flex-direction:column;gap:5px;cursor:pointer}
+.nav-toggle span{width:24px;height:2px;background:var(--light);transition:var(--transition);display:block}
+
+/* HERO */
+.hero{position:relative;min-height:90vh;display:flex;align-items:center;overflow:hidden;background:var(--dark-2)}
+.hero-bg{position:absolute;inset:0;background:linear-gradient(105deg,rgba(10,10,10,0.93) 42%,rgba(10,10,10,0.25) 100%);z-index:1}
+.hero-img{position:absolute;right:0;top:0;bottom:0;width:55%;object-fit:cover;object-position:top center}
+.hero-content{position:relative;z-index:2;max-width:600px;padding:80px 0;animation:fadeInUp 0.8s ease both}
+.hero-eyebrow{font-size:11px;letter-spacing:4px;text-transform:uppercase;color:var(--gold);margin-bottom:20px;font-weight:500}
+.hero-title{font-family:var(--ff-serif);font-size:clamp(40px,5vw,66px);line-height:1.1;font-weight:700;color:var(--white);margin-bottom:24px}
+.hero-title em{font-style:italic;color:var(--gold)}
+.hero-sub{font-size:16px;line-height:1.7;color:var(--grey-light);max-width:460px;margin-bottom:40px}
+.hero-ctas{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:56px}
+.hero-features{display:flex;gap:32px;flex-wrap:wrap}
+.hero-feat{display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center}
+.hero-feat-icon{width:38px;height:38px;color:var(--gold)}
+.hero-feat span{font-size:11px;letter-spacing:0.5px;color:var(--grey-light);line-height:1.4;max-width:80px}
+.hero-badge{position:absolute;right:8%;bottom:12%;z-index:3;width:100px;height:100px;border-radius:50%;border:1px solid var(--gold);background:rgba(10,10,10,0.8);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:2px;animation:spin-slow 20s linear infinite}
+.hero-badge span{font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);line-height:1.4}
+.hero-badge strong{font-family:var(--ff-serif);font-size:11px;color:var(--white)}
+
+/* CATEGORIES */
+.categories{padding:72px 0;background:var(--dark-2)}
+.cat-grid{display:grid;grid-template-columns:repeat(8,1fr);gap:12px}
+.cat-item{display:flex;flex-direction:column;align-items:center;gap:12px;cursor:pointer}
+.cat-icon-wrap{width:80px;height:80px;border-radius:50%;background:var(--dark-3);border:1px solid rgba(200,169,110,0.2);display:flex;align-items:center;justify-content:center;transition:var(--transition);position:relative;overflow:hidden}
+.cat-item:hover .cat-icon-wrap{border-color:var(--gold);transform:translateY(-4px);box-shadow:var(--shadow-gold)}
+.cat-icon-wrap svg{width:28px;height:28px;color:var(--gold)}
+.cat-label{font-size:11px;letter-spacing:0.5px;color:var(--grey-light);text-align:center;transition:var(--transition)}
+.cat-view{font-size:10px;color:var(--gold);transition:var(--transition);opacity:0}
+.cat-item:hover .cat-label{color:var(--white)}
+.cat-item:hover .cat-view{opacity:1}
+
+/* BESTSELLERS */
+.bestsellers{padding:72px 0;background:var(--dark)}
+.section-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:48px}
+.view-all-link{font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold);border-bottom:1px solid transparent;transition:var(--transition);display:flex;align-items:center;gap:6px}
+.view-all-link:hover{border-color:var(--gold)}
+.products-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:20px}
+.product-card{background:var(--dark-2);border:1px solid rgba(255,255,255,0.05);border-radius:var(--radius);overflow:hidden;transition:var(--transition);cursor:pointer;position:relative}
+.product-card:hover{border-color:rgba(200,169,110,0.3);transform:translateY(-4px);box-shadow:var(--shadow)}
+.product-img-wrap{position:relative;overflow:hidden;aspect-ratio:1}
+.product-img-wrap img{width:100%;height:100%;object-fit:cover;transition:transform 0.5s ease}
+.product-card:hover .product-img-wrap img{transform:scale(1.06)}
+.product-badge{position:absolute;top:10px;left:10px;z-index:2}
+.product-wishlist{position:absolute;top:10px;right:10px;z-index:2;width:32px;height:32px;border-radius:50%;background:rgba(10,10,10,0.7);display:flex;align-items:center;justify-content:center;color:var(--grey);transition:var(--transition);opacity:0}
+.product-card:hover .product-wishlist{opacity:1}
+.product-wishlist:hover{color:#e05555;background:rgba(255,255,255,0.1)}
+.product-wishlist svg{width:16px;height:16px}
+.product-info{padding:14px 14px 16px}
+.product-name{font-size:13px;font-weight:500;color:var(--light);margin-bottom:6px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.product-price{font-family:var(--ff-serif);font-size:16px;color:var(--gold);font-weight:600;margin-bottom:8px}
+.product-stars{display:flex;align-items:center;gap:4px}
+.stars{display:flex;gap:2px;color:var(--gold);font-size:11px}
+.review-count{font-size:10px;color:var(--grey)}
+
+/* PROMO */
+.promo{padding:0 0 72px;background:var(--dark)}
+.promo-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:20px}
+.promo-card{padding:36px;border-radius:var(--radius);position:relative;overflow:hidden;cursor:pointer;transition:var(--transition);border:1px solid rgba(200,169,110,0.1)}
+.promo-card:hover{transform:translateY(-2px);box-shadow:var(--shadow)}
+.promo-card--dark{background:var(--dark-3)}
+.promo-card--navy{background:#0d1b2a}
+.promo-card--gold-border{background:var(--dark-3);border-color:var(--gold)}
+.promo-eyebrow{font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:12px}
+.promo-title{font-family:var(--ff-serif);font-size:26px;color:var(--white);line-height:1.2;margin-bottom:10px}
+.promo-sub{font-size:13px;color:var(--grey-light);line-height:1.6;margin-bottom:24px}
+.promo-cta{display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:var(--gold);transition:var(--transition)}
+.promo-cta svg{width:14px;height:14px;transition:transform var(--transition)}
+.promo-card:hover .promo-cta svg{transform:translateX(4px)}
+.promo-discount{font-family:var(--ff-serif);font-size:52px;color:var(--gold);line-height:1;margin-bottom:4px;font-weight:700}
+.promo-code{font-size:11px;color:var(--grey-light);margin-bottom:20px}
+.promo-code strong{color:var(--light);background:rgba(200,169,110,0.1);padding:2px 8px;border-radius:2px}
+
+/* TRUST */
+.trust{padding:40px 0;background:var(--dark-3);border-top:1px solid rgba(200,169,110,0.1);border-bottom:1px solid rgba(200,169,110,0.1)}
+.trust-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:32px}
+.trust-item{display:flex;align-items:center;gap:14px}
+.trust-icon{color:var(--gold);flex-shrink:0}
+.trust-icon svg{width:28px;height:28px}
+.trust-text strong{display:block;font-size:13px;font-weight:600;color:var(--white);margin-bottom:2px}
+.trust-text span{font-size:12px;color:var(--grey)}
+
+/* ABOUT */
+.about{padding:96px 0;background:var(--dark-2)}
+.about-inner{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center}
+.about-img-wrap{position:relative}
+.about-img-wrap::before{content:'';position:absolute;top:-16px;left:-16px;right:16px;bottom:16px;border:1px solid rgba(200,169,110,0.3);border-radius:4px;z-index:0}
+.about-img-wrap img{width:100%;height:480px;object-fit:cover;border-radius:4px;position:relative;z-index:1}
+.about-eyebrow{font-size:11px;letter-spacing:4px;text-transform:uppercase;color:var(--gold);margin-bottom:20px}
+.about-title{font-family:var(--ff-serif);font-size:clamp(30px,3vw,42px);color:var(--white);line-height:1.15;margin-bottom:24px}
+.about-body{font-size:15px;line-height:1.8;color:var(--grey-light);margin-bottom:16px}
+.about-stats{display:flex;gap:40px;margin:40px 0}
+.about-stat strong{display:block;font-family:var(--ff-serif);font-size:36px;color:var(--gold)}
+.about-stat span{font-size:12px;letter-spacing:1px;text-transform:uppercase;color:var(--grey)}
+
+/* TESTIMONIALS */
+.testimonials{padding:96px 0;background:var(--dark)}
+.testimonials-inner{display:grid;grid-template-columns:1fr 1.4fr;gap:72px;align-items:center}
+.testi-eyebrow{font-size:11px;letter-spacing:4px;text-transform:uppercase;color:var(--gold);margin-bottom:16px}
+.testi-title{font-family:var(--ff-serif);font-size:40px;color:var(--white);line-height:1.2;margin-bottom:24px}
+.testi-carousel{position:relative;overflow:hidden}
+.testi-track{display:flex;transition:transform 0.6s cubic-bezier(0.4,0,0.2,1)}
+.testi-card{flex:0 0 100%;background:var(--dark-2);border:1px solid rgba(200,169,110,0.15);border-radius:4px;padding:36px}
+.testi-quote{font-size:56px;color:var(--gold);line-height:0.7;font-family:var(--ff-serif);margin-bottom:16px}
+.testi-text{font-size:16px;line-height:1.7;color:var(--light);font-style:italic;margin-bottom:24px}
+.testi-stars{display:flex;gap:4px;color:var(--gold);margin-bottom:16px;font-size:18px}
+.testi-author{display:flex;align-items:center;gap:14px}
+.testi-avatar{width:44px;height:44px;border-radius:50%;background:var(--gold);display:flex;align-items:center;justify-content:center;font-family:var(--ff-serif);font-size:18px;color:var(--dark);font-weight:700}
+.testi-name{font-size:14px;font-weight:600;color:var(--white)}
+.testi-role{font-size:12px;color:var(--grey);margin-top:2px}
+.testi-nav{display:flex;align-items:center;gap:16px;margin-top:24px}
+.testi-btn{width:40px;height:40px;border:1px solid rgba(200,169,110,0.3);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--gold);transition:var(--transition);cursor:pointer}
+.testi-btn:hover{background:var(--gold);color:var(--dark);border-color:var(--gold)}
+.testi-btn svg{width:16px;height:16px}
+.testi-dots{display:flex;gap:8px}
+.testi-dot{width:8px;height:8px;border-radius:50%;background:var(--dark-5);border:1px solid rgba(200,169,110,0.3);transition:var(--transition);cursor:pointer}
+.testi-dot.active{background:var(--gold);border-color:var(--gold)}
+
+/* NEWSLETTER */
+.newsletter-banner{padding:64px 0;background:var(--dark-3);border-top:1px solid rgba(200,169,110,0.1)}
+.nl-inner{display:flex;align-items:center;justify-content:space-between;gap:48px;flex-wrap:wrap}
+.nl-text strong{display:block;font-family:var(--ff-serif);font-size:28px;color:var(--white);margin-bottom:8px}
+.nl-text p{font-size:14px;color:var(--grey-light)}
+.nl-form{display:flex;max-width:420px;width:100%}
+.nl-input{flex:1;padding:14px 20px;background:var(--dark-4);border:1px solid rgba(200,169,110,0.25);border-right:none;color:var(--white);font-family:var(--ff-sans);font-size:14px;outline:none;transition:var(--transition);border-radius:var(--radius) 0 0 var(--radius)}
+.nl-input::placeholder{color:var(--grey)}
+.nl-input:focus{border-color:var(--gold)}
+.nl-btn{padding:14px 24px;background:var(--gold);color:var(--dark);font-size:12px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;transition:var(--transition);border-radius:0 var(--radius) var(--radius) 0;font-family:var(--ff-sans);cursor:pointer;border:none}
+.nl-btn:hover{background:var(--gold-light)}
+
+/* FOOTER */
+.footer{background:var(--dark-2);border-top:1px solid rgba(200,169,110,0.1);padding:64px 0 0}
+.footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr 1.6fr;gap:48px;margin-bottom:48px}
+.footer-brand p{font-size:13px;line-height:1.7;color:var(--grey);margin:16px 0 24px;max-width:220px}
+.footer-social{display:flex;gap:12px}
+.footer-social a{width:34px;height:34px;border:1px solid rgba(200,169,110,0.2);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--grey);transition:var(--transition)}
+.footer-social a:hover{border-color:var(--gold);color:var(--gold)}
+.footer-social svg{width:14px;height:14px}
+.footer-heading{font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:20px;font-weight:600}
+.footer-links{display:flex;flex-direction:column;gap:10px}
+.footer-links a{font-size:13px;color:var(--grey);transition:var(--transition)}
+.footer-links a:hover{color:var(--light);padding-left:4px}
+.footer-payments{display:flex;gap:8px;margin-top:16px;flex-wrap:wrap}
+.payment-badge{background:var(--dark-4);border:1px solid rgba(255,255,255,0.08);border-radius:4px;padding:4px 10px;font-size:11px;color:var(--grey-light);font-weight:500}
+.footer-bottom{border-top:1px solid rgba(255,255,255,0.06);padding:20px 0;display:flex;justify-content:space-between;align-items:center}
+.footer-bottom p{font-size:12px;color:var(--grey)}
+.footer-bottom-links{display:flex;gap:24px}
+.footer-bottom-links a{font-size:12px;color:var(--grey);transition:var(--transition)}
+.footer-bottom-links a:hover{color:var(--gold)}
+
+/* MOBILE NAV */
+.mobile-nav{position:fixed;top:0;right:-100%;bottom:0;width:300px;background:var(--dark-2);border-left:1px solid rgba(200,169,110,0.15);z-index:200;transition:right 0.4s ease;display:flex;flex-direction:column;padding:24px}
+.mobile-nav.open{right:0}
+.mobile-nav-close{align-self:flex-end;color:var(--grey);padding:8px;cursor:pointer;background:none;border:none}
+.mobile-nav-close:hover{color:var(--gold)}
+.mobile-nav-links{display:flex;flex-direction:column;gap:24px;margin-top:32px}
+.mobile-nav-links a{font-size:18px;font-family:var(--ff-serif);color:var(--white)}
+.mobile-overlay{position:fixed;inset:0;background:rgba(0,0,0,0.7);z-index:150;opacity:0;pointer-events:none;transition:var(--transition)}
+.mobile-overlay.open{opacity:1;pointer-events:all}
+
+/* ANIMATIONS */
+@keyframes fadeInUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+@keyframes spin-slow{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+.fade-in{opacity:0;transform:translateY(20px);transition:opacity 0.6s ease,transform 0.6s ease}
+.fade-in.visible{opacity:1;transform:translateY(0)}
+
+/* RESPONSIVE */
+@media(max-width:1100px){.products-grid{grid-template-columns:repeat(3,1fr)}.cat-grid{grid-template-columns:repeat(4,1fr)}.footer-grid{grid-template-columns:1fr 1fr 1fr}}
+@media(max-width:900px){.nav{display:none}.nav-toggle{display:flex}.about-inner,.testimonials-inner{grid-template-columns:1fr}.promo-grid{grid-template-columns:1fr}.trust-grid{grid-template-columns:repeat(2,1fr)}.hero-img{width:40%}}
+@media(max-width:640px){.cat-grid{grid-template-columns:repeat(4,1fr)}.products-grid{grid-template-columns:repeat(2,1fr)}.ann-items{gap:16px;font-size:11px}.hero-title{font-size:34px}.hero-img{display:none}.footer-grid{grid-template-columns:1fr;gap:32px}.nl-inner{flex-direction:column;align-items:stretch}.footer-bottom{flex-direction:column;gap:12px;text-align:center}.about-stats{gap:24px}}
+
+</style>
+</head>
+<body>
+<div class="announcement-bar">
+<div class="container">
+  <div class="ann-items">
+    <div class="ann-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>Free Delivery on Orders Above 10 KWD</div>
+    <div class="ann-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>Premium Quality Fabrics</div>
+    <div class="ann-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 102.13-9.36L1 10"/></svg>Easy Returns &amp; Exchanges</div>
+  </div>
+  <div class="ann-social">
+    <a href="#" aria-label="Facebook" id="ann-fb"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+    <a href="#" aria-label="Instagram" id="ann-ig"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+    <a href="#" aria-label="TikTok" id="ann-tk"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.66a8.17 8.17 0 004.77 1.51V6.72a4.85 4.85 0 01-1-.03z"/></svg></a>
+  </div>
+</div>
+</div>
+<header class="header" id="main-header">
+<div class="container">
+  <div class="header-inner">
+    <a href="#" class="logo" id="logo-link">
+      <div class="logo-icon">SS</div>
+      <div class="logo-text"><strong>Side Signature</strong><span>Medical Apparel</span></div>
+    </a>
+    <nav class="nav">
+      <a href="#" class="active" id="nav-home">Home</a>
+      <a href="#categories" id="nav-shop">Shop</a>
+      <a href="#bestsellers" id="nav-collections">Collections</a>
+      <a href="#about" id="nav-about">About Us</a>
+      <a href="#testimonials" id="nav-reviews">Reviews</a>
+      <a href="#contact" id="nav-contact">Contact Us</a>
+    </nav>
+    <div class="header-actions">
+      <button aria-label="Search" id="btn-search"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg></button>
+      <button aria-label="Account" id="btn-account"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></button>
+      <div class="nav-toggle" id="nav-toggle" role="button" aria-label="Toggle menu"><span></span><span></span><span></span></div>
+    </div>
+  </div>
+</div>
+</header>
+<div class="mobile-overlay" id="mobile-overlay"></div>
+<nav class="mobile-nav" id="mobile-nav">
+  <button class="mobile-nav-close" id="mobile-nav-close" aria-label="Close menu"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+  <div class="logo" style="margin-top:8px"><div class="logo-icon">SS</div><div class="logo-text"><strong>Side Signature</strong><span>Medical Apparel</span></div></div>
+  <div class="mobile-nav-links">
+    <a href="#">Home</a><a href="#categories">Shop</a><a href="#bestsellers">Collections</a>
+    <a href="#about">About Us</a><a href="#testimonials">Reviews</a><a href="#contact">Contact Us</a>
+  </div>
+</nav>
+<section class="hero" id="hero">
+<div class="hero-bg"></div>
+<img src="C:/Users/Ameen/.gemini/antigravity-ide/brain/c34494d3-6229-4625-9744-21c909a971c5/hero_medical_1789107107279.jpg" alt="Confident doctor in premium white lab coat and navy scrubs in a modern hospital corridor" class="hero-img"/>
+<div class="container">
+  <div class="hero-content">
+    <p class="hero-eyebrow">Professional Medical Apparel &ndash; Kuwait</p>
+    <h1 class="hero-title">Made for <em>Those Who<br/>Keep Healthcare</em><br/>Moving.</h1>
+    <p class="hero-sub">Professional medical uniforms designed for doctors, nurses and paramedics in Kuwait &mdash; bringing together comfort, functionality and a smart professional appearance for every working day.</p>
+    <div class="hero-ctas">
+      <a href="#bestsellers" class="btn-primary" id="cta-explore">Explore Our Collection <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      <a href="#contact" class="btn-outline" id="cta-enquire">Enquire Now <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></a>
+    </div>
+    <div class="hero-features">
+      <div class="hero-feat"><svg class="hero-feat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><span>Finest Quality Fabrics</span></div>
+      <div class="hero-feat"><svg class="hero-feat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 20h9M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg><span>Tailored to Perfection</span></div>
+      <div class="hero-feat"><svg class="hero-feat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg><span>Custom Made Orders</span></div>
+      <div class="hero-feat"><svg class="hero-feat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><span>Secure &amp; Trusted</span></div>
+    </div>
+  </div>
+</div>
+<div class="hero-badge"><strong>SS</strong><span>Premium<br/>Medical<br/>Wear</span></div>
+</section>
+<section class="categories" id="categories">
+<div class="container">
+  <div class="section-title">Shop by Category</div>
+  <div class="cat-grid">
+    <div class="cat-item" id="cat-scrubs"><div class="cat-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.38 3.46L16 2a4 4 0 01-8 0L3.62 3.46a2 2 0 00-1.34 2.23l.58 3.57a1 1 0 00.99.84H6v10c0 1.1.9 2 2 2h8a2 2 0 002-2V10h2.15a1 1 0 00.99-.84l.58-3.57a2 2 0 00-1.34-2.23z"/></svg></div><span class="cat-label">Scrubs</span><span class="cat-view">View All</span></div>
+    <div class="cat-item" id="cat-labcoat"><div class="cat-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M12 3v18M3 9h18"/></svg></div><span class="cat-label">Lab Coats</span><span class="cat-view">View All</span></div>
+    <div class="cat-item" id="cat-surgical"><div class="cat-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2V9M9 21H5a2 2 0 01-2-2V9m0 0h18"/></svg></div><span class="cat-label">Surgical Sets</span><span class="cat-view">View All</span></div>
+    <div class="cat-item" id="cat-nursing"><div class="cat-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></div><span class="cat-label">Nursing</span><span class="cat-view">View All</span></div>
+    <div class="cat-item" id="cat-accessories"><div class="cat-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div><span class="cat-label">Accessories</span><span class="cat-view">View All</span></div>
+    <div class="cat-item" id="cat-footwear"><div class="cat-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 7h18M3 7c0 0 2 8 2 12h14c0-4 2-12 2-12M7 7V5a2 2 0 014 0v2"/></svg></div><span class="cat-label">Footwear</span><span class="cat-view">View All</span></div>
+    <div class="cat-item" id="cat-paramedic"><div class="cat-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M12 8v8M8 12h8"/></svg></div><span class="cat-label">Paramedic</span><span class="cat-view">View All</span></div>
+    <div class="cat-item" id="cat-gift"><div class="cat-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 12v10H4V12M22 7H2v5h20V7zM12 22V7M12 7H7.5a2.5 2.5 0 010-5C11 2 12 7 12 7zM12 7h4.5a2.5 2.5 0 000-5C13 2 12 7 12 7z"/></svg></div><span class="cat-label">Gift Sets</span><span class="cat-view">View All</span></div>
+  </div>
+</div>
+</section>
+<section class="bestsellers" id="bestsellers">
+<div class="container">
+<div class="section-header">
+<div class="section-title" style="margin-bottom:0;flex:1;justify-content:flex-start;padding-right:24px">Best Sellers</div>
+<a href="#" class="view-all-link" id="view-all-products">View All Products <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+</div>
+<div class="products-grid">
+<div class="product-card fade-in" id="product-1"><div class="product-img-wrap"><img src="C:/Users/Ameen/.gemini/antigravity-ide/brain/c34494d3-6229-4625-9744-21c909a971c5/product_scrubs_navy_1789107578293.jpg" alt="Classic Navy Scrubs Set" loading="lazy"/><span class="product-badge"><span class="badge badge-gold">Best Seller</span></span><button class="product-wishlist" aria-label="Add to wishlist"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></button></div><div class="product-info"><p class="product-name">Classic Navy Scrubs Set</p><p class="product-price">9.500 KWD</p><div class="product-stars"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><span class="review-count"></span></div></div></div>
+<div class="product-card fade-in" id="product-2"><div class="product-img-wrap"><img src="C:/Users/Ameen/.gemini/antigravity-ide/brain/c34494d3-6229-4625-9744-21c909a971c5/product_labcoat_1789107605480.jpg" alt="Premium White Lab Coat" loading="lazy"/><span class="product-badge"><span class="badge badge-gold">Top Rated</span></span><button class="product-wishlist" aria-label="Add to wishlist"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></button></div><div class="product-info"><p class="product-name">Premium White Lab Coat</p><p class="product-price">12.000 KWD</p><div class="product-stars"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><span class="review-count"></span></div></div></div>
+<div class="product-card fade-in" id="product-3"><div class="product-img-wrap"><img src="C:/Users/Ameen/.gemini/antigravity-ide/brain/c34494d3-6229-4625-9744-21c909a971c5/product_scrubs_green_1789107618474.jpg" alt="Sage Green Surgical Scrubs" loading="lazy"/><span class="product-badge"><span class="badge badge-dark">New Arrival</span></span><button class="product-wishlist" aria-label="Add to wishlist"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></button></div><div class="product-info"><p class="product-name">Sage Green Surgical Scrubs</p><p class="product-price">8.750 KWD</p><div class="product-stars"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</div><span class="review-count"></span></div></div></div>
+<div class="product-card fade-in" id="product-4"><div class="product-img-wrap"><img src="C:/Users/Ameen/.gemini/antigravity-ide/brain/c34494d3-6229-4625-9744-21c909a971c5/product_nurse_uniform_1789107761334.jpg" alt="Signature Nursing Uniform" loading="lazy"/><span class="product-badge"></span><button class="product-wishlist" aria-label="Add to wishlist"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></button></div><div class="product-info"><p class="product-name">Signature Nursing Uniform</p><p class="product-price">10.500 KWD</p><div class="product-stars"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><span class="review-count"></span></div></div></div>
+<div class="product-card fade-in" id="product-5"><div class="product-img-wrap"><img src="C:/Users/Ameen/.gemini/antigravity-ide/brain/c34494d3-6229-4625-9744-21c909a971c5/product_scrubs_black_1789108102154.jpg" alt="Midnight Black Scrubs Set" loading="lazy"/><span class="product-badge"></span><button class="product-wishlist" aria-label="Add to wishlist"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></button></div><div class="product-info"><p class="product-name">Midnight Black Scrubs Set</p><p class="product-price">9.000 KWD</p><div class="product-stars"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</div><span class="review-count"></span></div></div></div>
+<div class="product-card fade-in" id="product-6"><div class="product-img-wrap"><img src="C:/Users/Ameen/.gemini/antigravity-ide/brain/c34494d3-6229-4625-9744-21c909a971c5/product_scrubs_burgundy_1789107907146.jpg" alt="Royal Burgundy Scrubs Set" loading="lazy"/><span class="product-badge"><span class="badge badge-dark">Exclusive</span></span><button class="product-wishlist" aria-label="Add to wishlist"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></button></div><div class="product-info"><p class="product-name">Royal Burgundy Scrubs Set</p><p class="product-price">9.500 KWD</p><div class="product-stars"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><span class="review-count"></span></div></div></div>
+</div>
+</div>
+</section>
+<section class="promo">
+<div class="container">
+  <div class="promo-grid">
+    <div class="promo-card promo-card--dark fade-in" id="promo-tailoring">
+      <div class="promo-eyebrow">Custom Tailoring</div>
+      <div class="promo-title">Made Just<br/>For You</div>
+      <div class="promo-sub">Custom fits, perfect style. Exclusively designed for every healthcare professional in Kuwait.</div>
+      <a href="#contact" class="promo-cta" id="promo-cta-1">Book Now <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+    </div>
+    <div class="promo-card promo-card--navy fade-in" id="promo-complete">
+      <div class="promo-eyebrow">Hospital Special</div>
+      <div class="promo-title">Complete<br/>Professional Look</div>
+      <div class="promo-sub">Scrubs, lab coats &amp; accessories &mdash; styled all in one place for your hospital or clinic.</div>
+      <a href="#bestsellers" class="promo-cta" id="promo-cta-2">Explore Now <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+    </div>
+    <div class="promo-card promo-card--gold-border fade-in" id="promo-offer">
+      <div class="promo-eyebrow">Exclusive Offer</div>
+      <div class="promo-discount">15% OFF</div>
+      <div class="promo-sub">On your first purchase</div>
+      <div class="promo-code">Use Code: <strong>SIDE15</strong></div>
+      <a href="#bestsellers" class="btn-primary" id="promo-cta-3" style="font-size:12px;padding:10px 20px">Shop Now <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+    </div>
+  </div>
+</div>
+</section>
+<div class="trust">
+<div class="container">
+  <div class="trust-grid">
+    <div class="trust-item"><span class="trust-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span><div class="trust-text"><strong>Free Delivery</strong><span>On orders above 10 KWD</span></div></div>
+    <div class="trust-item"><span class="trust-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 102.13-9.36L1 10"/></svg></span><div class="trust-text"><strong>Easy Returns</strong><span>14-day return policy</span></div></div>
+    <div class="trust-item"><span class="trust-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg></span><div class="trust-text"><strong>Secure Payment</strong><span>100% safe &amp; secure</span></div></div>
+    <div class="trust-item"><span class="trust-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.63A2 2 0 012 .18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.06 6.06l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg></span><div class="trust-text"><strong>Customer Support</strong><span>24/7 dedicated support</span></div></div>
+    <div class="trust-item"><span class="trust-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span><div class="trust-text"><strong>Premium Quality</strong><span>Finest fabrics &amp; stitching</span></div></div>
+  </div>
+</div>
+</div>
+<section class="about" id="about">
+<div class="container">
+<div class="about-inner">
+<div class="about-img-wrap fade-in"><img src="C:/Users/Ameen/.gemini/antigravity-ide/brain/c34494d3-6229-4625-9744-21c909a971c5/about_store_1789107935951.jpg" alt="Side Signature premium medical apparel boutique store interior in Kuwait" loading="lazy"/></div>
+<div class="fade-in">
+  <div class="about-eyebrow">About Us</div>
+  <h2 class="about-title">Redefining Professionalism<br/>For Healthcare Workers</h2>
+  <p class="about-body">At Side Signature, we believe every healthcare professional deserves to look and feel their best. From state-of-the-art scrubs to meticulously crafted lab coats, our collections are made with premium fabrics, impeccable craftsmanship and attention to every detail.</p>
+  <p class="about-body">Founded in Kuwait, we understand the demands of the healthcare environment &mdash; our garments are designed to move with you through every shift, offering unmatched comfort without compromising on style.</p>
+  <div class="about-stats">
+    <div class="about-stat"><strong>500+</strong><span>Products</span></div>
+    <div class="about-stat"><strong>2K+</strong><span>Happy Clients</span></div>
+    <div class="about-stat"><strong>5+</strong><span>Years Experience</span></div>
+  </div>
+  <a href="#contact" class="btn-primary" id="about-cta">Read Our Story <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+</div>
+</div>
+</div>
+</section>
+<section class="testimonials" id="testimonials">
+<div class="container">
+  <div class="testimonials-inner">
+    <div>
+      <div class="testi-eyebrow">Testimonials</div>
+      <h2 class="testi-title">What Our Clients<br/>Say</h2>
+      <p style="font-size:14px;color:var(--grey);line-height:1.7;margin-top:8px">Trusted by doctors, nurses and paramedics across Kuwait&rsquo;s top hospitals and clinics.</p>
+    </div>
+    <div>
+      <div class="testi-carousel" id="testi-carousel">
+        <div class="testi-track" id="testi-track">
+          <div class="testi-card"><div class="testi-quote">&ldquo;</div><p class="testi-text">Amazing collection &mdash; perfect fit and outstanding service! I got so many compliments from colleagues on my very first day wearing these. Highly recommended for any healthcare professional.</p><div class="testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><div class="testi-author"><div class="testi-avatar">R</div><div><div class="testi-name">Rania Al-Mutairi</div><div class="testi-role">ICU Nurse, Al-Sabah Hospital &ndash; Kuwait</div></div></div></div>
+          <div class="testi-card"><div class="testi-quote">&ldquo;</div><p class="testi-text">The quality of the lab coats is exceptional. I&rsquo;ve worn many brands over my career but Side Signature is on another level. Tailoring is precise and the fabric feels premium even after repeated washing.</p><div class="testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><div class="testi-author"><div class="testi-avatar">K</div><div><div class="testi-name">Dr. Khalid Al-Rashidi</div><div class="testi-role">Senior Physician, Kuwait Hospital</div></div></div></div>
+          <div class="testi-card"><div class="testi-quote">&ldquo;</div><p class="testi-text">Ordered scrubs for our entire nursing team and couldn&rsquo;t be happier. The custom embroidery with our hospital logo looks incredible and delivery was extremely fast. Will definitely reorder!</p><div class="testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><div class="testi-author"><div class="testi-avatar">F</div><div><div class="testi-name">Fatima Al-Anzi</div><div class="testi-role">Head of Nursing, Private Clinic &ndash; Salmiya</div></div></div></div>
+        </div>
+      </div>
+      <div class="testi-nav">
+        <button class="testi-btn" id="testi-prev" aria-label="Previous"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg></button>
+        <button class="testi-btn" id="testi-next" aria-label="Next"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+        <div class="testi-dots" id="testi-dots">
+          <div class="testi-dot active" data-index="0"></div>
+          <div class="testi-dot" data-index="1"></div>
+          <div class="testi-dot" data-index="2"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<section class="newsletter-banner" id="contact">
+<div class="container">
+  <div class="nl-inner">
+    <div class="nl-text"><strong>Stay in the Know</strong><p>Subscribe to get updates on new arrivals, exclusive offers &amp; style tips.</p></div>
+    <form class="nl-form" id="nl-form" onsubmit="handleNewsletter(event)">
+      <input type="email" class="nl-input" id="nl-email" placeholder="Enter your email address" required aria-label="Email address"/>
+      <button type="submit" class="nl-btn" id="nl-submit">Subscribe</button>
+    </form>
+  </div>
+</div>
+</section>
+<footer class="footer">
+<div class="container">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="logo"><div class="logo-icon">SS</div><div class="logo-text"><strong>Side Signature</strong><span>Medical Apparel</span></div></div>
+      <p>Premium medical wear crafted for Kuwait&rsquo;s healthcare professionals. Quality, comfort and style in every stitch.</p>
+      <div class="footer-social">
+        <a href="#" aria-label="Facebook" id="footer-fb"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+        <a href="#" aria-label="Instagram" id="footer-ig"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+        <a href="#" aria-label="TikTok" id="footer-tk"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.66a8.17 8.17 0 004.77 1.51V6.72a4.85 4.85 0 01-1-.03z"/></svg></a>
+        <a href="#" aria-label="YouTube" id="footer-yt"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 00-1.95 1.96A29 29 0 001 12a29 29 0 00.46 5.58A2.78 2.78 0 003.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 001.95-1.95A29 29 0 0023 12a29 29 0 00-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg></a>
+      </div>
+    </div>
+    <div><div class="footer-heading">Shop</div><ul class="footer-links"><li><a href="#" id="fl-scrubs">Scrubs</a></li><li><a href="#" id="fl-lab">Lab Coats</a></li><li><a href="#" id="fl-nurse">Nursing Uniforms</a></li><li><a href="#" id="fl-surg">Surgical Sets</a></li><li><a href="#" id="fl-acc">Accessories</a></li><li><a href="#" id="fl-foot">Footwear</a></li></ul></div>
+    <div><div class="footer-heading">Collections</div><ul class="footer-links"><li><a href="#" id="fl-hosp">Hospital Collection</a></li><li><a href="#" id="fl-clinic">Clinic Collection</a></li><li><a href="#" id="fl-design">Designer Collection</a></li><li><a href="#" id="fl-new">New Arrivals</a></li><li><a href="#" id="fl-best">Best Sellers</a></li></ul></div>
+    <div><div class="footer-heading">Customer Care</div><ul class="footer-links"><li><a href="#" id="fl-about">About Us</a></li><li><a href="#" id="fl-size">Size Guide</a></li><li><a href="#" id="fl-ship">Shipping Policy</a></li><li><a href="#" id="fl-return">Return &amp; Exchange</a></li><li><a href="#" id="fl-faq">FAQs</a></li><li><a href="#contact" id="fl-contact">Contact Us</a></li></ul></div>
+    <div>
+      <div class="footer-heading">Newsletter</div>
+      <p style="font-size:13px;color:var(--grey);line-height:1.6;margin-bottom:16px">Subscribe to get updates on new arrivals, offers &amp; style tips.</p>
+      <form style="display:flex" id="footer-nl-form" onsubmit="handleNewsletter(event)">
+        <input type="email" id="footer-nl-email" style="flex:1;padding:10px 14px;background:var(--dark-4);border:1px solid rgba(200,169,110,0.2);border-right:none;color:var(--white);font-size:13px;outline:none;font-family:var(--ff-sans);border-radius:var(--radius) 0 0 var(--radius)" placeholder="Enter your email" aria-label="Footer email"/>
+        <button type="submit" id="footer-nl-btn" style="padding:10px 16px;background:var(--gold);color:var(--dark);font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;font-family:var(--ff-sans);border-radius:0 var(--radius) var(--radius) 0;border:none;cursor:pointer">Subscribe</button>
+      </form>
+      <div class="footer-payments"><span class="payment-badge">VISA</span><span class="payment-badge">Mastercard</span><span class="payment-badge">KNET</span><span class="payment-badge">PayPal</span></div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 Side Signature Medical Apparel. All Rights Reserved.</p>
+    <div class="footer-bottom-links"><a href="#" id="footer-privacy">Privacy Policy</a><a href="#" id="footer-terms">Terms &amp; Conditions</a></div>
+  </div>
+</div>
+</footer>
+<script>
+
+  // Mobile Nav
+  const navToggle = document.getElementById('nav-toggle');
+  const mobileNav = document.getElementById('mobile-nav');
+  const mobileOverlay = document.getElementById('mobile-overlay');
+  const mobileClose = document.getElementById('mobile-nav-close');
+  function openNav(){mobileNav.classList.add('open');mobileOverlay.classList.add('open');document.body.style.overflow='hidden'}
+  function closeNav(){mobileNav.classList.remove('open');mobileOverlay.classList.remove('open');document.body.style.overflow=''}
+  navToggle.addEventListener('click',openNav);
+  mobileClose.addEventListener('click',closeNav);
+  mobileOverlay.addEventListener('click',closeNav);
+  document.querySelectorAll('.mobile-nav-links a').forEach(a=>a.addEventListener('click',closeNav));
+
+  // Sticky header shadow
+  const header=document.getElementById('main-header');
+  window.addEventListener('scroll',()=>{header.style.boxShadow=window.scrollY>60?'0 4px 24px rgba(0,0,0,0.5)':'none'});
+
+  // Testimonials carousel
+  const track=document.getElementById('testi-track');
+  const dots=document.querySelectorAll('.testi-dot');
+  let cur=0;
+  function goTo(n){cur=(n+3)%3;track.style.transform='translateX(-'+(cur*100)+'%)';dots.forEach((d,i)=>d.classList.toggle('active',i===cur))}
+  document.getElementById('testi-prev').addEventListener('click',()=>goTo(cur-1));
+  document.getElementById('testi-next').addEventListener('click',()=>goTo(cur+1));
+  dots.forEach(d=>d.addEventListener('click',()=>goTo(+d.dataset.index)));
+  setInterval(()=>goTo(cur+1),5000);
+
+  // Scroll fade-in
+  const fadeEls=document.querySelectorAll('.fade-in');
+  const obs=new IntersectionObserver((entries)=>{entries.forEach((e,i)=>{if(e.isIntersecting){setTimeout(()=>e.target.classList.add('visible'),i*80);obs.unobserve(e.target)}})},{threshold:0.1});
+  fadeEls.forEach(el=>obs.observe(el));
+
+  // Newsletter handler
+  function handleNewsletter(e){e.preventDefault();const btn=e.target.querySelector('button[type=submit]');const inp=e.target.querySelector('input[type=email]');const orig=btn.textContent;btn.textContent='Thank You!';btn.style.background='#4CAF50';inp.value='';setTimeout(()=>{btn.textContent=orig;btn.style.background=''},3000)}
+
+  // Wishlist toggle
+  document.querySelectorAll('.product-wishlist').forEach(btn=>{
+    btn.addEventListener('click',function(e){e.stopPropagation();const svg=this.querySelector('svg');if(this.dataset.liked==='true'){this.style.color='';svg.setAttribute('fill','none');this.dataset.liked='false'}else{this.style.color='#e05555';svg.setAttribute('fill','#e05555');this.dataset.liked='true'}})
+  });
+
+  // Active nav link on scroll
+  const sects=['hero','categories','bestsellers','about','testimonials','contact'];
+  const navLinks=document.querySelectorAll('.nav a');
+  window.addEventListener('scroll',()=>{
+    let current='';
+    sects.forEach(id=>{const el=document.getElementById(id);if(el&&window.scrollY>=el.offsetTop-130)current=id});
+    navLinks.forEach(link=>{link.classList.remove('active');if(link.getAttribute('href')==='#'+current||(current==='hero'&&link.getAttribute('href')==='#'))link.classList.add('active')});
+  });
+
+</script>
+</body>
+</html>

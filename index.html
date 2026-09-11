@@ -125,37 +125,56 @@ button{cursor:pointer;border:none;background:none;font-family:inherit}
 .product-section-head .section-title::before{display:none}
 .product-section-head h2{font-family:var(--ff-serif);font-size:clamp(26px,3vw,36px);color:var(--navy);margin-bottom:12px;line-height:1.2}
 .product-section-head p{font-size:15px;line-height:1.7;color:var(--muted)}
-.products-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
-.products-grid--single{grid-template-columns:1fr;max-width:760px}
+.products-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
 .product-card{background:#fff;border:1px solid var(--border);border-radius:12px;overflow:hidden;transition:var(--transition);box-shadow:0 2px 10px rgba(10,31,92,0.04);display:flex;flex-direction:column}
 .product-card:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:rgba(212,175,55,0.45)}
-.products-grid--single .product-card{flex-direction:row;align-items:stretch}
-.products-grid--single .product-img-wrap{width:42%;flex-shrink:0;aspect-ratio:auto;min-height:100%;max-height:none;height:auto}
-.products-grid--single .product-info{padding:22px 24px}
-.product-img-wrap{position:relative;height:130px;aspect-ratio:auto;background:var(--bg-2);overflow:hidden;display:flex;align-items:center;justify-content:center}
-.product-img-wrap img{width:100%;height:100%;object-fit:contain;object-position:center;padding:8px;transition:transform 0.5s ease}
+.product-img-wrap{position:relative;height:140px;background:var(--bg-2);overflow:hidden;display:flex;align-items:center;justify-content:center}
+.product-img-wrap img{width:100%;height:100%;object-fit:contain;object-position:center;padding:10px;transition:transform 0.5s ease}
 .product-card:hover .product-img-wrap img{transform:scale(1.03)}
 .product-badge{position:absolute;top:8px;left:8px;z-index:2}
 .product-badge .badge{font-size:9px;padding:3px 8px}
-.product-info{padding:12px 12px 14px;display:flex;flex-direction:column;gap:6px;flex:1}
-.product-tagline{font-size:10px;letter-spacing:0.2px;color:var(--royal);font-weight:600;margin:0}
-.product-name{font-family:var(--ff-serif);font-size:15px;color:var(--navy);margin:0;line-height:1.25}
-.product-desc{font-size:11px;line-height:1.4;color:var(--muted);margin:0;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
-.product-meta{display:flex;flex-wrap:wrap;gap:4px;margin:0}
-.product-meta span{font-size:10px;color:var(--ink-soft);background:var(--bg-2);border:1px solid rgba(10,31,92,0.08);padding:3px 7px;border-radius:999px;line-height:1.2}
-.product-meta span strong{color:var(--navy);font-weight:600;margin-right:2px}
-.product-features{margin:0;display:flex;flex-wrap:wrap;gap:4px;list-style:none;padding:0}
-.product-features li{font-size:9px;color:var(--navy);line-height:1.25;padding:3px 6px;border-radius:999px;background:rgba(212,175,55,0.12);border:1px solid rgba(212,175,55,0.35)}
-.product-features li::before{display:none}
-.product-foot{display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap;margin-top:2px;padding-top:8px;border-top:1px solid rgba(10,31,92,0.08)}
-.product-colours{display:flex;align-items:center;gap:6px;font-size:10px;color:var(--muted);margin:0}
+.product-info{padding:14px 14px 16px;display:flex;flex-direction:column;gap:8px;flex:1}
+.product-tagline{font-size:11px;letter-spacing:0.2px;color:var(--royal);font-weight:600;margin:0}
+.product-name{font-family:var(--ff-serif);font-size:16px;color:var(--navy);margin:0;line-height:1.25}
+.product-basics{display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap}
+.product-sizes{font-size:11px;color:var(--ink-soft)}
+.product-sizes strong{color:var(--navy)}
+.product-colours{display:flex;align-items:center;gap:6px;font-size:11px;color:var(--muted);margin:0}
 .swatches{display:flex;gap:4px}
 .swatch{width:12px;height:12px;border-radius:50%;border:2px solid rgba(10,31,92,0.12);display:inline-block}
 .swatch--navy{background:var(--navy)}
 .swatch--royal{background:var(--royal)}
-.product-note{font-size:10px;color:var(--navy);font-weight:600;margin:0}
-.product-actions{display:flex;gap:6px;margin-top:auto}
-.product-actions .btn-primary,.product-actions .btn-wa{flex:1;justify-content:center;padding:8px 8px;font-size:9px;letter-spacing:0.6px}
+.product-actions{display:flex;gap:8px;margin-top:auto;padding-top:4px}
+.product-actions .btn-primary,.product-actions .btn-outline,.product-actions .btn-wa{flex:1;justify-content:center;padding:10px 10px;font-size:10px;letter-spacing:0.7px}
+.btn-details{display:inline-flex;align-items:center;justify-content:center;gap:6px;background:transparent;color:var(--navy);padding:10px 12px;font-size:10px;font-weight:700;letter-spacing:0.7px;text-transform:uppercase;border:1.5px solid rgba(10,31,92,0.3);border-radius:2px;transition:var(--transition);cursor:pointer;font-family:inherit;flex:1}
+.btn-details:hover{border-color:var(--royal);color:var(--royal);background:rgba(48,92,222,0.04)}
+
+/* PRODUCT MODAL */
+.product-modal{position:fixed;inset:0;z-index:300;display:flex;align-items:center;justify-content:center;padding:20px;opacity:0;visibility:hidden;pointer-events:none;transition:opacity 0.28s ease,visibility 0.28s ease}
+.product-modal.open{opacity:1;visibility:visible;pointer-events:all}
+.product-modal-backdrop{position:absolute;inset:0;background:rgba(6,20,56,0.55);backdrop-filter:blur(6px)}
+.product-modal-dialog{position:relative;z-index:1;width:min(860px,100%);max-height:min(90vh,720px);background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 24px 60px rgba(10,31,92,0.25);display:grid;grid-template-columns:1fr 1.1fr;transform:translateY(16px) scale(0.98);transition:transform 0.3s ease}
+.product-modal.open .product-modal-dialog{transform:translateY(0) scale(1)}
+.product-modal-close{position:absolute;top:12px;right:12px;z-index:2;width:36px;height:36px;border-radius:50%;background:rgba(10,31,92,0.08);color:var(--navy);display:inline-flex;align-items:center;justify-content:center;cursor:pointer;border:none;transition:var(--transition)}
+.product-modal-close:hover{background:var(--navy);color:#fff}
+.product-modal-media{background:var(--bg-2);display:flex;align-items:center;justify-content:center;padding:28px;min-height:280px;position:relative}
+.product-modal-media img{width:100%;height:100%;max-height:420px;object-fit:contain}
+.product-modal-badge{position:absolute;top:16px;left:16px}
+.product-modal-body{padding:28px 28px 24px;overflow-y:auto;display:flex;flex-direction:column;gap:12px}
+.product-modal-tagline{font-size:12px;color:var(--royal);font-weight:600;letter-spacing:0.3px}
+.product-modal-title{font-family:var(--ff-serif);font-size:26px;color:var(--navy);line-height:1.2;margin:0}
+.product-modal-desc{font-size:14px;line-height:1.65;color:var(--muted);margin:0}
+.product-modal-meta{display:flex;flex-wrap:wrap;gap:8px}
+.product-modal-meta span{font-size:12px;color:var(--ink-soft);background:var(--bg-2);border:1px solid rgba(10,31,92,0.08);padding:6px 10px;border-radius:999px}
+.product-modal-meta span strong{color:var(--navy);margin-right:4px}
+.product-modal-features{list-style:none;display:flex;flex-direction:column;gap:8px;margin:4px 0 0;padding:0}
+.product-modal-features li{font-size:13px;color:var(--ink-soft);padding-left:16px;position:relative;line-height:1.4}
+.product-modal-features li::before{content:'';position:absolute;left:0;top:7px;width:7px;height:7px;border-radius:50%;background:var(--gold)}
+.product-modal-colours{display:flex;align-items:center;gap:10px;font-size:13px;color:var(--muted);padding-top:4px}
+.product-modal-note{font-size:13px;font-weight:600;color:var(--navy);margin:0}
+.product-modal-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:8px}
+.product-modal-actions .btn-primary,.product-modal-actions .btn-wa{padding:12px 18px;font-size:11px}
+body.modal-open{overflow:hidden}
 
 /* FEATURES */
 .features{padding:80px 0;background:#fff}
@@ -280,7 +299,7 @@ body.nav-open{overflow:hidden}
 @media(max-width:1100px){
   .benefits-grid{grid-template-columns:repeat(3,1fr)}
   .products-grid{grid-template-columns:repeat(4,1fr);gap:10px}
-  .product-img-wrap{height:110px}
+  .product-img-wrap{height:120px}
   .product-name{font-size:14px}
   .features-grid{grid-template-columns:repeat(2,1fr)}
   .why-grid{grid-template-columns:repeat(2,1fr)}
@@ -290,7 +309,12 @@ body.nav-open{overflow:hidden}
 }
 @media(max-width:900px){
   .products-grid{grid-template-columns:repeat(2,1fr);gap:12px}
-  .product-img-wrap{height:120px}
+  .product-img-wrap{height:130px}
+  .product-modal-dialog{grid-template-columns:1fr;max-height:92vh}
+  .product-modal-media{min-height:200px;padding:20px;max-height:240px}
+  .product-modal-media img{max-height:200px}
+  .product-modal-body{padding:20px}
+  .product-modal-title{font-size:22px}
   .container{padding:0 18px}
   .nav{display:none}
   .nav-toggle{display:flex}
@@ -316,8 +340,6 @@ body.nav-open{overflow:hidden}
   .hero-ctas{flex-direction:column}
   .hero-ctas .btn-primary,.hero-ctas .btn-outline{width:100%;justify-content:center}
   .benefits-grid,.products-grid,.features-grid,.why-grid,.bulk-list,.form-grid{grid-template-columns:1fr}
-  .products-grid--single .product-card{flex-direction:column}
-  .products-grid--single .product-img-wrap{width:100%;height:130px;min-height:0}
   .footer-grid{grid-template-columns:1fr}
   .footer-bottom{flex-direction:column;text-align:center}
   .about-img-wrap img{height:280px}
@@ -490,7 +512,15 @@ body.nav-open{overflow:hidden}
     <p>Professional medical scrub sets with a choice of neckline styles — created for healthcare professionals across today's environments.</p>
   </div>
   <div class="products-grid">
-    <article class="product-card fade-in">
+    <article class="product-card fade-in"
+      data-badge="Women's" data-badge-class="badge-royal"
+      data-tagline="Clean. Classic. Professional."
+      data-name="Women's V-Neck Scrub Set"
+      data-desc="A versatile V-neck medical scrub set designed for a smart professional appearance and practical everyday use."
+      data-style="V-Neck Scrub Set" data-sizes="M / L / XL" data-origin="India"
+      data-features="Professional V-neck design|Practical pocket detailing|Comfortable everyday fit|Clean professional appearance|Designed for healthcare professionals"
+      data-colours="Navy Blue & Royal Blue"
+      data-img="assets/product-royal-set-1.png">
       <div class="product-img-wrap">
         <img src="assets/product-royal-set-1.png" alt="Women's V-Neck Scrub Set" loading="lazy"/>
         <div class="product-badge"><span class="badge badge-royal">Women's</span></div>
@@ -498,30 +528,25 @@ body.nav-open{overflow:hidden}
       <div class="product-info">
         <p class="product-tagline">Clean. Classic. Professional.</p>
         <h3 class="product-name">Women's V-Neck Scrub Set</h3>
-        <p class="product-desc">A versatile V-neck medical scrub set designed for a smart professional appearance and practical everyday use.</p>
-        <div class="product-meta">
-          <span><strong>Style</strong> V-Neck</span>
-          <span><strong>Sizes</strong> M / L / XL</span>
-          <span><strong>Origin</strong> India</span>
-        </div>
-        <ul class="product-features">
-          <li>Professional V-neck</li>
-          <li>Practical pockets</li>
-          <li>Comfortable fit</li>
-          <li>Clean appearance</li>
-          <li>Healthcare ready</li>
-        </ul>
-        <div class="product-foot">
-          <div class="product-colours"><div class="swatches"><i class="swatch swatch--navy" title="Navy Blue"></i><i class="swatch swatch--royal" title="Royal Blue"></i></div><span>Navy &amp; Royal</span></div>
-          <p class="product-note">Price on enquiry</p>
+        <div class="product-basics">
+          <span class="product-sizes"><strong>Sizes</strong> M / L / XL</span>
+          <div class="product-colours"><div class="swatches"><i class="swatch swatch--navy"></i><i class="swatch swatch--royal"></i></div></div>
         </div>
         <div class="product-actions">
-          <a href="#contact" class="btn-primary">Enquire Now</a>
-          <a href="#contact" class="btn-wa">WhatsApp</a>
+          <button type="button" class="btn-details js-product-details">View Details</button>
+          <a href="#contact" class="btn-primary">Enquire</a>
         </div>
       </div>
     </article>
-    <article class="product-card fade-in">
+    <article class="product-card fade-in"
+      data-badge="Women's" data-badge-class="badge-royal"
+      data-tagline="Modern comfort. Professional presence."
+      data-name="Women's Round-Neck Scrub Set"
+      data-desc="A contemporary round-neck medical scrub set for healthcare professionals who prefer a distinctive alternative to the traditional V-neck."
+      data-style="Round-Neck Scrub Set" data-sizes="M / L / XL" data-origin="India"
+      data-features="Modern round-neck design|Practical pocket detailing|Comfortable everyday fit|Smart professional silhouette|Designed for healthcare environments"
+      data-colours="Navy Blue & Royal Blue"
+      data-img="assets/product-royal-set-2.png">
       <div class="product-img-wrap">
         <img src="assets/product-royal-set-2.png" alt="Women's Round-Neck Scrub Set" loading="lazy"/>
         <div class="product-badge"><span class="badge badge-royal">Women's</span></div>
@@ -529,30 +554,25 @@ body.nav-open{overflow:hidden}
       <div class="product-info">
         <p class="product-tagline">Modern comfort. Professional presence.</p>
         <h3 class="product-name">Women's Round-Neck Scrub Set</h3>
-        <p class="product-desc">A contemporary round-neck medical scrub set for healthcare professionals who prefer a distinctive alternative to the traditional V-neck.</p>
-        <div class="product-meta">
-          <span><strong>Style</strong> Round-Neck</span>
-          <span><strong>Sizes</strong> M / L / XL</span>
-          <span><strong>Origin</strong> India</span>
-        </div>
-        <ul class="product-features">
-          <li>Modern round-neck</li>
-          <li>Practical pockets</li>
-          <li>Comfortable fit</li>
-          <li>Smart silhouette</li>
-          <li>Healthcare ready</li>
-        </ul>
-        <div class="product-foot">
-          <div class="product-colours"><div class="swatches"><i class="swatch swatch--navy"></i><i class="swatch swatch--royal"></i></div><span>Navy &amp; Royal</span></div>
-          <p class="product-note">Price on enquiry</p>
+        <div class="product-basics">
+          <span class="product-sizes"><strong>Sizes</strong> M / L / XL</span>
+          <div class="product-colours"><div class="swatches"><i class="swatch swatch--navy"></i><i class="swatch swatch--royal"></i></div></div>
         </div>
         <div class="product-actions">
-          <a href="#contact" class="btn-primary">Enquire Now</a>
-          <a href="#contact" class="btn-wa">WhatsApp</a>
+          <button type="button" class="btn-details js-product-details">View Details</button>
+          <a href="#contact" class="btn-primary">Enquire</a>
         </div>
       </div>
     </article>
-    <article class="product-card fade-in">
+    <article class="product-card fade-in"
+      data-badge="Women's" data-badge-class="badge-royal"
+      data-tagline="Distinctive by design. Professional by nature."
+      data-name="Women's High-Neck Scrub Set"
+      data-desc="A modern high-neck medical scrub set created for professionals who prefer a more structured neckline while maintaining everyday comfort and functionality."
+      data-style="High-Neck Scrub Set" data-sizes="M / L / XL" data-origin="India"
+      data-features="Distinctive high-neck design|Practical pocket detailing|Comfortable everyday fit|Structured professional appearance|Designed for everyday healthcare use"
+      data-colours="Navy Blue & Royal Blue"
+      data-img="assets/product-mandarin-flatlay.jpg">
       <div class="product-img-wrap">
         <img src="assets/product-mandarin-flatlay.jpg" alt="Women's High-Neck Scrub Set" loading="lazy"/>
         <div class="product-badge"><span class="badge badge-royal">Women's</span></div>
@@ -560,30 +580,25 @@ body.nav-open{overflow:hidden}
       <div class="product-info">
         <p class="product-tagline">Distinctive by design. Professional by nature.</p>
         <h3 class="product-name">Women's High-Neck Scrub Set</h3>
-        <p class="product-desc">A modern high-neck medical scrub set created for professionals who prefer a more structured neckline while maintaining everyday comfort and functionality.</p>
-        <div class="product-meta">
-          <span><strong>Style</strong> High-Neck</span>
-          <span><strong>Sizes</strong> M / L / XL</span>
-          <span><strong>Origin</strong> India</span>
-        </div>
-        <ul class="product-features">
-          <li>Distinctive high-neck</li>
-          <li>Practical pockets</li>
-          <li>Comfortable fit</li>
-          <li>Structured look</li>
-          <li>Everyday use</li>
-        </ul>
-        <div class="product-foot">
-          <div class="product-colours"><div class="swatches"><i class="swatch swatch--navy"></i><i class="swatch swatch--royal"></i></div><span>Navy &amp; Royal</span></div>
-          <p class="product-note">Price on enquiry</p>
+        <div class="product-basics">
+          <span class="product-sizes"><strong>Sizes</strong> M / L / XL</span>
+          <div class="product-colours"><div class="swatches"><i class="swatch swatch--navy"></i><i class="swatch swatch--royal"></i></div></div>
         </div>
         <div class="product-actions">
-          <a href="#contact" class="btn-primary">Enquire Now</a>
-          <a href="#contact" class="btn-wa">WhatsApp</a>
+          <button type="button" class="btn-details js-product-details">View Details</button>
+          <a href="#contact" class="btn-primary">Enquire</a>
         </div>
       </div>
     </article>
-    <article class="product-card fade-in" id="mens">
+    <article class="product-card fade-in" id="mens"
+      data-badge="Men's" data-badge-class="badge-navy"
+      data-tagline="Functional and Professional."
+      data-name="Men's V-Neck Scrub Set"
+      data-desc="A classic men's V-neck scrub set created to provide a clean professional appearance with the practicality required for everyday healthcare work."
+      data-style="V-Neck Scrub Set" data-sizes="M / L / XL" data-origin="India"
+      data-features="Classic V-neck design|Practical pocket detailing|Comfortable everyday fit|Clean professional appearance|Designed for healthcare professionals"
+      data-colours="Navy Blue & Royal Blue"
+      data-img="assets/product-navy-scrubs.jpg">
       <div class="product-img-wrap">
         <img src="assets/product-navy-scrubs.jpg" alt="Men's V-Neck Scrub Set" loading="lazy"/>
         <div class="product-badge"><span class="badge badge-navy">Men's</span></div>
@@ -591,26 +606,13 @@ body.nav-open{overflow:hidden}
       <div class="product-info">
         <p class="product-tagline">Functional and Professional.</p>
         <h3 class="product-name">Men's V-Neck Scrub Set</h3>
-        <p class="product-desc">A classic men's V-neck scrub set created to provide a clean professional appearance with the practicality required for everyday healthcare work.</p>
-        <div class="product-meta">
-          <span><strong>Style</strong> V-Neck</span>
-          <span><strong>Sizes</strong> M / L / XL</span>
-          <span><strong>Origin</strong> India</span>
-        </div>
-        <ul class="product-features">
-          <li>Classic V-neck</li>
-          <li>Practical pockets</li>
-          <li>Comfortable fit</li>
-          <li>Clean appearance</li>
-          <li>Healthcare ready</li>
-        </ul>
-        <div class="product-foot">
-          <div class="product-colours"><div class="swatches"><i class="swatch swatch--navy"></i><i class="swatch swatch--royal"></i></div><span>Navy &amp; Royal</span></div>
-          <p class="product-note">Price on enquiry</p>
+        <div class="product-basics">
+          <span class="product-sizes"><strong>Sizes</strong> M / L / XL</span>
+          <div class="product-colours"><div class="swatches"><i class="swatch swatch--navy"></i><i class="swatch swatch--royal"></i></div></div>
         </div>
         <div class="product-actions">
-          <a href="#contact" class="btn-primary">Enquire Now</a>
-          <a href="#contact" class="btn-wa">WhatsApp</a>
+          <button type="button" class="btn-details js-product-details">View Details</button>
+          <a href="#contact" class="btn-primary">Enquire</a>
         </div>
       </div>
     </article>
@@ -845,6 +847,36 @@ body.nav-open{overflow:hidden}
 </div>
 </footer>
 
+<!-- PRODUCT DETAILS MODAL -->
+<div class="product-modal" id="product-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="pm-title">
+  <div class="product-modal-backdrop" id="product-modal-backdrop"></div>
+  <div class="product-modal-dialog">
+    <button type="button" class="product-modal-close" id="product-modal-close" aria-label="Close details">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <div class="product-modal-media">
+      <div class="product-modal-badge"><span class="badge" id="pm-badge">Women's</span></div>
+      <img id="pm-img" src="" alt=""/>
+    </div>
+    <div class="product-modal-body">
+      <p class="product-modal-tagline" id="pm-tagline"></p>
+      <h3 class="product-modal-title" id="pm-title"></h3>
+      <p class="product-modal-desc" id="pm-desc"></p>
+      <div class="product-modal-meta" id="pm-meta"></div>
+      <ul class="product-modal-features" id="pm-features"></ul>
+      <div class="product-modal-colours">
+        <div class="swatches"><i class="swatch swatch--navy"></i><i class="swatch swatch--royal"></i></div>
+        <span id="pm-colours">Navy Blue &amp; Royal Blue</span>
+      </div>
+      <p class="product-modal-note">For Price &amp; Availability, Please Contact Us.</p>
+      <div class="product-modal-actions">
+        <a href="#contact" class="btn-primary" id="pm-enquire">Enquire Now</a>
+        <a href="#contact" class="btn-wa" id="pm-whatsapp">WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</div>
+
 <script>
   const navToggle = document.getElementById('nav-toggle');
   const mobileNav = document.getElementById('mobile-nav');
@@ -868,7 +900,10 @@ body.nav-open{overflow:hidden}
   mobileClose.addEventListener('click',closeNav);
   mobileOverlay.addEventListener('click',closeNav);
   document.querySelectorAll('.mobile-nav-links a, .mobile-nav-cta, #mobile-logo').forEach(a=>a.addEventListener('click',closeNav));
-  document.addEventListener('keydown',e=>{if(e.key==='Escape'&&mobileNav.classList.contains('open'))closeNav()});
+  document.addEventListener('keydown',e=>{
+    if(e.key==='Escape'&&mobileNav.classList.contains('open'))closeNav();
+    if(e.key==='Escape'&&productModal.classList.contains('open'))closeProductModal();
+  });
 
   const header=document.getElementById('main-header');
   window.addEventListener('scroll',()=>{header.style.boxShadow=window.scrollY>60?'0 4px 24px rgba(10,31,92,0.08)':'none'});
@@ -876,6 +911,49 @@ body.nav-open{overflow:hidden}
   const fadeEls=document.querySelectorAll('.fade-in');
   const obs=new IntersectionObserver((entries)=>{entries.forEach((e,i)=>{if(e.isIntersecting){setTimeout(()=>e.target.classList.add('visible'),i*60);obs.unobserve(e.target)}})},{threshold:0.1});
   fadeEls.forEach(el=>obs.observe(el));
+
+  // Product details modal
+  const productModal=document.getElementById('product-modal');
+  const pmImg=document.getElementById('pm-img');
+  const pmBadge=document.getElementById('pm-badge');
+  const pmTagline=document.getElementById('pm-tagline');
+  const pmTitle=document.getElementById('pm-title');
+  const pmDesc=document.getElementById('pm-desc');
+  const pmMeta=document.getElementById('pm-meta');
+  const pmFeatures=document.getElementById('pm-features');
+  const pmColours=document.getElementById('pm-colours');
+
+  function openProductModal(card){
+    const d=card.dataset;
+    pmImg.src=d.img||'';
+    pmImg.alt=d.name||'';
+    pmBadge.textContent=d.badge||'';
+    pmBadge.className='badge '+(d.badgeClass||'badge-royal');
+    pmTagline.textContent=d.tagline||'';
+    pmTitle.textContent=d.name||'';
+    pmDesc.textContent=d.desc||'';
+    pmMeta.innerHTML=
+      '<span><strong>Style</strong> '+(d.style||'')+'</span>'+
+      '<span><strong>Sizes</strong> '+(d.sizes||'')+'</span>'+
+      '<span><strong>Origin</strong> '+(d.origin||'')+'</span>';
+    pmFeatures.innerHTML=(d.features||'').split('|').filter(Boolean).map(f=>'<li>'+f+'</li>').join('');
+    pmColours.textContent=d.colours||'Navy Blue & Royal Blue';
+    productModal.classList.add('open');
+    productModal.setAttribute('aria-hidden','false');
+    document.body.classList.add('modal-open');
+  }
+  function closeProductModal(){
+    productModal.classList.remove('open');
+    productModal.setAttribute('aria-hidden','true');
+    document.body.classList.remove('modal-open');
+  }
+  document.querySelectorAll('.js-product-details').forEach(btn=>{
+    btn.addEventListener('click',()=>openProductModal(btn.closest('.product-card')));
+  });
+  document.getElementById('product-modal-close').addEventListener('click',closeProductModal);
+  document.getElementById('product-modal-backdrop').addEventListener('click',closeProductModal);
+  document.getElementById('pm-enquire').addEventListener('click',closeProductModal);
+  document.getElementById('pm-whatsapp').addEventListener('click',closeProductModal);
 
   function handleEnquiry(e){
     e.preventDefault();
